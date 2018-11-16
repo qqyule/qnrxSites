@@ -7,6 +7,7 @@
 /SiteFiles/
 !/SiteFiles/assets/
 *.html
+!/SiteServer/**/*.html
 !T_*.html
 !index.html
 !**/include/*.html
