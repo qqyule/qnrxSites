@@ -6,7 +6,6 @@
 /bin/
 /SiteFiles/
 !/SiteFiles/assets/
-/SiteServer/
 *.html
 !T_*.html
 !index.html
