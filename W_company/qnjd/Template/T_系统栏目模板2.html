@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{channel.title}-{stl.SiteName}</title>
+    <stl:include file="@/include/head.html"></stl:include>
+    <style>
+        @media only screen and (min-width: 1025px) {
+            .am-with-topbar-fixed-top {
+                padding-top: 105px;
+            }
+        }
+
+        @media only screen and (max-width: 640px) {
+            .am-with-topbar-fixed-top {
+                padding-top: 80px;
+            }
+        }
+    </style>
+    <script>
+        var ua = navigator.userAgent || navigator.vendor || window.opera;
+        //全局对象
+        window.APPCONF = {
+            isIOS: /ipad|iphone|ipod/ig.test(ua) && !window.MSStream,
+            isWechat: /micromessenger/ig.test(ua),
+            isShoubai: /baiduboxapp/ig.test(ua),
+            // 分享 参数
+            url: location.href,
+            shareTitle: '{channel.title}-{stl.SiteName}-黔南热线策划制作',
+            shareDesc: '{stl.SiteName}由黔南热线策划制作，主办：黔南州禁毒委员会。',
+            shareImgUrl: '{stl.SiteUrl}/images/app.jpg'
+        };
+    </script>
+</head>
+
+<body>
+ <stl:include file="@/include/header.html"></stl:include>
+    <div class="am-container am-margin-top-sm">
+        <div class="am-g my-am-list">
+            <div class="am-u-sm-12 am-u-lg-9">
+                <ol class="am-breadcrumb">
+                    当前位置：
+                    <li>
+                       <stl:location> >> </stl:location>
+                    </li>
+                </ol>
+        <div class="list">
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+            <stl:pageContents pageNum="14" order="AddDate" scope="SelfAndChildren">
+              <li class="am-list-item-dated">
+                <stl:a>[{channel.Title}] <stl:content type="Title" ellipsis="..."></stl:content></stl:a>
+                <span class="am-list-date date">(<stl:content type="AddDate" formatString="yyyy年MM月dd日"></stl:content>)</span>
+               </li>
+            </stl:pageContents>
+                        </ul>
+                    </div>
+                    <div class="plist am-g" style="margin-top:6px; font-size: 1.4rem;">
+            <stl:pageItems autoHide="true">
+            
+            <div class="am-u-md-12 am-g">
+            <ul data-am-widget="pagination" class="am-pagination am-pagination-default">
+            <stl:pageItem type="PreviousPage">
+              <stl:yes>
+              <li class="am-pagination-prev"><a href="{Current.Url}">← 上一页</a></li>
+              </stl:yes>
+              <stl:no>
+              <li class="am-pagination-first"><a href="javascript:;">← 上一页</a></li>
+              </stl:no>
+            </stl:pageItem>
+              <stl:pageItem type="PageNavigation" listNum="4">
+              <stl:yes>
+                <li><a href="{Current.Url}">{Current.Num}</a></li>
+              </stl:yes>
+              <stl:no>
+                <li class="active"><a href="javascript:;">{Current.Num}</a></li>
+              </stl:no>
+              </stl:pageItem>
+              <stl:pageItem type="NextPage">
+              <stl:yes>
+              <li class="am-pagination-next"><a href="{Current.Url}">下一页 →</a></li>
+              </stl:yes>
+              <stl:no>
+              <li class="am-pagination-last"><a href="javascript:;">下一页 →</a></li>
+              </stl:no>
+            </stl:pageItem>
+            </ul>
+            </div>
+          </stl:pageItems>
+                    </div>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-md-3 am-u-lg-3 lm-gzdt com-mid-list">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_gzdt}" class="">
+                            <h2>{Channel.Title_gzdt}</h2>
+                            <span class="am-list-news-more am-fr">+更多+</span>
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="工作动态" totalNum="8" border="0">
+                                <li class="am-g am-list-item-dated">
+                                    <stl:a title="{Content.FullTitle}" target="_blank" class="am-list-item-hd "><stl:content type="Title"></stl:content></stl:a>
+                                    <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                </li>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-md-3 am-u-lg-3 jdkf com-mid-list">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_jdkf}" class="">
+                            <h2>{Channel.Title_jdkf}</h2>
+                            <span class="am-list-news-more am-fr">+更多+</span>
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="戒毒康复" totalNum="8" border="0">
+                                <li class="am-g am-list-item-dated">
+                                    <stl:a title="{Content.FullTitle}" target="_blank" class="am-list-item-hd ">
+                                        <stl:content type="Title"></stl:content>
+                                    </stl:a>
+                                    <span class="am-list-date">[
+                                        <stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                </li>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<stl:include file="@/include/footer.html"></stl:include>
+</body>
+
+</html>

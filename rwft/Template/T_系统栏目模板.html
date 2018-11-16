@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{Channel.title}-{stl.SiteName}-黔南热线</title>
+    <meta name="keywords" content="人物访谈，黔南人物，黔南人，人物，贵州人物，贵州人物，都匀人物，都匀人物" />
+    <meta name="description" content="黔南热线人物访谈，站在高端，访问黔南！将黔南人展现给世界！黔南名人网站" />
+    <stl:include file="@/include/head.html"></stl:include>
+    <style>
+        @media only screen and (min-width: 1025px) {
+            .am-with-topbar-fixed-top {
+                padding-top: 105px;
+            }
+        }
+
+        @media only screen and (max-width: 640px) {
+            .am-with-topbar-fixed-top {
+                padding-top: 80px;
+            }
+        }
+    </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?0ca1dc46120bf60eae22257eeb06f3cf";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <!--[if lte IE 7]>
+    <p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，网站暂不支持。 请 <ahref="http://browsehappy.com/" target="_blank">升级浏览器</a>以获得更好的体验！</p>
+    <![endif]-->
+    <stl:include file="@/include/header.html"></stl:include>
+
+    <div class="am-container">
+        <div class="am-g my-am-list">
+            <div class="am-u-sm-12 am-u-md-8 am-u-lg-8">
+                <ol class="am-breadcrumb">
+                    当前位置：
+                    <li>
+                        <stl:location> >> </stl:location>
+                    </li>
+                </ol>
+                <div class="list">
+                    <div class="am-list-news-bd">
+                        <ul class="am-list lm-list">
+                            <stl:pageContents pageNum="20" order="AddDate" scope="SelfAndChildren">
+                                <li class="am-list-item-dated">
+                                    <a href="{content.NavigationUrl}">{content.title}</a>
+                                    <span class="am-list-date date">
+                                        <stl:content type="AddDate" format="yyyy-mm-dd"></stl:content>
+                                    </span>
+                                </li>
+                            </stl:pageContents>
+                        </ul>
+                    </div>
+                    <div class="plist am-g" style="margin-top:6px; font-size: 1.4rem;">
+                        <stl:pageItems autoHide="true">
+                            <div class="am-u-md-12 am-g">
+                                <ul data-am-widget="pagination" class="am-pagination am-pagination-default">
+                                    <stl:pageItem type="PreviousPage">
+                                        <stl:yes>
+                                            <li class="am-pagination-first">
+                                                <a href="{Current.Url}">上一页</a>
+                                            </li>
+                                        </stl:yes>
+                                        <stl:no>
+                                            <li class="am-pagination-first">
+                                                <a href="javascript:;">上一页</a>
+                                            </li>
+                                        </stl:no>
+                                    </stl:pageItem>
+                                    <stl:pageItem type="PageNavigation" listNum="8">
+                                        <stl:yes>
+                                            <li>
+                                                <a href="{Current.Url}">{Current.Num}</a>
+                                            </li>
+                                        </stl:yes>
+                                        <stl:no>
+                                            <li>
+                                                <a class="my-page-active" href="javascript:;">{Current.Num}</a>
+                                            </li>
+                                        </stl:no>
+                                    </stl:pageItem>
+                                    <stl:pageItem type="NextPage">
+                                        <stl:yes>
+                                            <li class="am-pagination-next">
+                                                <a href="{Current.Url}">下一页</a>
+                                            </li>
+                                        </stl:yes>
+                                        <stl:no>
+                                            <li class="am-pagination-next">
+                                                <a href="javascript:;">下一页</a>
+                                            </li>
+                                        </stl:no>
+                                    </stl:pageItem>
+                                </ul>
+                            </div>
+                        </stl:pageItems>
+
+                    </div>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-md-4 am-u-lg-4 lm-rmrw com-mid-list">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="javascript:;" class="">
+                            <h2>热门人物</h2>
+                            <!-- <span class="am-list-news-more am-fr">more &raquo;</span> -->
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="首页" scope="SelfAndChildren" order="Hits" totalNum="8">
+                                <li class="am-g am-list-item-dated">
+                                    <a href="{content.NavigationUrl}" class="am-list-item-hd">{content.title}</a>
+                                    <span class="am-list-date">[
+                                        <stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                </li>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-md-4 am-u-lg-4 com-mid-list">
+                <div class="am-g aside-zxrw">
+                    <div class="am-u-sm-12">
+                        <div data-am-widget="titlebar" class="am-titlebar am-titlebar-multi">
+                            <h2 class="am-titlebar-title">
+                                最新人物
+                            </h2>
+                            <nav class="am-titlebar-nav">
+                                <!-- <a href="http://sd.qnz.com.cn/channels/sdly.html" class="">more &raquo;</a> -->
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-12 aside-ly ly">
+                        <ul class="am-gallery am-gallery-overlay am-avg-sm-2 am-avg-md-2 am-avg-lg-2 am-thumbnails">
+                            <stl:contents channelName="首页" scope="Children" total="6" isImage="true" order="AddDate">
+                                <li>
+                                    <div class="am-gallery-item">
+                                        <a href="{content.NavigationUrl}" target="_blank" class="">
+                                            <img src="{content.ImageUrl}" alt="{content.title}">
+                                            <h3 class="am-gallery-title">{content.title}</h3>
+                                        </a>
+                                    </div>
+                                </li>
+                            </stl:contents>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <stl:include file="@/include/footer.html"></stl:include>
+</body>
+
+</html>

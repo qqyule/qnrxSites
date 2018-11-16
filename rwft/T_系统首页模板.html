@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{stl.SiteName}-黔南热线</title>
+    <meta name="keywords" content="人物访谈，黔南人物，黔南人，人物，贵州人物，贵州人物，都匀人物，都匀人物" />
+    <meta name="description" content="黔南热线人物访谈，站在高端，访问黔南！将黔南人展现给世界！黔南名人网站" />
+    <stl:include file="@/include/head.html"></stl:include>
+    <style>
+        @media only screen and (min-width: 1025px) {
+            .am-with-topbar-fixed-top {
+                padding-top: 105px;
+            }
+        }
+
+        @media only screen and (max-width: 640px) {
+            .am-with-topbar-fixed-top {
+                padding-top: 80px;
+            }
+        }
+    </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?0ca1dc46120bf60eae22257eeb06f3cf";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <!--[if lte IE 7]>
+    <p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，网站暂不支持。 请 <ahref="http://browsehappy.com/" target="_blank">升级浏览器</a>以获得更好的体验！</p>
+    <![endif]-->
+
+    <stl:include file="@/include/header.html"></stl:include>
+    <!-- mb-搜索部分 -->
+    <div class="am-container am-show-sm-only wrap-sear-pc wrap-sear-mb">
+        <div class="search-pc search-mb-txt" id="doc-topbar-collapse">
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 my-sear-txt">
+                <a href="{stl.SiteUrl}/qnzmhwz.html" target="_blank" class="am-text-truncate">《浅谈黔南门户网站对发展黔南的价值和意义》</a>
+            </div>
+        </div>
+    </div>
+    <div class="am-container am-show-sm-only wrap-sear-pc wrap-searbar-mb">
+
+        <div class="search-pc" id="doc-topbar-collapse">
+            <div class="am-topbar-right search-bar mb-search-bar">
+                <form name="searchform" action="{stl.SiteUrl}/search.html" method="get" _lpchecked="1">
+                    <div id="search">
+                        <input name="word" id="word" type="text" class="search-txt" placeholder="">
+                        <input type="image" class="sear-icon" onclick="" src="{stl.SiteUrl}/images/s-btn.png">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="am-container">
+        <!-- 最新人物 -->
+        <div class="am-g zxrw">
+            <div class="am-u-sm-12">
+                <div data-am-widget="titlebar" class="am-titlebar am-titlebar-multi">
+                    <h2 class="am-titlebar-title">
+                        最新人物
+                    </h2>
+                    <!-- <nav class="am-titlebar-nav">
+                        <a href="http://sd.qnz.com.cn/channels/sdly.html" class="">+更多+</a>
+                    </nav> -->
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-12 ly">
+                <ul class="am-gallery am-gallery-overlay am-avg-sm-2 am-avg-md-3 am-avg-lg-6 am-thumbnails">
+                    <stl:contents channelName="首页" scope="Children" totalNum="6" isImage="true" order="AddDate">
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="{content.NavigationUrl}" target="_blank" class="">
+                                    <img src="{content.ImageUrl}" alt="{content.title}">
+                                    <h3 class="am-gallery-title">{content.title}</h3>
+                                </a>
+                            </div>
+                        </li>
+                    </stl:contents>
+                </ul>
+            </div>
+        </div>
+        <!-- 最新人物 end -->
+
+        <!-- 党政人士、商界精英 -->
+        <div class="am-g">
+            <!-- 党政人士 -->
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 dzrs com-mid-list com-mid-list-1">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_dzrs}" class="" target="_blank">
+                            <h2>党政人士</h2>
+                            <span class="am-list-news-more am-fr">more &raquo;</span>
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="党政人士" totalNum="6" order="AddDate">
+                                <stl:if testType="AddDate" testOperate="GreatThan" testValue="20d">
+                                    <stl:yes>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}
+                                                <span class="am-badge am-badge-danger am-round">new</span>
+                                            </a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}</a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:no>
+                                </stl:if>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 商界精英 -->
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 sjjy com-mid-list com-mid-list-1">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_sjjy}" class="" target="_blank">
+                            <h2>商界精英</h2>
+                            <span class="am-list-news-more am-fr">more &raquo;</span>
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="商界精英" totalNum="6" order="AddDate">
+                                <stl:if testType="AddDate" testOperate="GreatThan" testValue="20d">
+                                    <stl:yes>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}
+                                                <span class="am-badge am-badge-danger am-round">new</span>
+                                            </a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}</a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:no>
+                                </stl:if>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 文化名人、协会学会 -->
+        <div class="am-g">
+            <!-- 文化名人 -->
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 whmr com-mid-list com-mid-list-2">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_whmr}" class="" target="_blank">
+                            <h2>文化名人</h2>
+                            <span class="am-list-news-more am-fr">more &raquo;</span>
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="文化名人" totalNum="6" order="AddDate">
+                                <stl:if testType="AddDate" testOperate="GreatThan" testValue="20d">
+                                    <stl:yes>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}
+                                                <span class="am-badge am-badge-danger am-round">new</span>
+                                            </a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}</a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:no>
+                                </stl:if>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 协会学会 -->
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 xhxh com-mid-list com-mid-list-2">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_xhxh}" class="" target="_blank">
+                            <h2>协会学会</h2>
+                            <span class="am-list-news-more am-fr">more &raquo;</span>
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="协会学会" totalNum="6" order="AddDate">
+                                <stl:if testType="AddDate" testOperate="GreatThan" testValue="20d">
+                                    <stl:yes>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}
+                                                <span class="am-badge am-badge-danger am-round">new</span>
+                                            </a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}</a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:no>
+                                </stl:if>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 专家学者、创业精英 -->
+        <div class="am-g">
+            <!-- 专家学者 -->
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 zjxz com-mid-list com-mid-list-3">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_zjxz}" class="" target="_blank">
+                            <h2>专家学者</h2>
+                            <span class="am-list-news-more am-fr">more &raquo;</span>
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="专家学者" totalNum="6" order="AddDate">
+                                <stl:if testType="AddDate" testOperate="GreatThan" testValue="20d">
+                                    <stl:yes>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}
+                                                <span class="am-badge am-badge-danger am-round">new</span>
+                                            </a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}</a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:no>
+                                </stl:if>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 创业精英 -->
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 cyjj com-mid-list com-mid-list-3">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_cyjj}" class="" target="_blank">
+                            <h2>创业精英</h2>
+                            <span class="am-list-news-more am-fr">more &raquo;</span>
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="创业精英" totalNum="6" order="AddDate">
+                                <stl:if testType="AddDate" testOperate="GreatThan" testValue="20d">
+                                    <stl:yes>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}
+                                                <span class="am-badge am-badge-danger am-round">new</span>
+                                            </a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}</a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:no>
+                                </stl:if>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 文人墨客、青春风采 -->
+        <div class="am-g">
+            <!-- 文人墨客 -->
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 wrmk com-mid-list com-mid-list-4">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_wrmk}" class="" target="_blank">
+                            <h2>文人墨客</h2>
+                            <span class="am-list-news-more am-fr">more &raquo;</span>
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="文人墨客" totalNum="6" order="AddDate">
+                                <stl:if testType="AddDate" testOperate="GreatThan" testValue="20d">
+                                    <stl:yes>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}
+                                                <span class="am-badge am-badge-danger am-round">new</span>
+                                            </a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}</a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:no>
+                                </stl:if>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 青春风采 -->
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 qcfc com-mid-list com-mid-list-4">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_qcfc}" class="">
+                            <h2>青春风采</h2>
+                            <span class="am-list-news-more am-fr">more &raquo;</span>
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="青春风采" totalNum="6" order="AddDate">
+                                <stl:if testType="AddDate" testOperate="GreatThan" testValue="20d">
+                                    <stl:yes>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}
+                                                <span class="am-badge am-badge-danger am-round">new</span>
+                                            </a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}</a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:no>
+                                </stl:if>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 创业先锋、民间侠客 -->
+        <div class="am-g">
+            <!-- 创业先锋 -->
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 cyxf com-mid-list com-mid-list-5">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_cyxf}" class="" target="_blank">
+                            <h2>创业先锋</h2>
+                            <span class="am-list-news-more am-fr">more &raquo;</span>
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="创业先锋" totalNum="6" order="AddDate">
+                                <stl:if testType="AddDate" testOperate="GreatThan" testValue="20d">
+                                    <stl:yes>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}
+                                                <span class="am-badge am-badge-danger am-round">new</span>
+                                            </a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}</a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:no>
+                                </stl:if>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 民间侠客 -->
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 mjxk com-mid-list com-mid-list-5">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_mjxk}" class="">
+                            <h2>民间侠客</h2>
+                            <span class="am-list-news-more am-fr">more &raquo;</span>
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="民间侠客" totalNum="6" order="AddDate">
+                                <stl:if testType="AddDate" testOperate="GreatThan" testValue="20d">
+                                    <stl:yes>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}
+                                                <span class="am-badge am-badge-danger am-round">new</span>
+                                            </a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <li class="am-g am-list-item-dated">
+                                            <a href="{content.NavigationUrl}" title="{content.fullTitle}" target="_blank" class="am-list-item-hd">{content.title}</a>
+                                            <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                        </li>
+                                    </stl:no>
+                                </stl:if>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 编者按 -->
+        <div class="am-g bz-wrap">
+            <div class="bianzhe am-cf">
+                <p class="bz-tit">编者按：</p>
+                <p class="bz-txt">亲爱的网友：</p>
+                <p class="bz-txt">由于时间和水平的关系，我们不能在短时间内全面详细地报道当今黔南各行各业更多更优秀的人物，我们迫切需要得到广大网友的大力支持和帮助，为我们提供人物采访线索或直接投稿。</p>
+                <p class="bz-txt">我们搭建此平台的目的，一来是希望广大网民朋友能从身边各行各业的优秀人物身上获得启迪和力量；二来是希望透过门户网站的窗口作用向全世界展示黔南人的风采。</p>
+                <p class="bz-txt">开办仓促，条件、水平有限，疏漏和不足之处，敬请谅解。欢迎各位领导、专家学者、各位网友多提宝贵意见和建议。</p>
+                <p class="bz-tel">电话：0854-8221848 18008548977 QQ：1020359655</p>
+                <p class="bz-tougao am-fr">
+                    <a href="{stl.SiteUrl}/wytg.html">
+                        <img src="{stl.SiteUrl}/images/wytg.png" alt="">
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <stl:include file="@/include/footer.html"></stl:include>
+</body>
+
+</html>

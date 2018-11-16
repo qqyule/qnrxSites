@@ -1,0 +1,61 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        #wmw img {
+            width: 180px;
+            height: 100px;
+        }
+
+        #wmw div {
+            text-align: center
+        }
+
+        #wmw ul li {
+            background: url(http://cdn.qnz.com.cn/images/ls1.gif) no-repeat 0 14px;
+            padding-left: 11px;
+            list-style: none;
+            height: 32px;
+            line-height: 32px;
+        }
+
+        #wmw a {
+            color: #000033;
+
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        #wmw a:hover {
+            color: #9F0000;
+        }
+    </style>
+
+    <div id="wmw">
+        <ul>
+            <stl:contents channelName="文明播报" totalNum="4" order="AddDate">
+                <li>
+                    <a href="{content.NavigationUrl}" target="_blank" title="{content.title}">
+                        <stl:content type="Title" wordNum="20"></stl:content>
+                    </a>
+                </li>
+            </stl:contents>
+        </ul>
+    </div>
+</body>
+
+</html>

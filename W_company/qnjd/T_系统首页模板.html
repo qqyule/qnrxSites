@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{stl.SiteName}-黔南热线</title>
+    <meta name="keywords" content="{stl.SiteName},禁毒,禁毒办,黔南州禁毒委员会,黔南热线" />
+    <meta name="description" content="" />
+    <stl:include file="@/include/head.html"></stl:include>
+    <style>
+        @media only screen and (min-width: 1025px) {
+            .am-with-topbar-fixed-top {
+                padding-top: 105px;
+            }
+        }
+
+        @media only screen and (max-width: 640px) {
+            .am-with-topbar-fixed-top {
+                padding-top: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <stl:include file="@/include/header.html"></stl:include>
+    <div class="am-container">
+        <div class="am-g am-margin-top-xl">
+            <!-- 工作动态 -->
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-4 my-news">
+                <div class="star">
+                    <span>工作动态</span>
+                </div>
+                <div class="am-list-news-bd gzdt-tj">
+                    <ul class="am-list">
+                        <stl:contents channelName="工作动态" totalNum="1" order="AddDate" isRecommend="true">
+                            <li class="am-list-item-desced">
+                                <stl:a title="{Content.FullTitle}" target="_blank" class="am-text-truncate am-list-item-hd ">
+                                    <stl:content type="Title" wordNum="25" ellipsis="..."></stl:content>
+                                </stl:a>
+                                <div class="am-list-item-text">
+                                    <stl:content type="Content" wordNum="50" ellipsis="..." isClearTags="true"></stl:content><a
+                                        hrf="" target="_blank">[更多]</a>
+                                </div>
+                            </li>
+                        </stl:contents>
+                    </ul>
+                </div>
+                <div class="am-list-news-bd gzdt-list">
+                    <ul class="am-list">
+                        <stl:contents channelName="工作动态" order="AddDate" totalNum="5">
+                            <li>
+                                <stl:a title="{Content.FullTitle}" target="_blank">
+                                    <stl:content type="Title" wordNum="20" ellipsis="..."></stl:content>
+                                </stl:a>
+                                <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                            </li>
+                        </stl:contents>
+                    </ul>
+                </div>
+            </div>
+            <!-- 工作动态 end -->
+
+            <!-- 幻灯 -->
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-5 padding-none am-margin-bottom-lg">
+                <div data-am-widget="slider" class="am-slider am-slider-c3" data-am-slider='{"controlNav":false}'>
+                    <ul class="am-slides">
+                        <stl:contents channelName="工作动态" totalNum="5" isImage="true" order="AddDate" isRecommend="true">
+                            <li>
+                                <a href="{content.NavigationUrl}" target="_blank">
+                                    <img src="{content.ImageUrl}" alt="{content.FullTitle}">
+                                    <div class="am-slider-desc">
+                                        <div class="am-slider-counter">
+                                            <span class="am-active">{content.ItemIndex}</span>/5</div>{content.Title}
+                                    </div>
+                                </a>
+                            </li>
+                        </stl:contents>
+                    </ul>
+                </div>
+            </div>
+            <!-- 幻灯 end -->
+
+            <!-- 通知公告 -->
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-3 my-tzgg">
+                <div data-am-widget="intro" class="am-intro am-cf am-intro-default">
+                    <div class="am-intro-hd">
+                        <h2 class="am-intro-title">通知公告</h2>
+                        <a class="am-intro-more am-intro-more-top " href="{Channel.NavigationUrl_tzgg}">+更多+</a>
+                    </div>
+                    <div class="am-cf am-text-sm tzgg-list">
+                        <div class="am-list-news-bd">
+                            <ul class="am-list" id="tzgg">
+                                <stl:marquee direction="Vertical" height="260">
+                                    <stl:contents channelName="通知公告" totalNum="10">
+                                        <stl:a title="{Content.FullTitle}" target="_blank">
+                                            <stl:content type="Title" wordNum="26" ellipsis="..."></stl:content>
+                                        </stl:a>[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]<br>
+                                    </stl:contents>
+                                </stl:marquee>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 通知公告 end -->
+        </div>
+        <!-- top end -->
+
+        <!-- 预防教育、戒毒康复 -->
+        <div class="am-g">
+            <!-- 预防教育 -->
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 yfjy com-mid-list">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_yfjy}" class="">
+                            <h2>预防教育</h2>
+                            <span class="am-list-news-more am-fr">+更多+</span>
+                        </a>
+                    </div>
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="预防教育" totalNum="1" isImage="true" order="AddDate">
+                                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                                    <div class="am-u-sm-3 am-list-thumb">
+                                        <a href="{content.NavigationUrl}" class="">
+                                            <img src="{content.ImageUrl}" alt="{content.title}" />
+                                        </a>
+                                    </div>
+                                    <div class="am-u-sm-9 am-list-main">
+                                        <h3 class="am-list-item-hd">
+                                            <a href="{content.NavigationUrl}" class="am-text-truncate">
+                                                <stl:content type="Title" wordNum="26" ellipsis="..."></stl:content>
+                                            </a>
+                                        </h3>
+
+                                        <div class="am-list-item-text">
+                                            <stl:content type="content" wordNum="100" ellipsis="..." isClearTags="true"></stl:content>
+                                        </div>
+                                    </div>
+                                </li>
+                            </stl:contents>
+                            <stl:contents channelName="预防教育" totalNum="4" order="AddDate">
+                                <li class="am-g am-list-item-dated">
+                                    <a href="{content.NavigationUrl}" class="am-list-item-hd " target="_blank">
+                                        <stl:content type="Title" wordNum="40" ellipsis="..."></stl:content>
+                                    </a>
+                                    <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                </li>
+                            </stl:contents>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 戒毒康复 -->
+            <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 jdkf com-mid-list">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_jdkf}" class="">
+                            <h2>戒毒康复</h2>
+                            <span class="am-list-news-more am-fr">+更多+</span>
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="戒毒康复" totalNum="8" order="AddDate">
+                                <li class="am-g am-list-item-dated">
+                                    <a href="{content.NavigationUrl}" class="am-list-item-hd " target="_blank">
+                                        <stl:content type="Title" wordNum="40" ellipsis="..."></stl:content>
+                                    </a>
+                                    <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                </li>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 禁毒视频 -->
+        <div class="am-g jdsp">
+            <div class="am-u-sm-12">
+                <div data-am-widget="titlebar" class="am-titlebar am-titlebar-multi">
+                    <h2 class="am-titlebar-title">
+                        禁毒视频
+                    </h2>
+                    <nav class="am-titlebar-nav">
+                        <a href="{Channel.NavigationUrl_jdsp}" class="">+更多+</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-12 ly">
+                <ul class="am-gallery am-gallery-overlay am-avg-sm-2 am-avg-md-3 am-avg-lg-6 am-thumbnails">
+                    <stl:contents channelName="禁毒视频" totalNum="6" isImage="true" order="AddDate">
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="{content.NavigationUrl}" class="">
+                                    <img src="{content.ImageUrl}" alt="{content.title}">
+                                    <h3 class="am-gallery-title">
+                                        <stl:content type="Title" wordNum="20" ellipsis="..."></stl:content>
+                                    </h3>
+                                </a>
+                            </div>
+                        </li>
+                    </stl:contents>
+                </ul>
+            </div>
+        </div>
+        <!-- 禁毒视频 end -->
+
+        <!-- 缉毒执法、禁毒课堂 -->
+        <div class="am-g jdzc">
+            <div class="am-u-sm-12 am-u-md-5 am-u-lg-5 jd-wrap">
+                <div data-am-widget="tabs" class="am-tabs am-tabs-default">
+                    <ul class="am-tabs-nav am-cf">
+                        <li class="am-active">
+                            <a href="[data-tab-panel-0]">缉毒执法</a>
+                        </li>
+                        <li class="">
+                            <a href="[data-tab-panel-1]">政策法规</a>
+                        </li>
+                    </ul>
+                    <div class="am-tabs-bd">
+                        <div data-tab-panel-0 class="am-tab-panel am-active jdzf jdzc-com-list">
+                            <div>
+                                <ul class="am-gallery am-avg-sm-3  am-gallery-bordered">
+                                    <stl:contents channelName="缉毒执法" totalNum="3" isImage="true" order="AddDate">
+                                        <li class="am-gallery-item">
+                                            <a href="{content.NavigationUrl}" title="{content.title}">
+                                                <img src="{content.ImageUrl}" border="0" width="130" height="90" align="absmiddle"
+                                                    class="KS_Pic">
+                                            </a>
+                                        </li>
+                                    </stl:contents>
+                                </ul>
+                            </div>
+                            <div class="am-list-news-bd">
+                                <div>
+                                    <ul class="am-list">
+                                        <stl:contents channelName="缉毒执法" totalNum="5" order="AddDate">
+                                            <li class="am-list-item-dated">
+                                                <a class="am-list-item-hd" href="{content.NavigationUrl}" title="{content.title}"
+                                                    target="_blank">
+                                                    <stl:content type="Title" wordNum="46" ellipsis="..."></stl:content>
+
+                                                </a>
+                                                <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                            </li>
+                                        </stl:contents>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-tab-panel-1 class="am-tab-panel zcfg jdzc-com-list">
+                            <div class="am-list-news-bd">
+                                <div>
+                                    <ul class="am-list">
+                                        <stl:contents channelName="政策法规" totalNum="9" order="AddDate">
+                                            <li class="am-list-item-dated">
+                                                <a class="am-list-item-hd" href="{content.NavigationUrl}" title="{content.title}"
+                                                    target="_blank">
+                                                    <stl:content type="Title" wordNum="46" ellipsis="..."></stl:content>
+
+                                                </a>
+                                                <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                            </li>
+                                        </stl:contents>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-md-7 am-u-lg-7 jdkt">
+                <div class="am-panel am-panel-default">
+                    <div class="am-panel-hd">
+                        <span>禁毒课堂</span>
+                    </div>
+                    <div class="am-panel-bd am-cf">
+                        <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 dpzs">
+                            <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                                <!--列表标题-->
+                                <div class="am-list-news-hd am-cf">
+                                    <!--带更多链接-->
+                                    <a href="{Channel.NavigationUrl_dpzs}" class="">
+                                        <h2>毒品知识</h2>
+                                        <span class="am-list-news-more am-fr">+更多+</span>
+                                    </a>
+                                </div>
+
+                                <div class="am-list-news-bd">
+                                    <ul class="am-list">
+                                        <stl:contents channelName="毒品知识" totalNum="7" order="AddDate">
+                                            <li class="am-g am-list-item-dated">
+                                                <a href="{content.NavigationUrl}" class="am-list-item-hd ">
+                                                    <stl:content type="Title" wordNum="46" ellipsis="..."></stl:content>
+                                                </a>
+                                                <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                            </li>
+                                        </stl:contents>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="am-u-sm-12 am-u-md-6 am-u-lg-6 dpwh">
+                            <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                                <!--列表标题-->
+                                <div class="am-list-news-hd am-cf">
+                                    <!--带更多链接-->
+                                    <a href="{Channel.NavigationUrl_dpwh}" class="">
+                                        <h2>毒品危害</h2>
+                                        <span class="am-list-news-more am-fr">+更多+</span>
+                                    </a>
+                                </div>
+
+                                <div class="am-list-news-bd">
+                                    <ul class="am-list">
+                                        <stl:contents channelName="毒品危害" totalNum="7" order="AddDate">
+                                            <li class="am-g am-list-item-dated">
+                                                <a href="{content.NavigationUrl}" class="am-list-item-hd ">
+                                                    <stl:content type="Title" wordNum="46" ellipsis="..."></stl:content>
+                                                </a>
+                                                <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                            </li>
+                                        </stl:contents>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 缉毒执法、禁毒课堂 end -->
+
+        <!-- 县市报道 -->
+        <div class="am-g xsbd">
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-12 xsbd-hd com-mid-list">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{channel.NavigationUrl_xsbd}" class="">
+                            <h2>县市报道</h2>
+                            <span class="am-list-news-more am-fr">+更多+</span>
+                        </a>
+                    </div>
+
+                    <!-- 电脑 -->
+                    <div class="am-show-lg-only pc-xsbd-bd am-cf" id="xsbd">
+                        <ul class="w-ul am-cf">
+                            <stl:channels channelName="县市报道">
+                                <li class="w-li">
+                                    <div class="xs-item">
+                                        <stl:contents totalNum="1" order="AddDate" isImage="true">
+                                            <a href="{content.NavigationUrl}" class="item-pic" title="{content.FullTitle}">
+                                                <img src="{content.ImageUrl}" alt="{content.Title}">
+                                                <span>{content.Title}</span>
+                                            </a>
+                                        </stl:contents>
+                                        <ul class="item-news">
+                                            <stl:contents totalNum="3" order="AddDate" startNum="2">
+                                                <li>
+                                                    <a href="{content.NavigationUrl}" title="{content.Title}">{content.Title}</a>
+                                                    <span>[<stl:content Type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                                </li>
+                                            </stl:contents>
+                                        </ul>
+                                        <p class="item-xs-name"><a href="{channel.NavigationUrl}">{channel.Title}</a></p>
+                                    </div>
+                                </li>
+                            </stl:channels>
+                        </ul>
+                    </div>
+
+                    <!-- 手机 -->
+                    <div class="am-show-md-down mb-xsbd-bd">
+                        <ul class="am-avg-sm-4 am-avg-md-6 am-cf">
+                            <stl:channels channelName="县市报道">
+                                <li><a href="{channel.NavigationUrl}">{channel.Title}</a></li>
+                            </stl:channels>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 县市报道 end -->
+
+        <div class="am-g friendlink">
+            <div class="am-u-sm-12">
+                <div data-am-widget="titlebar" class="am-titlebar am-titlebar-multi am-no-layout">
+                    <h2 class="am-titlebar-title">友情链接</h2>
+                </div>
+                <div class="">
+                    <ul class="fdlink-list">
+                        <stl:contents channelName="友情链接" totalNum="10">
+                            <li>
+                                <a title="{Content.FullTitle}" href="{content.link}" class="gd-friendline" target="_blank">
+                                    <stl:content type="Title"></stl:content>
+                                </a>
+                            </li>
+                        </stl:contents>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <stl:include file="@/include/footer.html"></stl:include>
+    <script src="{stl.SiteUrl}/js/jquery.kxbdmarquee.js"></script>
+    <script>
+        $('#xsbd').kxbdMarquee();
+    </script>
+</body>
+
+</html>

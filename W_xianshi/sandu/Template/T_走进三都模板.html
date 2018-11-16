@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{channel.Title}-{stl.SiteName}|黔南热线</title>
+  <stl:include file="/include/head.html"></stl:include>
+</head>
+
+<body class="am-with-fixed-header">
+   <stl:include file="/include/header.html"></stl:include>
+        <div class="am-g my-am-list">
+            <div class="am-u-sm-12 am-u-lg-9">
+                <ol class="am-breadcrumb">
+                    当前位置：
+           <li><stl:location> >> </stl:location></li>
+                </ol>
+                <div class="zjsd-list">
+                    <div class="mg">
+                        <ul class="am-avg-lg-3 am-avg-md-2 am-avg-sm-2">
+            <stl:channels channelIndex="zjsd" isImage="true">
+                            <li class="">
+                                <a class="" href="{channel.NavigationUrl}" title="">
+                                <img src="{channel.ImageUrl}" alt="">
+                                </a>                                
+                            </li>
+            </stl:channels>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-lg-3 am-margin-top-sm my-zjsd">
+                <div data-am-widget="intro" class="am-intro am-cf am-intro-default">
+                    <div class="am-intro-hd">
+                        <h2 class="am-intro-title">走进三都</h2>
+                        <a class="am-intro-more am-intro-more-top " href="{Channel.NavigationUrl_zjsd}" target="_blank">more &raquo; </a>
+                    </div>
+                    <div class="am-cf am-margin-top-sm am-text-sm">
+                        <p class="am-align-left">
+                            <img src="http://13xs.qnz.com.cn/UpFiles/article/admin/201102/2011021014243229154.jpg" class="am-img-thumbnail am-radius" width="90px" alt="三都" />
+                            <p style="margin-top: 0;" class="sdjj-txt" >
+                               <stl:channel type="Content" channelName="县情概况" isClearTags="true" wordNum="80" ellipsis="..."></stl:channel> 
+                                <a href="{channel.NavigationUrl_xqgk}"
+                                    target="_blank">[详细]</a>
+                            </p>
+                        </p>
+                        <hr data-am-widget="divider" style="" class="am-divider am-divider-dashed" />
+                        <ul class="am-avg-sm-3 am-avg-md-2 am-avg-lg-3 am-text-center gaikuang">
+              <stl:channels channelIndex="zjsd">
+                <li><a href="{Channel.NavigationUrl}" class="am-btn am-btn-primary am-btn-xs {Channel.ChannelIndex}">
+                  <i class="am-icon-chevron-right"></i> {Channel.Title}</a>
+                </li>
+              </stl:channels>
+                        </ul>
+                    </div>
+                </div>
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+
+                     <div class="am-list-news-hd am-cf">
+
+                        <a href="{Channel.NavigationUrl_zhxw}" target="_blank" class="">
+                            <h2>
+                                <span class="am-icon-pencil-square"></span> {Channel.Title_zhxw}</h2>
+                        </a>
+                    </div>
+                    <div class="am-list-news-bd">
+                        <div>
+                             <ul class="am-list">
+              <stl:contents channelName="综合新闻" totalNum="6" border="0">
+                <li>
+                <stl:a title="{Content.FullTitle}" target="_blank">
+                  <stl:content type="Title"></stl:content><br />
+                </stl:a>
+                </li>
+              </stl:contents>
+              </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <stl:include file="/include/footer.html"></stl:include>
+</body>
+
+</html>

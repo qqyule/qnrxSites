@@ -1,0 +1,222 @@
+
+<!DOCTYPE html><html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{stl.SiteName}-黔南热线</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <stl:include file="@/include/head.html"></stl:include>
+    <script>
+        var ua = navigator.userAgent || navigator.vendor || window.opera;
+        //全局对象
+        window.APPCONF = {
+            isIOS: /ipad|iphone|ipod/ig.test(ua) && !window.MSStream,
+            isWechat: /micromessenger/ig.test(ua),
+            isShoubai: /baiduboxapp/ig.test(ua),
+            // 分享 参数
+            url: location.href,
+            shareTitle: '{stl.SiteName}-黔南热线',
+            shareDesc: '第四届黔南骄傲年度人物评选活动官方网站，技术支持：黔南热线。',
+            shareImgUrl: '{stl.SiteUrl}/images/app.jpg'
+        };
+    </script>
+    <style>
+        @media only screen and (min-width: 1025px) {
+            .am-with-topbar-fixed-top {
+                padding-top: 105px;
+            }
+        }
+      @media only screen and (max-width: 640px) {
+            .am-with-topbar-fixed-top {
+                padding-top: 80px;
+            }
+        }
+    </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?0ca1dc46120bf60eae22257eeb06f3cf";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <stl:include file="@/include/header.html"></stl:include>
+    <div class="am-container">
+        <div class="am-g am-margin-top-xl w-top">
+            <!-- 幻灯 -->
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-7 am-margin-bottom-md">
+                <div data-am-widget="slider" class="am-slider am-slider-c3" data-am-slider='{"controlNav":false}'>
+                    <ul class="am-slides">
+                        <stl:contents channelName="相关报道" totalNum="5" isImage="true" order="AddDate" isRecommend="true">
+                          <li>
+                            <a href="{content.NavigationUrl}" target="_blank">
+                              <img src="{content.ImageUrl}" alt="{content.FullTitle}">
+                              <div class="am-slider-desc">
+                                <div class="am-slider-counter">
+                                  <span class="am-active">{content.ItemIndex}</span>/5</div>{content.Title}
+                              </div>
+                            </a>
+                          </li>
+                        </stl:contents>                      
+                    </ul>
+                </div>
+            </div>
+            <!-- 幻灯 end -->
+            <!-- 相关报道 -->
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-5 my-news">
+                <div class="star">
+                    <span>相关报道</span>
+                </div>
+                <div class="am-list-news-bd gzdt-tj">
+                    <ul class="am-list">
+                        <stl:contents channelName="相关报道" totalNum="1" order="AddDate" isRecommend="true">
+                            <li class="am-list-item-desced">
+                                <a class="am-text-truncate am-list-item-hd" href="{content.NavigationUrl}" target="_blank"
+                                    title="{content.Fulltitle}">{content.Title}</a>
+                                <div class="am-list-item-text">
+                                    <stl:content type="Content" wordNum="50" ellipsis="..." isClearTags="true"></stl:content>
+                                    <a href="{content.NavigationUrl}" target="_blank">[更多]</a>
+                                </div>
+                            </li>
+                        </stl:contents>
+                    </ul>
+                </div>
+                <div class="am-list-news-bd gzdt-list">
+                    <ul class="am-list">
+                        <stl:contents channelName="相关报道" order="AddDate" totalNum="6">
+                            <li class="am-list-item-dated">
+                                <a class="am-list-item-hd" href="{content.NavigationUrl}" title="{content.FullTitle}"
+                                    target="_blank">
+                                    {content.Title}
+                                </a>
+                                <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                            </li>
+                        </stl:contents>
+                           <li class="am-list-item-dated">                            
+                             <a class="am-list-item-hd" href="{Channel.NavigationUrl_xgbd}" title="更多"
+                             target="_blank">
+                               更多
+                             </a>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 相关报道 end -->
+        </div>
+        <!-- top end -->
+        <!-- 人物事迹 -->
+        <div class="am-g rwsj">
+            <div class="am-u-sm-12">
+                <div data-am-widget="titlebar" class="am-titlebar am-titlebar-multi">
+                    <h2 class="am-titlebar-title">
+                        人物事迹
+                    </h2>
+                    <nav class="am-titlebar-nav">
+                        <a href="{Channel.NavigationUrl_rwsj}" class="" target="_blank">+更多+</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-12 ly">
+                <ul class="am-avg-sm-2 am-avg-md-2 am-avg-lg-3 am-cf">
+                    <stl:contents channelName="人物事迹" totalNum="31" order="AddDate" isImage="true">
+                        <li class="am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                            <div class="li-wrap am-cf">
+                                <div class="am-u-sm-12 am-u-md-5 am-u-lg-5 am-list-thumb">
+                                    <a href="{content.NavigationUrl}" class="" target="_blank">
+                                        <img src="{content.ImageUrl}" alt="{content.FullTitle}" />
+                                    </a>
+                                </div>
+                                <div class="am-u-sm-12 am-u-md-7 am-u-lg-7 am-list-main">
+                                    <h3 class="am-list-item-hd"><a href="{content.NavigationUrl}" class="" title="{content.FullTitle}">
+                                            <stl:content type="Title" wordNum="16" ellipsis="..."></stl:content>
+                                        </a></h3>
+                                    <div class="am-list-item-text">
+                                        <stl:content type="content" wordNum="36" ellipsis="..." isClearTags="true"></stl:content>
+                                    </div>
+                                </div>
+                                <p><a href="{content.NavigationUrl}" target="_blank">查看详细</a></p>
+                            </div>
+                        </li>
+                    </stl:contents>
+                </ul>
+            </div>
+        </div>
+        <!-- 人物事迹 end -->
+        <!-- 媒体关注 组织机构 评分标准 -->
+        <div class="am-g jdzc">
+            <div class="am-u-sm-12 am-u-md-4 am-u-lg-4 zzjg com-mid-list">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="javascript:;" class="">
+                            <h2>组织机构</h2>
+                            <!-- <span class="am-list-news-more am-fr">+更多+</span> -->
+                        </a>
+                    </div>
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <p><span>主办：</span>中共黔南州委、黔南州人民政府</p>
+                            <p><span>承办：</span>中共黔南州委宣传部、黔南州文明办</p>
+                            <p><span>协办：</span>黔南州文广新局、黔南日报社、黔南广播电视台</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-md-4 am-u-lg-4 mtgz com-mid-list">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{channel.NavigationUrl_mtgz}" class="">
+                            <h2>媒体关注</h2>
+                            <span class="am-list-news-more am-fr">+更多+</span>
+                        </a>
+                    </div>
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="媒体关注" totalNum="5" order="AddDate">
+                                <li class="am-g am-list-item-dated">
+                                    <a href="{content.NavigationUrl}" target="_blank" class="am-list-item-hd" title="{cotnent.FullTitle}">{content.Title}</a>
+                                    <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                </li>
+                            </stl:contents>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-md-4 am-u-lg-4 pbbz com-mid-list">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="javascript:;" class="">
+                            <h2>评比标准</h2>
+                            <!-- <span class="am-list-news-more am-fr">+更多+</span> -->
+                        </a>
+                    </div>
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <p><span>推动力：</span>对黔南经济社会发展有较为突出的贡献；</p>
+                            <p><span>感召力：</span>其行动和声音代表着积极向上的力量；</p>
+                            <p><span>影响力：</span>在社会或某个领域具有影响力，公众普遍认同；</p>
+                            <p><span>代表性：</span>适当兼顾不同行业、不同地域的人物。</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 媒体关注 组织机构 评分标准 end -->
+        </div>
+    </div>
+    <stl:include file="@/include/footer.html"></stl:include>
+    
+</body>
+
+</html>

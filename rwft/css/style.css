@@ -1,0 +1,879 @@
+@charset "utf-8";
+body {
+  background: url(../images/body-bg.jpg);
+}
+
+/* 公共头部 */
+
+.my-am-btn {
+  font-size: 1.4rem;
+  margin-top: 0.4rem;
+  width: 9.6rem;
+  border-radius: 0.4rem;
+}
+
+.my-am-dropdown-content {
+  min-width: 180px;
+  padding: 10px 5px;
+}
+
+.shouye {
+  color: #318ade !important;
+}
+
+.am-container {
+  max-width: 1000px;
+  background: #fff;
+}
+
+.fl {
+  float: left !important;
+}
+
+.footlink {
+  background: #318ade;
+  line-height: 3rem;
+}
+
+.next span {
+}
+
+.next a {
+  color: #666;
+}
+
+.next a:hover {
+  color: #318ade;
+}
+
+@media only screen and (min-width: 1025px) {
+  .ly .am-gallery-item img {
+    height: 120px;
+  }
+  .am-gallery-bordered .am-gallery-item img {
+    width: 100%;
+    height: 108px;
+  }
+  .am-slides img {
+    height: 320px;
+  }
+  .padding-none {
+    padding: 0;
+  }
+  .am-list > li > a {
+    /* padding: .5rem 0 */
+  }
+  .am-with-fixed-header {
+    padding-top: 0;
+  }
+}
+
+.am-list a {
+}
+
+.am-list a:before {
+  content: "\f0da";
+  margin-right: 0.5rem;
+}
+
+.gaikuang li {
+  margin-top: 0.2rem;
+}
+
+[class*="am-align-"] {
+  margin-bottom: 0.2rem;
+}
+
+.menu-bars > a {
+  color: #eee;
+}
+
+.am-topbar .am-text-ir {
+  display: block;
+  margin-right: 10px;
+  height: 50px;
+  width: 125px;
+  background: url(../images/lxsd.png) no-repeat left center;
+  -webkit-background-size: 125px 24px;
+  background-size: 125px 24px;
+}
+
+.link {
+  border-radius: 5px;
+  /* border: 1px solid #efefef; */
+  /* background: #f5f5f5 */
+}
+
+.link1 {
+  border-bottom: 1px dotted #ccc;
+}
+
+a.red {
+  color: red;
+}
+
+.newstitles {
+  margin: 20px 0;
+}
+
+.newstitles h2 {
+  font-size: 160%;
+  /* margin-bottom: 10px; */
+}
+.newstitles h5 {
+  font-size: 94%;
+  color: #666;
+  margin-top: -4px;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 640px) {
+  .ly .am-gallery-item img {
+    height: 130px;
+  }
+  .am-gallery-bordered .am-gallery-item img {
+    width: 100%;
+    height: 80px;
+  }
+  .am-slides img {
+    height: 280px;
+  }
+  .hd {
+    margin-bottom: 10px;
+  }
+  .newstitles h2 {
+    font-size: 150%;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .ly .am-gallery-item img {
+    height: 160px;
+  }
+  .am-gallery-bordered .am-gallery-item img {
+    width: 100%;
+    height: 90px;
+  }
+  .am-slides img {
+    height: 420px;
+  }
+  .hd {
+    margin-bottom: 10px;
+  }
+}
+
+.newstitles img {
+  width: 30px;
+  border-radius: 30px;
+}
+
+.newstitles span {
+  color: #e1652f;
+  padding: 0 5px;
+}
+
+.contents {
+  margin: 30px auto;
+}
+
+.newstitles span {
+  color: #fff;
+  padding: 0.25em 0.625em;
+}
+
+.list li {
+  height: 52px;
+}
+
+.list li a {
+}
+
+.list .date {
+  float: right;
+  font-size: 80%;
+}
+
+.contents img {
+  max-width: 90%;
+}
+
+/* PC头部nav */
+
+.my-header-topbar {
+  background: none;
+  border-color: #fff;
+  border-style: none;
+}
+
+.wrap-nav-pc {
+  padding-top: 1rem;
+}
+
+.my-header-topbar .nav-pc {
+  width: 100%;
+  background: #799bac;
+}
+
+.my-header-topbar .nav-pc ul li {
+  margin: 0;
+}
+
+.am-topbar-inverse .am-topbar-nav > li > a {
+  color: #fff;
+}
+
+@media only screen and (min-width: 641px) {
+  .am-topbar-nav > li > a {
+    position: relative;
+    line-height: 60px;
+    padding: 0 19px;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .am-topbar-nav > li > a:after {
+    bottom: 0px;
+  }
+}
+
+.am-topbar-inverse .am-topbar-nav > li > a:after {
+  border-bottom-color: #5c7683;
+}
+
+.am-topbar-inverse .am-topbar-nav > li > a:focus:after,
+.am-topbar-inverse .am-topbar-nav > li > a:hover:after {
+  border-bottom-color: #5c7683;
+}
+
+/* 搜索部分 */
+
+.wrap-sear-pc {
+  height: 6rem;
+  /* background: #eee; */
+  padding: 0px 1.5rem;
+}
+
+.search-pc {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #eee;
+}
+
+.search-pc .my-sear-txt {
+  padding-left: 45px;
+  background: url(../images/my-sear-txt-icon.png) 21px center no-repeat;
+}
+
+.search-pc .my-sear-txt a {
+  color: #ca1212;
+}
+
+.search-pc .my-sear-txt a:hover {
+  text-decoration: underline;
+}
+
+.search-bar {
+  position: relative;
+  margin-right: 28px;
+  line-height: 58px;
+}
+
+.search-bar input[type="text"] {
+  width: 190px;
+  padding: 8px;
+  font-size: 12px;
+  background: #b5b5b5;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+/* @media only screen and (max-width: 1170px){
+    .search-bar input[type=text]{
+        width: 140px;
+    }
+}
+@media only screen and (max-width: 1120px){
+    .search-bar input[type=text]{
+        width: 50px;
+    }
+} */
+
+.search-bar .sear-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -6px;
+}
+
+/* 手机头部 */
+
+.my-mb-header {
+  background: #799bac;
+}
+
+.my-mb-header .am-header-left a i.am-icon-home {
+  font-size: 20px !important;
+}
+
+.pc-header .am-topbar {
+  min-height: 0;
+  margin-bottom: 0;
+}
+
+/* .am-titlebar h2,
+.am-titlebar nav a,
+.am-list-news h2{
+    color: #3390e7 !important;
+} */
+
+.sdbanner-m {
+  margin-top: 1rem;
+}
+
+.am-list-date {
+  position: absolute;
+  top: 0.9rem;
+  right: 5px;
+  font-size: 1.3rem;
+}
+
+/* 最新人物 */
+
+.zxrw .am-titlebar {
+  border-top: 2px #f9bd11 solid;
+}
+
+.zxrw .am-titlebar .am-titlebar-title {
+  padding-left: 40px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #333;
+  background: url(../images/zxrw-icon.png) 10px 11px no-repeat;
+}
+
+.zxrw .am-titlebar a {
+  font-size: 1.3rem;
+  color: #888;
+}
+
+.zxrw .ly ul {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* 列表公共 */
+
+.com-mid-list .am-list-news-default {
+  margin: 0;
+}
+
+.com-mid-list-1 .am-list-news-hd {
+  border-bottom: 2px solid #cc070c;
+}
+
+.com-mid-list-1 .am-list-news-bd ul li a:hover {
+  color: #cc070c;
+}
+
+.com-mid-list-2 .am-list-news-hd {
+  border-bottom: 2px solid #43acd9;
+}
+
+.com-mid-list-2 .am-list-news-bd ul li a:hover {
+  color: #43acd9;
+}
+
+.com-mid-list-3 .am-list-news-hd {
+  border-bottom: 2px solid #f9bd11;
+}
+
+.com-mid-list-3 .am-list-news-bd ul li a:hover {
+  color: #f9bd11;
+}
+
+.com-mid-list-4 .am-list-news-hd {
+  border-bottom: 2px solid #1abb9c;
+}
+
+.com-mid-list-4 .am-list-news-bd ul li a:hover {
+  color: #1abb9c;
+}
+
+.com-mid-list-5 .am-list-news-hd {
+  border-bottom: 2px solid #2f89fc;
+}
+
+.com-mid-list-5 .am-list-news-bd ul li a:hover {
+  color: #2f89fc;
+}
+
+.com-mid-list .am-list-news-hd h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.com-mid-list .am-list-news-hd span {
+  color: #888;
+}
+
+.com-mid-list .am-list-news-bd ul {
+  margin-top: 1rem;
+}
+
+.com-mid-list .am-list-news-bd ul li {
+  line-height: 8px;
+  border: none;
+}
+
+.com-mid-list .am-list-news-bd ul li a {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.com-mid-list .am-list-news-bd ul li a::before {
+  content: none;
+}
+
+/* 党政人士 */
+
+.dzrs .am-list-news-hd h2 {
+  padding-left: 30px;
+  background: url(../images/dzrs-icon.png) 4px 4px no-repeat;
+  color: #cc070c;
+}
+
+/* 商界精英 */
+
+.sjjy .am-list-news-hd h2 {
+  padding-left: 34px;
+  background: url(../images/sjjy-icon.png) 4px 4px no-repeat;
+  color: #cc070c;
+}
+
+/* 文化名人 */
+
+.whmr .am-list-news-hd h2 {
+  padding-left: 28px;
+  background: url(../images/whmr-icon.png) 4px 4px no-repeat;
+  color: #43acd9;
+}
+
+/* 协会学会 */
+
+.xhxh .am-list-news-hd h2 {
+  padding-left: 34px;
+  background: url(../images/xhxh-icon.png) 4px 4px no-repeat;
+  color: #43acd9;
+}
+
+/* 专家学者 */
+
+.zjxz .am-list-news-hd h2 {
+  padding-left: 34px;
+  background: url(../images/zjxz-icon.png) 4px 4px no-repeat;
+  color: #f9bd19;
+}
+
+/* 创业精英 */
+
+.cyjj .am-list-news-hd h2 {
+  padding-left: 34px;
+  background: url(../images/cyjj-icon.png) 4px 4px no-repeat;
+  color: #f9bd19;
+}
+
+/* 文人墨客 */
+
+.wrmk .am-list-news-hd h2 {
+  padding-left: 34px;
+  background: url(../images/wrmk-icon.png) 4px 4px no-repeat;
+  color: #1abb9c;
+}
+
+/* 青春风采 */
+
+.qcfc .am-list-news-hd h2 {
+  padding-left: 30px;
+  background: url(../images/qcfc-icon.png) 4px 4px no-repeat;
+  color: #1abb9c;
+}
+
+/* 创业先锋 */
+
+.cyxf .am-list-news-hd h2 {
+  padding-left: 34px;
+  background: url(../images/cyxf-icon.png) 4px 4px no-repeat;
+  color: #2f89fc;
+}
+
+/* 民间侠客 */
+
+.mjxk .am-list-news-hd h2 {
+  padding-left: 30px;
+  background: url(../images/mjxk-icon.png) 4px 4px no-repeat;
+  color: #2f89fc;
+}
+
+.am-list-news-bd ul li a:hover {
+  color: #3390e7;
+}
+
+/* 编者按 */
+
+.bz-wrap {
+  margin-top: 3rem;
+}
+
+.bianzhe {
+  padding: 1.5rem;
+  background: #f6f6f6;
+}
+
+.bianzhe p {
+  padding: 0;
+  margin: 0;
+  /* margin: 1rem 0 0 0; */
+}
+
+.bianzhe p.bz-tit {
+  margin-bottom: 0.6rem;
+  color: #cc070c;
+  font-weight: bold;
+}
+
+.bianzhe p.bz-txt {
+  margin: 0 0 0.5rem 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.bianzhe p.bz-tel {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 14px;
+  color: #cc070c;
+  font-weight: bold;
+}
+
+/* 尾部 */
+
+.footlink {
+  padding: 5rem 0 2rem 0;
+  text-align: center;
+  background: #fff;
+}
+
+.footlink p {
+  margin: 0;
+  padding: 0rem 1.5rem 0 1.5rem;
+  color: #333;
+  font-size: 1.4rem;
+  line-height: 20px;
+}
+
+.footlink p.ft-txt {
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.footlink p.ft-first {
+  margin-top: 3rem;
+}
+
+.footlink ul {
+  /* padding: .4rem 0 .4rem 0; */
+  padding: 0;
+  background: #e1e1e1;
+}
+
+.footlink a {
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.footlink a:hover {
+  text-decoration: underline;
+}
+
+/* 栏目页 */
+
+.my-am-list .am-breadcrumb {
+  margin-bottom: 0;
+}
+
+.my-am-list .am-breadcrumb a {
+  font-size: 1.4rem;
+  color: #3390e7;
+}
+
+.my-am-list .am-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.my-am-list .lm-list li {
+  line-height: 28px;
+  margin-bottom: 0;
+  border: none;
+  border-bottom: 1px dashed #e5e5e5 !important;
+}
+
+.my-am-list .list ul li a {
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.my-am-list .list ul li a:hover {
+  color: #0376d3;
+}
+
+.my-am-list .lm-rmrw .am-list-news-hd {
+  border-bottom: 2px solid #cc070c;
+}
+
+.my-am-list .lm-rmrw h2 {
+  padding-left: 28px;
+  color: #333;
+  background: url(../images/aside-rmrw-icon.png) 1px center no-repeat;
+}
+
+.aside-zxrw .am-titlebar {
+  border-top: 2px #cc070c solid;
+}
+
+.aside-zxrw .am-titlebar .am-titlebar-title {
+  padding-left: 40px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #333;
+  background: url(../images/aside-zxrw-icon.png) 10px 11px no-repeat;
+}
+
+.aside-zxrw .am-titlebar a {
+  font-size: 1.3rem;
+  color: #888;
+}
+
+.aside-zxrw .ly ul {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .aside-ly .am-gallery-item img {
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 641px) {
+  .aside-ly .am-gallery-item img {
+    height: 110px;
+  }
+}
+
+/* 内容页 */
+
+.discuss {
+  margin: 10px 10px;
+  padding-bottom: 16px;
+  background: #fcfcfc;
+  color: #888;
+  text-shadow: 1px 1px 1px #fff;
+  border-bottom: 1px solid #e4e4e4;
+}
+@media only screen and (min-width: 1025px){
+  .discuss{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+.discuss h1 {
+  font-size: 18px;
+  padding: 0px 0px 10px 50px;
+  display: block;
+  border-bottom: 1px solid #e4e4e4;
+  margin: -10px -15px 30px -10px;
+  color: #888;
+}
+
+.discuss h1 > span {
+  display: block;
+  font-size: 10px;
+}
+
+.discuss label {
+  display: block;
+  margin: 0px;
+}
+
+.discuss label > span {
+  display: inline-block;
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+  margin-top: 10px;
+  color: #888;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.discuss input[type="text"],
+.discuss textarea {
+  border: 1px solid #dadada;
+  color: #333;
+  height: 30px;
+  margin-bottom: 16px;
+  margin-right: 6px;
+  margin-top: 2px;
+  outline: 0 none;
+  padding: 3px 3px 3px 5px;
+  width: 70%;
+  font-size: 12px;
+  line-height: 15px;
+  box-shadow: inset 0px 1px 4px #ececec;
+  -moz-box-shadow: inset 0px 1px 4px #ececec;
+  -webkit-box-shadow: inset 0px 1px 4px #ececec;
+}
+
+.discuss textarea {
+  padding: 5px 3px 3px 5px;
+}
+
+.discuss textarea {
+  height: 100px;
+  resize: none;
+}
+
+.discuss .button {
+  background: #e27575;
+  border: none;
+  padding: 8px 25px 8px 25px;
+  color: #fff;
+  box-shadow: 1px 1px 5px #b6b6b6;
+  border-radius: 3px;
+  text-shadow: 1px 1px 1px #9e3f3f;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.discuss .button:hover {
+  background: #cf7a7a;
+}
+.rules {
+  width: 85%;
+  margin: 10px auto;
+}
+.rules p {
+  font-size: 12px;
+  margin: 0;
+  padding: 2px 0;
+  /* line-height: 20px; */
+}
+.rules p.bz-tit {
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+.comment .bz-tit {
+  margin-top: 10px;
+  margin-left: 12px;
+  font-size: 17px;
+}
+.comment ul {
+  padding-left: 1rem;
+}
+.comment ul li {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #d5d5d5;
+  list-style: none;
+}
+.comment ul li .com-name {
+  margin-bottom: 10px;
+  padding-left: 22px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #666;
+  background: url(../images/comment-icon.png) 1px 5px no-repeat;
+}
+.comment ul li .com-name span {
+  color: #777;
+}
+.comment ul li .com-name i {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  color: #999;
+}
+.comment ul li .bz-txt {
+  color: #666;
+  font-size: 13px;
+  line-height: 24px;
+  padding-left: 6px;
+}
+/* 分页 */
+.my-page-active{
+    background: #799bac !important;
+    color: #fff !important;
+}
+.plist ul li a:hover{
+  color: #799bac !important;
+}
+.rwft-cont-hidden{
+  /* display: none !important; */
+}
+/* 我要投稿 */
+.wytg{
+  background: #e8e8e8;
+  margin: 0 !important;
+}
+.wytg .tg-tit{
+  margin-top: 16px !important;
+}
+div.bootstrap-large textarea.form-control{
+  height: 528px;
+}
+/* mb搜索部分 */
+.wrap-sear-mb{
+  height: 4.2rem;
+  padding-top: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.search-mb-txt{
+  height: 46px;
+  line-height: 40px;
+}
+.search-mb-txt .my-sear-txt {
+  padding-left: 0px;
+  background: none;
+  text-align: center;
+}
+.search-mb-txt .my-sear-txt a {
+  font-size: 14px;
+  color: #ca1212;
+}
+.mb-search-bar{
+  width: 300px;
+  margin: 2px auto;
+  line-height: 41px;
+}
+.mb-search-bar input[type="text"] {
+  width: 100%;
+}
+.mb-search-bar .sear-icon {
+  right: 16px;
+}
+.mb-search-bar #search{
+  padding: 0 10px;
+}
+.wrap-searbar-mb{
+  height:4rem;
+  padding: 0 1rem;
+}
+.wrap-searbar-mb .search-pc{
+  height: 46px;
+}

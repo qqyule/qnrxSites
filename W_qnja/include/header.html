@@ -1,0 +1,203 @@
+<!--[if lte IE 7]>
+    <p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，网站暂不支持。 请 <ahref="http://browsehappy.com/" target="_blank">升级浏览器</a>以获得更好的体验！</p>
+    <![endif]-->
+<div class="am-g pc-header">
+    <header class="am-topbar am-topbar-inverse my-header-topbar">
+        <style>
+            #top_ty {
+                    width: 100%;
+                    height: 34px;
+                    background: #fafafa;
+                    line-height: 34px;
+                    border-bottom: 1px solid #eee;
+                    overflow: hidden;
+                }
+              #top_ty #top_ty_main {
+                    /* width: 60%; */
+                    margin: 0 auto
+                }
+              #top_ty ul {
+                    padding-left: 0;
+                    overflow: hidden;
+                }
+              #top_ty ul li {
+                    float: left;
+                    margin-right: 16px;
+                    list-style: none;
+                }
+              #top_ty ul li.top_logo {
+                    margin-right: 20px;
+                }
+              #top_ty ul li a {
+                    color: #333;
+                    font-size: 14px;
+                }
+              .clearfix {
+                    *zoom: 1;
+                }
+              .clearfix:before,
+                .clearfix:after {
+                    display: table;
+                    line-height: 0;
+                    content: "";
+                }
+              .clearfix:after {
+                    clear: both;
+                }
+            </style>
+        <!-- 热线公共头 -->
+        <div id="top_ty">
+            <div id="top_ty_main" class="am-container">
+                <ul>
+                    <li class="top_logo">
+                        <a href="http://www.qnz.com.cn">
+                            <img src="http://cdn.special.qnz.com.cn/images/logoqnz.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.qnz.com.cn" target="_parent">首 页</a>
+                    </li>
+                    <li>
+                        <a href="http://www.qnz.com.cn/news/" target="_blank">黔南新闻</a>
+                    </li>
+                    <li>
+                        <a href="http://people.qnz.com.cn" target="_blank">百姓呼声</a>
+                    </li>
+                    <li>
+                        <a href="http://qnly.qnz.com.cn/" target="_blank">黔南旅游</a>
+                    </li>
+                    <li>
+                        <a href="http://rwft.qnz.com.cn" target="_blank">人物访谈</a>
+                    </li>
+                    <li>
+                        <a href="/a/204.html" target="_blank">微讲堂</a>
+                    </li>
+                    <li>
+                        <a href="http://special.qnz.com.cn" target="_blank">专题</a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- 热线公共头 end-->
+        <div class="get">
+            <div class="am-g am-g-collapse">
+                <div class="am-u-lg-12 am-show-lg-only">
+                    <img src="{stl.SiteUrl}/images/header.jpg" width="100%" />
+                </div>
+                <!-- <div class="am-u-lg-12 am-show-md-down" id="sj_top">
+                        <img src="images/header.png" class="am-img-responsive" />
+                    </div> -->
+            </div>
+        </div>
+        <!-- nav-pc -->
+        <div class="am-container am-show-lg-only wrap-nav-pc">
+            <!-- <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}">
+                    <span class="am-sr-only">导航切换</span>
+                    <span class="am-icon-bars"></span>
+                </button> -->
+            <div class="am-collapse am-topbar-collapse nav-pc" id="doc-topbar-collapse">
+                <ul class="am-nav am-nav-pills am-topbar-nav">
+                    <stl:if testType="ChannelIndex" testValue="首页">
+                        <stl:yes>
+                            <li class="am-active">
+                                <stl:a channelIndex="首页"></stl:a>
+                            </li>
+                        </stl:yes>
+                        <stl:no>
+                            <li>
+                                <stl:a channelIndex="首页"></stl:a>
+                            </li>
+                        </stl:no>
+                    </stl:if>
+                    <stl:channels channelIndex="首页" groupChannelNot="hidden">
+                        <stl:itemTemplate type="Item">
+                            <li>
+                                <stl:a>{Channel.Title}</stl:a>
+                            </li>
+                        </stl:itemTemplate>
+                        <stl:itemTemplate type="SelectedItem" selected="current">
+                            <li class="am-active">
+                                <stl:a>{Channel.Title}</stl:a>
+                            </li>
+                        </stl:itemTemplate>
+                    </stl:channels>
+                </ul>
+              <div class="am-topbar-right search-bar">
+                <form role="search" name="searchform" action="{stl.SiteUrl}/search.html" method="get" _lpchecked="1">
+                  <div id="search">
+                    <input name="word" id="word" type="text" class="search-txt" placeholder="">
+                    <input type="image" class="sear-icon" onclick="" src="{stl.SiteUrl}/images/s-btn.png">
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+    </header>
+</div>
+<!-- nav-mb img -->
+<div class="am-g am-hide-lg">
+    <header data-am-widget="header" class="am-header am-header-default am-header-fixed my-mb-header">
+        <div class="am-header-left am-header-nav">
+            <a href="{stl.SiteUrl}" class="">
+                <span class="am-header-nav-title">
+                    <!-- 首页 -->
+                </span>
+                <i class="am-header-icon am-icon-home"></i>
+            </a>
+        </div>
+        <h1 class="am-header-title">
+            第四届黔南骄傲年度人物评选活动
+        </h1>
+        <div class="am-header-right am-header-nav">
+            <div class="menu-bars">
+                <a href="#doc-oc-demo1" data-am-offcanvas="{effect: 'push'}">菜单
+                    <i class="am-menu-toggle-icon am-icon-bars"></i>
+                </a>
+                <nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1 am-no-layout" data-am-menu-offcanvas="">
+                    <a href="javascript: void(0)" class="am-menu-toggle okmemo-tmp-unselect"></a>
+                    <div class="am-offcanvas" style="touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                        <div class="am-offcanvas-bar am-offcanvas-bar-overlay">
+                            <ul class="am-menu-nav am-avg-sm-1">
+                                <stl:if testType="ChannelIndex" testValue="首页">
+                                    <stl:yes>
+                                        <li class="am-active">
+                                            <stl:a channelIndex="首页"></stl:a>
+                                        </li>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <li>
+                                            <stl:a channelIndex="首页"></stl:a>
+                                        </li>
+                                    </stl:no>
+                                </stl:if>
+                                <stl:channels channelIndex="首页" grounpChannelNot="hiddec">
+                                    <stl:itemTemplate type="Item">
+                                        <li>
+                                            <stl:a>{Channel.Title}</stl:a>
+                                        </li>
+                                    </stl:itemTemplate>
+                                    <stl:itemTemplate type="SelectedItem" seleted="current">
+                                        <li class="am-active">
+                                            <stl:a>{Channel.Title}</stl:a>
+                                        </li>
+
+                                    </stl:itemTemplate>
+                                </stl:channels>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+</div>
+<div class="am-g am-g-collapse">
+    <div class="am-u-sm-12 am-show-sm-only" id="sj_top">
+        <img src="{stl.SiteUrl}/images/header-mb.jpg" class="am-img-responsive rwft-cont-hidden" width="100%" />
+    </div>
+    <div class="am-u-md-12 am-show-md-only" id="sj_top">
+        <img src="{stl.SiteUrl}/images/header-mb-b.jpg" class="am-img-responsive" width="100%" />
+    </div>
+</div>
+<!-- nav-mb img end -->

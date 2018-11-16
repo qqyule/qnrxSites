@@ -1,0 +1,146 @@
+<div class="am-g">
+    <style>
+        #top_ty {
+            width: 100%;
+            height: 34px;
+            background: #fafafa;
+            line-height: 34px;
+            border-bottom: 1px solid #eee;
+            overflow: hidden;
+        }
+
+        #top_ty #top_ty_main {
+            /* width: 60%; */
+            margin: 0 auto
+        }
+
+        #top_ty ul {
+            padding-left: 0;
+            overflow: hidden;
+        }
+
+        #top_ty ul li {
+            float: left;
+            margin-right: 16px;
+            list-style: none;
+        }
+
+        #top_ty ul li.top_logo {
+            margin-right: 20px;
+        }
+
+        #top_ty ul li a {
+            color: #333;
+            font-size: 14px;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
+        .clearfix:before,
+        .clearfix:after {
+            display: table;
+            line-height: 0;
+            content: "";
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+    </style>
+    <!-- 热线公共头 -->
+    <div id="top_ty">
+        <div id="top_ty_main" class="am-container">
+            <ul>
+                <li class="top_logo">
+                    <a href="http://www.qnz.com.cn">
+                        <img src="http://cdn.special.qnz.com.cn/images/logoqnz.png" />
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.qnz.com.cn" target="_parent">首 页</a>
+                </li>
+                <li>
+                    <a href="http://www.qnz.com.cn/news/" target="_blank">黔南新闻</a>
+                </li>
+                <li>
+                    <a href="http://people.qnz.com.cn" target="_blank">百姓呼声</a>
+                </li>
+                <li>
+                    <a href="http://qnly.qnz.com.cn/" target="_blank">黔南旅游</a>
+                </li>
+                <li>
+                    <a href="http://rwft.qnz.com.cn" target="_blank">人物访谈</a>
+                </li>
+                <li>
+                    <a href="/a/204.html" target="_blank">微讲堂</a>
+                </li>
+                <li>
+                    <a href="http://special.qnz.com.cn" target="_blank">专题</a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- 热线公共头 end-->
+</div>
+<!-- nav-mb -->
+<div class="am-g">
+    <header data-am-widget="header" class="am-header am-header-fixed am-header-default my-mb-header">
+        <div class="am-header-left am-header-nav">
+            <a href="{stl.SiteUrl}" class="">
+                <span class="am-header-nav-title">
+                </span>
+                <i class="am-header-icon am-icon-home"></i>
+            </a>
+        </div>
+        <h1 class="am-header-title">
+            罗甸县农村信用联社
+        </h1>
+        <div class="am-header-right am-header-nav my-mb-nav">
+            <div class="menu-bars">
+                <a href="#doc-oc-demo1" data-am-offcanvas="{effect: 'push'}">菜单
+                    <i class="am-menu-toggle-icon am-icon-bars"></i>
+                </a>
+
+                <nav data-am-widget="menu" class="am-menu  am-menu-offcanvas1 am-no-layout" data-am-menu-offcanvas="">
+                    <a href="javascript: void(0)" class="am-menu-toggle okmemo-tmp-unselect"></a>
+                    <div class="am-offcanvas" style="touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                        <div class="am-offcanvas-bar am-offcanvas-bar-overlay">
+                            <ul class="am-menu-nav am-avg-sm-1">
+                                <stl:if testType="ChannelIndex" testValue="首页">
+                                    <stl:yes>
+                                        <li class="am-active">
+                                            <stl:a channelIndex="首页"></stl:a>
+                                        </li>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <li>
+                                            <stl:a channelIndex="首页"></stl:a>
+                                        </li>
+                                    </stl:no>
+                                </stl:if>
+                                <stl:channels channelIndex="首页">
+                                    <stl:itemTemplate type="item">
+                                        <li>
+                                            <stl:a>{Channel.Title}</stl:a>
+                                        </li>
+                                    </stl:itemTemplate>
+                                    <stl:itemTemplate type="selectedItem" selected="current">
+                                        <li class="am-active">
+                                            <stl:a>{Channel.Title}</stl:a>
+                                        </li>
+                                    </stl:itemTemplate>
+                                </stl:channels>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+</div>

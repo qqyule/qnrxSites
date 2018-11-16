@@ -1,0 +1,36 @@
+
+<footer>    
+    <p>主办： 中共黔南州委宣传部 黔南州文明办</p>
+    <p>黔南热线技术支持 © 2007-2018 QNZ.COM.CN All rights reserved. </p>
+    <p>黔ICP备11003211号</p>
+</footer>
+
+<script src="{stl.SiteUrl}/js/bootstrap.bundle.min.js"></script>
+<script src="{stl.SiteUrl}/js/bootstrap.min.js"></script>
+<script src="{stl.SiteUrl}/js/slick.min.js"></script>
+<script>
+    $(function () {
+        $('#photo').slick({
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: true,
+            infinite: false,
+        });
+    });
+</script>
+<script>
+    $("#mobile-nav-taggle").click(function () {
+        var mobileMenu = $("#mobile-menu");
+        if (mobileMenu.hasClass("show-nav")) {
+            setTimeout(function () {
+                mobileMenu.addClass("hide-nav").removeClass("show-nav");
+            }, 0)
+        } else {
+            setTimeout(function () {
+                mobileMenu.addClass("show-nav").removeClass("hide-nav");
+            }, 0)
+        }
+    })
+</script>

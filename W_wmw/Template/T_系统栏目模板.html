@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{Channel.title}-{stl.SiteName}</title>
+    <link rel="stylesheet" href="{stl.SiteUrl}/css/jquery.hiSlider.min.css">
+    <link rel="stylesheet" href="{stl.SiteUrl}/css/bootstrap.css" crossorigin="anonymous">
+    <link data-content="css" rel="stylesheet">
+    <link data-content="css2" rel="stylesheet">
+    <link data-content="css3" rel="stylesheet">
+    <script src="//apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) { //测试当前是哪个手机系统，可根据业务需要选择
+            var show = 1
+            $("[data-content='css']").attr({
+                href: "{stl.SiteUrl}/css/style_3g.css"
+            });
+            $("[data-content='css2']").attr({
+                href: "{stl.SiteUrl}/css/bootstrap.css"
+            });
+            $("[data-content='css3']").attr({
+                href: "{stl.SiteUrl}/css/zico.min.css"
+            });
+        } else if (/iPad/i.test(navigator.userAgent)) { // ipad
+            var show = 2
+            $("[data-content='css']").attr({
+                href: "{stl.SiteUrl}/css/style_3g.css"
+            });
+            $("[data-content='css2']").attr({
+                href: "{stl.SiteUrl}/css/bootstrap.css"
+            });
+            $("[data-content='css3']").attr({
+                href: "{stl.SiteUrl}/css/zico.min.css"
+            });
+        } else {
+            var show = 3;
+            $("[data-content='css']").attr({
+                href: "{stl.SiteUrl}/css/style.css"
+            });
+        }
+    </script>
+    <!--[if IE 6]>
+<script src="{$GetInstallDir}js/iepng.js" type="text/javascript"></script>
+<script type="text/javascript">
+   EvPNG.fix('div, ul, img, li, input'); 
+</script>
+<![endif]-->
+    <script>
+        $(document).ready(function () {
+            $(".menu").find("li:first").addClass("currclass");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="pc">
+        <!--头部通用-->
+        <div id="wrap">
+            <!-- 头部通用 -->
+            <stl:include file="@/include/header.html"></stl:include>
+            <!-- 头部通用 end -->
+            <div class="blank10">
+            </div>
+            <table border="0" cellpadding="0" cellspacing="0" class="">
+                <tr>
+                    <td width="720" class="" valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" class="left">
+                            <tr>
+                                <td class="bread">
+                                    <!-- 栏目导航 -->
+                                    您当前位置：
+                                    <stl:location> >> </stl:location>
+                                    <!-- 栏目导航 end -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="list">
+                                    <!-- 终级文章列表2 -->
+                                    <ul>
+                                        <stl:pageContents pageNum="20" order="AddDate" scope="SelfAndChildren">
+                                            <li>
+                                                <span class="listdate">[
+                                                    <stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content>]</span>
+                                                <a href="{content.NavigationUrl}" target="_blank" title="{content.FullTitle}">
+                                                    <stl:content type="Title" wordNum="36" ellipsis="..."></stl:content>
+                                                </a>
+                                            </li>
+                                        </stl:pageContents>
+                                    </ul>
+                                    <div class="clear"></div>
+                                    <div align="right" class="fenye" id="fenye">
+                                        <stl:pageItems autoHide="true">
+                                            <table border="0">
+                                                <tr>
+                                                    <td id="pagelist">
+                                                        <stl:pageItem type="FirstPage">
+                                                            <stl:yes>
+                                                                <a href="{Current.Url}" class="prev">首 页</a>
+                                                            </stl:yes>
+                                                            <stl:no>
+                                                                <a href="javascript:;" class="prev">首 页</a>
+                                                            </stl:no>
+                                                        </stl:pageItem>
+                                                        <stl:pageItem type="PreviousPage">
+                                                            <stl:yes>
+                                                                <a href="{Current.Url}" class="next">上一页</a>
+                                                            </stl:yes>
+                                                            <stl:no>
+                                                                <a href="javascript:;" class="next">上一页</a>
+                                                            </stl:no>
+                                                        </stl:pageItem>
+                                                        <stl:pageItem type="PageNavigation" listNum="5">
+                                                            <stl:yes>
+                                                                <a href="{Current.Url}">{Current.Num}</a>
+                                                            </stl:yes>
+                                                            <stl:no>
+                                                                <a href="javascript:;" class="curr">{Current.Num}</a>
+                                                            </stl:no>
+                                                        </stl:pageItem>
+                                                        <stl:pageItem type="NextPage">
+                                                            <stl:yes>
+                                                                <a href="{Current.Url}" class="next">下一页</a>
+                                                            </stl:yes>
+                                                            <stl:no>
+                                                                <a href="javascript:;" class="next">下一页</a>
+                                                            </stl:no>
+                                                        </stl:pageItem>
+                                                        <stl:pageItem type="LastPage">
+                                                            <stl:yse>
+                                                                <a href="{Current.Url}" class="prev">末页</a>
+                                                            </stl:yse>
+                                                            <stl:no>
+                                                                <a href="javascript:;" class="prev">末页</a>
+                                                            </stl:no>
+                                                        </stl:pageItem>
+
+                                                        <!-- <span>总共
+                                <span id="totalpage"></span>页</span> -->
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </stl:pageItems>
+                                    </div>
+                                    <!-- 终级文章列表2 end -->
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="10"></td>
+                    <td width="250" valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" class="block-r">
+                            <tr>
+                                <td>
+                                    <div class="block-r-t">
+                                        <h2>文明播报</h2>
+                                        <a target="_blank" href="{channel.NavigationUrl_wmbb}" class="more">更多&gt;&gt;</a>
+                                    </div>
+                                    <div class="blank15"></div>
+                                    <!-- 内页文明播报 -->
+                                    <ul>
+                                        <stl:contents channelName="文明播报" totalNum="6" order="AddDate">
+                                            <li>
+                                                <a href="{content.NavigationUrl}" target="_blank" title="{content.FullTitel}">
+                                                    <stl:content type="Title" wordNum="14" ellipsis="..."></stl:content>
+                                                </a>
+                                            </li>
+                                        </stl:contents>
+                                    </ul>
+                                    <!-- 内页文明播报 end -->
+                                    <div class="blank15"></div>
+                                    <div class="block-r-t">
+                                        <h2>多彩贵州文明行动</h2>
+                                        <a target="_blank" href="{channel.NavigationUrl_dcgzwmxd}" class="more">更多&gt;&gt;</a>
+                                    </div>
+                                    <div class="blank15"></div>
+                                    <!-- 内页多彩贵州 -->
+                                    <ul>
+                                        <stl:contents channelName="文明播报" totalNum="6" order="AddDate">
+                                            <li>
+                                                <a href="{content.NavigationUrl}" target="_blank" title="{content.FullTitel}">
+                                                    <stl:content type="Title" wordNum="14" ellipsis="..."></stl:content>
+                                                </a>
+                                            </li>
+                                        </stl:contents>
+                                    </ul>
+                                    <!-- 内页多彩贵州 end -->
+                                    <div class="blank15"></div>
+                                    <!-- <div class="block-r-t">
+                                        <h2>图播</h2>
+                                    </div> -->
+                                    <!-- 内页幻灯 -->
+                                    <!-- 内页幻灯 end -->
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="blank10">
+        </div>
+        <!-- 底部通用 -->
+        <stl:include file="@/include/footer.html"></stl:include>
+        <!-- 底部通用 end-->
+    </div>
+    <!-- PC end -->
+
+    <div id="phone">
+        <!-- 手机顶部通用 -->
+        <stl:include file="@/include/header_3g.html"></stl:include>
+        <!-- 手机顶部通用end -->
+        <div class="container-fluid">
+            <nav aria-label="breadcrumb" id="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="{stl.SiteUrl}">首页</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="">{Channel.title}</a>
+                    </li>
+                </ol>
+            </nav>
+            <!-- 终级文章列表2 -->
+            <ul class="phone-list">
+                                        <stl:pageContents pageNum="20" order="AddDate" scope="SelfAndChildren">
+                                            <li>
+                                                <span class="listdate">[
+                                                    <stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content>]</span>
+                                                <a href="{content.NavigationUrl}" target="_blank" title="{content.FullTitle}">
+                                                    <stl:content type="Title" wordNum="36" ellipsis="..."></stl:content>
+                                                </a>
+                                            </li>
+                                        </stl:pageContents>
+            </ul>
+            <div class="clear"></div>
+            <div align="right" class="fenye" id="fenye">
+                <stl:pageItems autoHide="true">
+                    <table border="0">
+                        <tr>
+                            <td id="pagelist">
+                                <stl:pageItem type="FirstPage">
+                                    <stl:yes>
+                                        <a href="{Current.Url}" class="prev">首 页</a>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <a href="javascript:;" class="prev">首 页</a>
+                                    </stl:no>
+                                </stl:pageItem>
+                                <stl:pageItem type="PreviousPage">
+                                    <stl:yes>
+                                        <a href="{Current.Url}" class="next">上一页</a>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <a href="javascript:;" class="next">上一页</a>
+                                    </stl:no>
+                                </stl:pageItem>
+                                <stl:pageItem type="PageNavigation" listNum="5">
+                                    <stl:yes>
+                                        <a href="{Current.Url}">{Current.Num}</a>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <a href="javascript:;" class="curr">{Current.Num}</a>
+                                    </stl:no>
+                                </stl:pageItem>
+                                <stl:pageItem type="NextPage">
+                                    <stl:yes>
+                                        <a href="{Current.Url}" class="next">下一页</a>
+                                    </stl:yes>
+                                    <stl:no>
+                                        <a href="javascript:;" class="next">下一页</a>
+                                    </stl:no>
+                                </stl:pageItem>
+                                <stl:pageItem type="LastPage">
+                                    <stl:yse>
+                                        <a href="{Current.Url}" class="prev">末页</a>
+                                    </stl:yse>
+                                    <stl:no>
+                                        <a href="javascript:;" class="prev">末页</a>
+                                    </stl:no>
+                                </stl:pageItem>
+
+                                <!-- <span>总共
+        <span id="totalpage"></span>页</span> -->
+                            </td>
+                        </tr>
+                    </table>
+                </stl:pageItems>
+            </div>
+            <!-- 终级文章列表2 end -->
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                查看更多热门文章
+                                <i class="zi zi_doubleDown"></i>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <!-- 手机热门文章 -->
+                                <stl:contents channelName="文明播报" order="Hits" totalNum="6" scope="SelfAndChildren">
+                                    <li class="list-group-item">
+                                        <a href="{content.Navigation}" title="{content.title}">
+                                            <i class="zi zi_fire" style="color:#b60808"></i>
+                                            {content.title} （
+                                            <stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content>）
+                                        </a>
+                                    </li>
+                                </stl:contents>
+                                <!-- 手机热门文章 end -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 手机底部通用 -->
+        <stl:include file="@/include/footer_3g.html"></stl:include>
+        <!-- 手机底部通用 end -->
+    </div>
+    <!-- phone end -->
+
+    <script>
+        if (show == 3) {
+            $('#phone').remove()
+        } else {
+            $('#pc').remove()
+        }
+    </script>
+</body>
+
+</html>

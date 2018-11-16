@@ -1,0 +1,2514 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>黔南文明网</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link data-content="css" rel="stylesheet">
+    <link data-content="css2" rel="stylesheet">
+    <link data-content="css3" rel="stylesheet">
+    <link data-content="css4" rel="stylesheet">
+    <script src="//apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/jquery@1.9.1/jquery.min.js"></script> -->
+    <script type="text/javascript">
+        if (/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) { //测试当前是哪个手机系统，可根据业务需要选择
+            var show = 1
+            $("[data-content='css']").attr({
+                href: "http://wmw.qnz.com.cn/css/style_3g.css"
+            });
+            $("[data-content='css2']").attr({
+                href: "http://wmw.qnz.com.cn/css/bootstrap.css"
+            });
+            $("[data-content='css3']").attr({
+                href: "http://wmw.qnz.com.cn/css/zico.min.css"
+            });
+        } else if (/iPad/i.test(navigator.userAgent)) { // ipad
+            var show = 2
+            $("[data-content='css']").attr({
+                href: "http://wmw.qnz.com.cn/css/style_3g.css"
+            });
+            $("[data-content='css2']").attr({
+                href: "http://wmw.qnz.com.cn/css/bootstrap.css"
+            });
+            $("[data-content='css3']").attr({
+                href: "http://wmw.qnz.com.cn/css/zico.min.css"
+            });
+        } else {
+            var show = 3;
+            $("[data-content='css']").attr({
+                href: "http://wmw.qnz.com.cn/css/style.css"
+            });
+            $("[data-content='css4']").attr({
+                href: "http://wmw.qnz.com.cn/css/jquery.hiSlider.min.css"
+            });
+        }
+    </script>
+    <!--[if IE 6]>
+    <script src="{$GetInstallDir}js/iepng.js" type="text/javascript"></script>
+    <script type="text/javascript">
+   EvPNG.fix('div, ul, img, li, input'); 
+    </script>
+<![endif]-->
+    <script>
+        $(document).ready(function () {
+            $(".menu").find("li:first").addClass("currclass");
+            $(".t1").mouseover(function () {
+                $(".t1").addClass("tab_active");
+                $(".t2").removeClass("tab_active");
+                $("#tab1").show();
+                $("#tab2").hide();
+                $("#tab1_more").show();
+                $("#tab2_more").hide();
+            });
+            $(".t2").mouseover(function () {
+                $(".t2").addClass("tab_active");
+                $(".t1").removeClass("tab_active");
+                $("#tab2").show();
+                $("#tab1").hide();
+                $("#tab2_more").show();
+                $("#tab1_more").hide();
+            });
+        });
+    </script>
+
+    <style>
+        .t1,
+        .t2 {
+            float: left;
+            padding: 5px 20px;
+        }
+
+        .tab_active {
+            background: #d81813;
+            color: #fff;
+        }
+    </style>
+    <style>
+        .hiSlider {
+            overflow: hidden;
+            height: 290px;
+            width: 520px;
+            background: #eee;
+        }
+
+        .hiSlider-item {
+            float: left;
+        }
+
+        .hiSlider-item img {
+            width: 520px;
+            height: 290px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pc">
+        <div id="wrap">
+            <!-- 头部通用 -->
+            
+<!-- 头部通用 -->
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" background="http://topic.qnz.com.cn/imgsbh/box_titlebg.jpg"
+    class="top-qnrx">
+    <tbody>
+        <tr>
+            <td width="8%">
+                <a href="http://www.qnz.com.cn">
+                    <img src="http://topic.qnz.com.cn/imgsbh/logoqnz.jpg" width="73" height="30" border="0">
+                </a>
+            </td>
+            <td width="1%">&nbsp;</td>
+            <td width="91%">
+                <table width="804" height="17" align="center" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div align="center">
+                                    <a href="http://www.qnz.com.cn" target="_parent">首 页</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div align="center">
+                                    <a href="http://www.qnz.com.cn/news" target="_blank">黔南新闻</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div align="center">
+                                    <a href="http://people.qnz.com.cn" target="_blank">百姓呼声</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div align="center">
+                                    <a href="http://rwft.qnz.com.cn" target="_blank">人物访谈</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div align="center">
+                                    <a href="http://house.qnz.com.cn" target="_blank">房 产</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div align="center">
+                                    <a href="http://job.qnz.com.cn" target="_blank">人 才</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div align="center">
+                                    <a href="http://info.qnz.com.cn/" target="_blank">分类信息</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div align="center">
+                                    <a href="http://info.qnz.com.cn/category-80.shtml" target="_blank">餐饮美食</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div align="center">
+                                    <a href="http://rsqn.qnz.com.cn" target="_blank">认识黔南</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div align="center">
+                                    <a href="http://web.qnz.com.cn" target="_blank">网建</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div align="center">
+                                    <a href="http://info.qnz.com.cn/category-2.shtml" target="_blank">便民生活</a>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="http://special.qnz.com.cn" target="_blank">专题</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="blank10">
+
+</div>
+<table border="0" cellspacing="0" cellpadding="0" align="center" width="980">
+    <tr>
+        <td>
+            <a href="/">
+                <img src="http://wmw.qnz.com.cn/images/logo.jpg" alt="黔南文明网" />
+            </a>
+        </td>
+        <td>
+            <img src="http://wmw.qnz.com.cn/images/banner1.jpg" alt="" />
+        </td>
+    </tr>
+</table>
+<div class="blank10">
+
+</div>
+<div class="nav">
+    <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <table border="0" cellspacing="0" cellpadding="0" width="720" class="menu">
+                    <tr>
+                        <td width="10" rowspan="2"></td>
+                        <td width="20" rowspan="2">
+                            <a href="http://wmw.qnz.com.cn">
+                                <img src="http://wmw.qnz.com.cn/images/home.jpg" alt="黔南文明网">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="http://wmw.qnz.com.cn/channels/wmcj.html">文明创建</a>
+                        </td>
+                        <td width="140">
+                            <a href="http://wmw.qnz.com.cn/channels/dcgzwmxd.html">多彩贵州文明行动</a>
+                        </td>
+                        <td rowspan="2">
+                            <img src="http://wmw.qnz.com.cn/images/nav_bg.jpg" alt="" />
+                        </td>
+                        <td>
+                            <a href="http://wmw.qnz.com.cn/channels/qnja.html">黔南骄傲</a>
+                        </td>
+                        <td>
+                            <a href="http://wmw.qnz.com.cn/channels/zyff.html">志愿服务</a>
+                        </td>
+                        <td>
+                            <a href="http://wmw.qnz.com.cn/channels/ddjt.html">道德讲堂</a>
+                        </td>
+                        <td width="102">
+                            <a href="http://wmw.qnz.com.cn/channels/jwmsxf.html">讲文明树新风</a>
+                        </td>
+                        <td rowspan="2">
+                            <img src="http://wmw.qnz.com.cn/images/nav_bg.jpg" alt="" />
+                        </td>
+                        <td>
+                            <a href="http://wmw.qnz.com.cn/channels/tp.html">图片</a>
+                        </td>
+                        <td>
+                            <a href="http://wmw.qnz.com.cn/channels/ft.html">访谈</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://wmw.qnz.com.cn/channels/wmbb.html">文明播报</a>
+                        </td>
+                        <td>
+                            <a href="http://wmw.qnz.com.cn/channels/sznjmlxc.html">四在农家美丽乡村</a>
+                        </td>
+                        <td>
+                            <a href="http://wmw.qnz.com.cn/channels/ddmf.html">道德模范</a>
+                        </td>
+                        <td>
+                            <a href="http://wmw.qnz.com.cn/channels/wmdjr.html">我们的节日</a>
+                        </td>
+                        <td>
+                            <a href="http://wmw.qnz.com.cn/channels/gzxx.html">工作信息</a>
+                        </td>
+                        <td>
+                            <a href="http://wmw.qnz.com.cn/channels/wcnrjy.html">未成年人教育</a>
+                        </td>
+                        <td>
+                            <a href="http://wmw.qnz.com.cn/channels/zl.html">资料</a>
+                        </td>
+                        <td>
+                            <a href="http://wmw.qnz.com.cn/channels/sp.html">视频</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+
+            <td width="230">
+                <table border="0" cellspacing="0" cellpadding="0" width="230">
+                    <tr>
+                        <td>
+                            <script src="http://wmw.qnz.com.cn/js/S_Article.js"></script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="date">
+                                <script>
+                                    var CalendarData = new Array(20);
+                                    var madd = new Array(12);
+                                    var TheDate = new Date();
+                                    var tgString = "甲乙丙丁戊己庚辛壬癸";
+                                    var dzString = "子丑寅卯辰巳午未申酉戌亥";
+                                    var numString = "一二三四五六七八九十";
+                                    var monString = "正二三四五六七八九十冬腊";
+                                    var weekString = "日一二三四五六";
+                                    var sx = "鼠牛虎兔龙蛇马羊猴鸡狗猪";
+                                    var cYear;
+                                    var cMonth;
+                                    var cDay;
+                                    var cHour;
+                                    var cDateString;
+                                    var DateString;
+                                    var Browser = navigator.appName;
+
+                                    function init() {
+                                        CalendarData[0] = 0x41A95;
+                                        CalendarData[1] = 0xD4A;
+                                        CalendarData[2] = 0xDA5;
+                                        CalendarData[3] = 0x20B55;
+                                        CalendarData[4] = 0x56A;
+                                        CalendarData[5] = 0x7155B;
+                                        CalendarData[6] = 0x25D;
+                                        CalendarData[7] = 0x92D;
+                                        CalendarData[8] = 0x5192B;
+                                        CalendarData[9] = 0xA95;
+                                        CalendarData[10] = 0xB4A;
+                                        CalendarData[11] = 0x416AA;
+                                        CalendarData[12] = 0xAD5;
+                                        CalendarData[13] = 0x90AB5;
+                                        CalendarData[14] = 0x4BA;
+                                        CalendarData[15] = 0xA5B;
+                                        CalendarData[16] = 0x60A57;
+                                        CalendarData[17] = 0x52B;
+                                        CalendarData[18] = 0xA93;
+                                        CalendarData[19] = 0x40E95;
+                                        madd[0] = 0;
+                                        madd[1] = 31;
+                                        madd[2] = 59;
+                                        madd[3] = 90;
+                                        madd[4] = 120;
+                                        madd[5] = 151;
+                                        madd[6] = 181;
+                                        madd[7] = 212;
+                                        madd[8] = 243;
+                                        madd[9] = 273;
+                                        madd[10] = 304;
+                                        madd[11] = 334;
+                                    }
+
+                                    function GetBit(m, n) {
+                                        return (m >> n) & 1;
+                                    }
+
+                                    function e2c() {
+                                        var total, m, n, k;
+                                        var isEnd = false;
+                                        var tmp = TheDate.getYear();
+                                        if (tmp < 1900) tmp += 1900;
+                                        total = (tmp - 2001) * 365 +
+                                            Math.floor((tmp - 2001) / 4) +
+                                            madd[TheDate.getMonth()] +
+                                            TheDate.getDate() -
+                                            23;
+                                        if (TheDate.getYear() % 4 == 0 && TheDate.getMonth() > 1)
+                                            total++;
+                                        for (m = 0;; m++) {
+                                            k = (CalendarData[m] < 0xfff) ? 11 : 12;
+                                            for (n = k; n >= 0; n--) {
+                                                if (total <= 29 + GetBit(CalendarData[m], n)) {
+                                                    isEnd = true;
+                                                    break;
+                                                }
+                                                total = total - 29 - GetBit(CalendarData[m], n);
+                                            }
+                                            if (isEnd) break;
+                                        }
+                                        cYear = 2001 + m;
+                                        cMonth = k - n + 1;
+                                        cDay = total;
+                                        if (k == 12) {
+                                            if (cMonth == Math.floor(CalendarData[m] / 0x10000) + 1)
+                                                cMonth = 1 - cMonth;
+                                            if (cMonth > Math.floor(CalendarData[m] / 0x10000) + 1)
+                                                cMonth--;
+                                        }
+                                        cHour = Math.floor((TheDate.getHours() + 3) / 2);
+                                    }
+
+                                    function GetcDateString() {
+                                        var tmp = "";
+                                        tmp += tgString.charAt((cYear - 4) % 10); //年干   
+                                        tmp += dzString.charAt((cYear - 4) % 12); //年支   
+                                        tmp += "年";
+                                        tmp += " ";
+                                        if (cMonth < 1) {
+                                            tmp += "闰";
+                                            tmp += monString.charAt(-cMonth - 1);
+                                        } else
+                                            tmp += monString.charAt(cMonth - 1);
+                                        tmp += "月";
+                                        tmp += (cDay < 11) ? "初" : ((cDay < 20) ? "十" : ((cDay < 30) ? "廿" :
+                                            "卅"));
+                                        if (cDay % 10 != 0 || cDay == 10)
+                                            tmp += numString.charAt((cDay - 1) % 10);
+                                        tmp += "    ";
+                                        cDateString = tmp;
+                                        return tmp;
+                                    }
+
+                                    function GetDateString() {
+                                        var tmp = "";
+                                        var t1 = TheDate.getYear();
+                                        if (t1 < 1900) t1 += 1900;
+                                        tmp += t1 +
+                                            "年" +
+                                            (TheDate.getMonth() + 1) + "月" +
+                                            TheDate.getDate() + "日   " +
+                                            "   星期" + weekString.charAt(TheDate.getDay());
+                                        DateString = tmp;
+                                        return tmp;
+                                    }
+                                    init();
+                                    e2c();
+                                    GetDateString();
+                                    GetcDateString();
+                                    document.write(DateString, " ", cDateString);
+                                </script>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+<!-- 头部通用 end -->
+
+            <!-- 头部通用 end -->
+
+            <div class="blank10">
+            </div>
+            <table border="0" cellspacing="0" cellpadding="0" width="980">
+                <tr>
+                    <td rowspan="2">
+                        <a href="http://topic.qnz.com.cn/topic_html/list_973.html" target="_blank">
+                            <img src="http://wmw.qnz.com.cn/images/drqn.jpg" />
+                        </a>
+                    </td>
+                    <td align="center" width="750">
+                        <!-- 今日头条 -->
+                        
+                            <a href="http://wmw.qnz.com.cn/contents/wmbb/12645.html" target="_blank" title="瓮安县持续“高压”推进环境整治 助力“文明在行动”">
+                                <img src="http://wmw.qnz.com.cn/upload/images/2018/11/4ed279e773d3707a.jpg">
+                            </a>
+                        
+
+                        <!-- 今日头条 end -->
+                    </td>
+                    <td rowspan="2">
+                        <a href="http://topic.qnz.com.cn/topic_html/list_958.html" target="_blank">
+                            <img src="http://wmw.qnz.com.cn/images/zgm.jpg" />
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" class="tt_txt">
+                        <!-- 头条 -->
+
+                        
+                            [
+                            <a href="http://wmw.qnz.com.cn/contents/wmbb/12632.html" target="_blank" title="三都普安镇“三部曲”让农村环境更加亮丽">
+                                三都普安镇“三部曲”让农村环境更加亮...
+                            </a>]
+                        
+                            [
+                            <a href="http://wmw.qnz.com.cn/contents/wmbb/12629.html" target="_blank" title="贵定县开展“清岸清水”河道治理活动">
+                                贵定县开展“清岸清水”河道治理活动
+                            </a>]
+                        
+                            [
+                            <a href="http://wmw.qnz.com.cn/contents/wmbb/12617.html" target="_blank" title="三都完善停车位规划助力乡村环境综合整治">
+                                三都完善停车位规划助力乡村环境综合整...
+                            </a>]
+                        
+                        <!-- 头条 end -->
+                    </td>
+                </tr>
+            </table>
+            <div class="blank5">
+            </div>
+
+
+            <table border="0" cellspacing="0" cellpadding="0" width="980">
+                <tr>
+                    <td align="center">
+                        <a href="http://www.wenming.cn/specials/zxdj/hxjz/tsjzg/" target="_blank">
+                            <img src="http://wmw.qnz.com.cn/images/shehui.jpg" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <table border="0" cellspacing="0" cellpadding="0" width="980">
+                <tr>
+                    <td align="center" width="485">
+                        <a href="http://wmw.qnz.com.cn/channels/jsmlqn.html" target="_blank">
+                            <img src="http://wmw.qnz.com.cn/images/xc.jpg" />
+                        </a>
+                    </td>
+                    <td align="center" width="10">
+                    </td>
+                    <td align="center" width="485">
+                        <a href="http://special.qnz.com.cn/a/335.html" target="_blank">
+                            <img src="http://wmw.qnz.com.cn/images/qyp.jpg" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <div class="blank5">
+            </div>
+
+
+            <div class="blank5">
+            </div>
+            <table border="0" cellspacing="0" cellpadding="0" width="980" class="row1">
+                <tr>
+                    <td class="slider">
+                        <!-- 首页幻灯 -->
+                        <div class="pic">
+                            <!--图片列表-->
+                            <ul class="hiSlider hiSlider1">
+                                
+                                    <li data-title="都匀市双新村探索“双十星”管理模式，提升精神文明创建实效" class="hiSlider-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12647.html" target="_blank" title="都匀市双新村探索“双十星”管理模式，提升精神文明创建实效">
+                                            <img src="http://wmw.qnz.com.cn/upload/images/2018/11/3c7676621271c84.jpg">
+                                        </a>
+                                    </li>
+                                
+                                    <li data-title="瓮安县持续“高压”推进环境整治 助力“文明在行动”" class="hiSlider-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12645.html" target="_blank" title="瓮安县持续“高压”推进环境整治 助力“文明在行动”">
+                                            <img src="http://wmw.qnz.com.cn/upload/images/2018/11/c5f8b0fa810fe01a.jpg">
+                                        </a>
+                                    </li>
+                                
+                                    <li data-title="都匀“献血达人”徐培华60岁生日无偿献血让献血生涯完美谢幕" class="hiSlider-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12634.html" target="_blank" title="都匀“献血达人”徐培华60岁生日无偿献血让献血生涯完美谢幕">
+                                            <img src="http://wmw.qnz.com.cn/upload/images/2018/11/9a96b08bc2519ed8.jpg">
+                                        </a>
+                                    </li>
+                                
+                                    <li data-title="三都普安镇“三部曲”让农村环境更加亮丽" class="hiSlider-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12632.html" target="_blank" title="三都普安镇“三部曲”让农村环境更加亮丽">
+                                            <img src="http://wmw.qnz.com.cn/upload/images/2018/11/2aa2eecd79b20ed4.jpg">
+                                        </a>
+                                    </li>
+                                
+                                    <li data-title="三都完善停车位规划助力乡村环境综合整治" class="hiSlider-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12617.html" target="_blank" title="三都完善停车位规划助力乡村环境综合整治">
+                                            <img src="http://wmw.qnz.com.cn/upload/images/2018/11/29a90ed06e04c341.jpg">
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                        <!-- 首页幻灯 end -->
+                    </td>
+                    <td width="10"></td>
+                    <td style="vertical-align: top;">
+                        <table border="0" cellspacing="0" cellpadding="0" width="430" style="padding:0 5 0 5px;" class="wmbb">
+                            <tr>
+                                <td height="21"></td>
+                            </tr>
+                            <tr>
+                                <td class="wmbb-t">
+                                    <div class="t1 tab_active">文明播报</div>
+                                    <div class="t2">文件公告</div>
+                                    <a class="more" id="tab1_more" href="http://wmw.qnz.com.cn/channels/wmbb.html">更多>></a>
+                                    <a class="more" id="tab2_more" href="http://wmw.qnz.com.cn/index.html">更多>></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table border="0" cellspacing="0" cellpadding="0" id="tab1">
+
+                                        <tr>
+                                            <!-- 首页文明播报 -->
+                                            <td>
+                                                <h1>
+                                                    
+                                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12647.html" target="_blank" title="都匀市双新村探索“双十星”管理模式，提升精神文明创建实效">
+                                                            都匀市双新村探索“双十星”管理模式，提升精神...
+                                                        </a>
+                                                    
+                                                </h1>
+                                                <ul>
+                                                    
+                                                        <li>
+                                                            <span class="date">
+                                                                11-16
+                                                            </span>
+                                                            <a href="http://wmw.qnz.com.cn/contents/wmbb/12645.html" target="_blank" title="瓮安县持续“高压”推进环境整治 助力“文明在行动”">
+                                                                瓮安县持续“高压”推进环境整治 助力“文...
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <span class="date">
+                                                                11-16
+                                                            </span>
+                                                            <a href="http://wmw.qnz.com.cn/contents/wmbb/12644.html" target="_blank" title="龙里县9家商户被评为“放心消费示范单位”">
+                                                                龙里县9家商户被评为“放心消费示范单位”
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <span class="date">
+                                                                11-16
+                                                            </span>
+                                                            <a href="http://wmw.qnz.com.cn/contents/wmbb/12643.html" target="_blank" title="独山240户易地移民搬迁对象喜获新房">
+                                                                独山240户易地移民搬迁对象喜获新房
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <span class="date">
+                                                                11-16
+                                                            </span>
+                                                            <a href="http://wmw.qnz.com.cn/contents/wmbb/12642.html" target="_blank" title="惠水：幸福社区里的幸福故事">
+                                                                惠水：幸福社区里的幸福故事
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <span class="date">
+                                                                11-16
+                                                            </span>
+                                                            <a href="http://wmw.qnz.com.cn/contents/wmbb/12641.html" target="_blank" title="福泉：全力真抓实干 创建小康学校">
+                                                                福泉：全力真抓实干 创建小康学校
+                                                            </a>
+                                                        </li>
+                                                    
+                                                </ul>
+                                                <!-- 首页文明播报 end-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table border="0" cellspacing="0" cellpadding="0" id="tab2" style="display:none">
+                                        <tr>
+                                            <td>
+                                                <!-- 首页文件公告 -->
+                                                <ul>
+                                                    
+                                                        <li>
+                                                            <a href="http://wmw.qnz.com.cn/contents/zl/11548.html" target="_blank" title="content.FullTitle">
+                                                                关于对黔南州2016—2017年度拟命名表彰文明单位、文明乡镇、文明村、文明校园、文明家...
+                                                            </a>
+                                                            <span style="color:#999"> (
+                                                                07-20)</span>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a href="http://wmw.qnz.com.cn/contents/zl/11547.html" target="_blank" title="content.FullTitle">
+                                                                文明类别测评体系
+                                                            </a>
+                                                            <span style="color:#999"> (
+                                                                12-06)</span>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a href="http://wmw.qnz.com.cn/contents/zl/11546.html" target="_blank" title="content.FullTitle">
+                                                                关于开展2016-2017年度州级文明单位、文明村镇、文明家庭、文明校园申报工作的通知
+                                                            </a>
+                                                            <span style="color:#999"> (
+                                                                12-06)</span>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a href="http://wmw.qnz.com.cn/contents/zl/11544.html" target="_blank" title="content.FullTitle">
+                                                                贵州省文明单位测评体系操作手册
+                                                            </a>
+                                                            <span style="color:#999"> (
+                                                                04-13)</span>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a href="http://wmw.qnz.com.cn/contents/zl/11545.html" target="_blank" title="content.FullTitle">
+                                                                关于转发《关于评选表彰全省文明城市、文明村镇、文明单位、文明家庭、文明校园的通知...
+                                                            </a>
+                                                            <span style="color:#999"> (
+                                                                03-10)</span>
+                                                        </li>
+                                                    
+                                                </ul>
+                                                <!-- 首页文件公告 end-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <div class="blank10">
+            </div>
+            <table border="0" cellspacing="0" cellpadding="0" class="row2">
+                <tr>
+                    <td class="duocai">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td class="duocai-t" colspan="5">
+                                    <span class="more">
+                                        <a target="_blank" href="http://wmw.qnz.com.cn/channels/dcgzwmxd.html">
+                                            <img src="http://wmw.qnz.com.cn/images/more.png" />
+                                        </a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="15" colspan="5"></td>
+                            </tr>
+                            <tr>
+                                <td width="10"></td>
+                                <td width="430">
+                                    <!-- 首页多彩贵州图 -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        
+                                            <tr>
+                                                <td width="100%" style="text-align:center;padding-bottom:2px;">
+                                                    <table style="margin:3px;width:100%" cellspacing="0" cellpadding="0" border="0">
+                                                        <tr>
+                                                            <td class="image" style="text-align:center" width="150">
+                                                                <a href="http://wmw.qnz.com.cn/contents/dcgzwmxd/12646.html" target="_blank" title="瓮安县持续“高压”推进环境整治 助力“文明在行动”">
+                                                                    <img src="http://wmw.qnz.com.cn/upload/images/2018/11/2a5545608f80153d.jpg" border="0" width="140" height="80" style="border:1px solid #eeeeee" class="pic" alt="瓮安县持续“高压”推进环境整治 助力“文明在行动”" align="absmiddle">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="t">
+                                                                    <a href="http://wmw.qnz.com.cn/contents/dcgzwmxd/12646.html" target="_blank" title="瓮安县持续“高压”推进环境整治 助力“文明在行动”">
+                                                                        瓮安县持续“高压”推进环境整治 助力...
+                                                                    </a>
+                                                                </div>
+                                                                <div class="text">
+                                                                    为维护城市容貌整体和谐，不断提升城市形象。近期，瓮安县城市环境综合整...
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        
+                                            <tr>
+                                                <td width="100%" style="text-align:center;padding-bottom:2px;">
+                                                    <table style="margin:3px;width:100%" cellspacing="0" cellpadding="0" border="0">
+                                                        <tr>
+                                                            <td class="image" style="text-align:center" width="150">
+                                                                <a href="http://wmw.qnz.com.cn/contents/dcgzwmxd/12478.html" target="_blank" title="荔波县公安局网安大队开展“多彩贵州文明行动”环境卫生大清扫活动">
+                                                                    <img src="http://wmw.qnz.com.cn/upload/images/2018/10/93eed038c8eab0e3.jpg" border="0" width="140" height="80" style="border:1px solid #eeeeee" class="pic" alt="荔波县公安局网安大队开展“多彩贵州文明行动”环境卫生大清扫活动" align="absmiddle">
+                                                                </a>
+                                                            </td>
+                                                            <td>
+                                                                <div class="t">
+                                                                    <a href="http://wmw.qnz.com.cn/contents/dcgzwmxd/12478.html" target="_blank" title="荔波县公安局网安大队开展“多彩贵州文明行动”环境卫生大清扫活动">
+                                                                        荔波县公安局网安大队开展“多彩贵州文...
+                                                                    </a>
+                                                                </div>
+                                                                <div class="text">
+                                                                    10月29日，荔波县公安局网安大队以“多彩贵州文明行动”为契机，开展“我...
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        
+                                    </table>
+                                    <!-- 首页多彩贵州图 end -->
+                                </td>
+                                <td width="15"></td>
+                                <td>
+                                    <!-- 首页多彩贵州 -->
+                                    <ul>
+                                        
+                                            <li>
+                                                <a href="http://wmw.qnz.com.cn/contents/dcgzwmxd/12646.html" target="_blank" title="瓮安县持续“高压”推进环境整治 助力“文明在行动”">
+                                                    瓮安县持续“高压”推进环境整治 ...
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="http://wmw.qnz.com.cn/contents/wmbb/12603.html" target="_blank" title="瓮安：多措并举整治乡镇环境助力“文明在行动”">
+                                                    瓮安：多措并举整治乡镇环境助力“...
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="http://wmw.qnz.com.cn/contents/wmbb/12493.html" target="_blank" title="瓮安：多部门联合开展环境综合整治行动">
+                                                    瓮安：多部门联合开展环境综合整治...
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="http://wmw.qnz.com.cn/contents/dcgzwmxd/12478.html" target="_blank" title="荔波县公安局网安大队开展“多彩贵州文明行动”环境卫生大清扫活动">
+                                                    荔波县公安局网安大队开展“多彩贵...
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="http://wmw.qnz.com.cn/contents/dcgzwmxd/12412.html" target="_blank" title="罗甸县交警大队持续开展重点交通违法整治行动">
+                                                    罗甸县交警大队持续开展重点交通违...
+                                                </a>
+                                            </li>
+                                        
+                                            <li>
+                                                <a href="http://wmw.qnz.com.cn/contents/wmbb/12392.html" target="_blank" title="都匀市以“小手牵大手”文明行动引导市民群众建设改善人居环境">
+                                                    都匀市以“小手牵大手”文明行动引...
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                    <!-- 首页多彩贵州 end -->
+                                </td>
+                                <td width="10"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="10"></td>
+                    <td class="jiang">
+                        <!-- 首页讲文明 -->
+                        <ul>
+                            
+                                <li>
+                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12556.html" target="_blank" title="福泉：扫黑除恶建设安全文明校园">
+                                        福泉：扫黑除恶建设安全文明校...
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12543.html" target="_blank" title="福泉：大脚小脚动起来 健康文明伴我行">
+                                        福泉：大脚小脚动起来 健康文...
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12546.html" target="_blank" title="瓮安：真抓实干出实招 环境整治出实效">
+                                        瓮安：真抓实干出实招 环境整...
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12473.html" target="_blank" title="都匀市归兰水族乡开展环境卫生整治">
+                                        都匀市归兰水族乡开展环境卫生...
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12459.html" target="_blank" title="新时代文明实践中心启动仪式在龙里举行">
+                                        新时代文明实践中心启动仪式在...
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12390.html" target="_blank" title="文明乡风展新颜——记贵定县新巴镇新华村的蜕变之路">
+                                        文明乡风展新颜——记贵定县新...
+                                    </a>
+                                </li>
+                            
+                                <li>
+                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12347.html" target="_blank" title="民族团结共铸“幸福黔南”">
+                                        民族团结共铸“幸福黔南”
+                                    </a>
+                                </li>
+                            
+                        </ul>
+                        <!-- 首页讲文明 end -->
+                    </td>
+                </tr>
+            </table>
+            <div class="blank10">
+            </div>
+            <table border="0" cellspacing="0" cellpadding="0" class="row3">
+                <tr>
+                    <td class="title_bg">
+                        <h2>四在农家美丽乡村</h2>
+                        <a target="_blank" href="http://wmw.qnz.com.cn/channels/sznjmlxc.html" class="more">
+                            <img src="http://wmw.qnz.com.cn/images/more.png">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- 首页四在农家 -->
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                
+                                    <td width="20%" style="text-align:center;padding-bottom:2px;">
+                                        <div class="image">
+                                            <a href="http://wmw.qnz.com.cn/contents/sznjmlxc/11768.html" target="_blank" title="三都：发展荷藕产业 建设美丽乡村">
+                                                <img src="http://wmw.qnz.com.cn/upload/images/2018/8/8321e2ff7b037155.jpg" border="0" width="160" height="100" style="border:1px solid #ccc" class="pic" alt="三都：发展荷藕产业 建设美丽乡村" align="absmiddle">
+                                            </a>
+                                        </div>
+                                        <div class="t">
+                                            <a href="http://wmw.qnz.com.cn/contents/sznjmlxc/11768.html" target="_blank" title="三都：发展荷藕产业 建设美丽乡村">
+                                                三都：发展荷藕产业 建设...
+                                            </a>
+                                        </div>
+                                    </td>
+                                
+                                    <td width="20%" style="text-align:center;padding-bottom:2px;">
+                                        <div class="image">
+                                            <a href="http://wmw.qnz.com.cn/contents/wmbb/11764.html" target="_blank" title="黔南首次“美丽乡村”农民书画摄影展在匀开展">
+                                                <img src="http://wmw.qnz.com.cn/upload/images/2018/8/3f93c370d502bcae.jpg" border="0" width="160" height="100" style="border:1px solid #ccc" class="pic" alt="黔南首次“美丽乡村”农民书画摄影展在匀开展" align="absmiddle">
+                                            </a>
+                                        </div>
+                                        <div class="t">
+                                            <a href="http://wmw.qnz.com.cn/contents/wmbb/11764.html" target="_blank" title="黔南首次“美丽乡村”农民书画摄影展在匀开展">
+                                                黔南首次“美丽乡村”农民...
+                                            </a>
+                                        </div>
+                                    </td>
+                                
+                                    <td width="20%" style="text-align:center;padding-bottom:2px;">
+                                        <div class="image">
+                                            <a href="http://wmw.qnz.com.cn/contents/sznjmlxc/10962.html" target="_blank" title="长顺：文化“种”上墙 乡村更加靓">
+                                                <img src="http://wmw.qnz.com.cn/upload/images/2018/8/156bfe85c41d9333.jpg" border="0" width="160" height="100" style="border:1px solid #ccc" class="pic" alt="长顺：文化“种”上墙 乡村更加靓" align="absmiddle">
+                                            </a>
+                                        </div>
+                                        <div class="t">
+                                            <a href="http://wmw.qnz.com.cn/contents/sznjmlxc/10962.html" target="_blank" title="长顺：文化“种”上墙 乡村更加靓">
+                                                长顺：文化“种”上墙 乡...
+                                            </a>
+                                        </div>
+                                    </td>
+                                
+                                    <td width="20%" style="text-align:center;padding-bottom:2px;">
+                                        <div class="image">
+                                            <a href="http://wmw.qnz.com.cn/contents/sznjmlxc/10961.html" target="_blank" title="长顺：综合整治显成效 美了乡村富了民">
+                                                <img src="http://wmw.qnz.com.cn/upload/images/2018/8/6933460a9bb9bd02.jpg" border="0" width="160" height="100" style="border:1px solid #ccc" class="pic" alt="长顺：综合整治显成效 美了乡村富了民" align="absmiddle">
+                                            </a>
+                                        </div>
+                                        <div class="t">
+                                            <a href="http://wmw.qnz.com.cn/contents/sznjmlxc/10961.html" target="_blank" title="长顺：综合整治显成效 美了乡村富了民">
+                                                长顺：综合整治显成效 美...
+                                            </a>
+                                        </div>
+                                    </td>
+                                
+                                    <td width="20%" style="text-align:center;padding-bottom:2px;">
+                                        <div class="image">
+                                            <a href="http://wmw.qnz.com.cn/contents/sznjmlxc/10958.html" target="_blank" title="龙里:“农业+旅游”助推乡村振兴">
+                                                <img src="http://wmw.qnz.com.cn/upload/images/2018/8/57995aa8ee335479.jpg" border="0" width="160" height="100" style="border:1px solid #ccc" class="pic" alt="龙里:“农业+旅游”助推乡村振兴" align="absmiddle">
+                                            </a>
+                                        </div>
+                                        <div class="t">
+                                            <a href="http://wmw.qnz.com.cn/contents/sznjmlxc/10958.html" target="_blank" title="龙里:“农业+旅游”助推乡村振兴">
+                                                龙里:“农业+旅游”助推乡...
+                                            </a>
+                                        </div>
+                                    </td>
+                                
+                            </tr>
+                        </table>
+                        <!-- 首页四在农家 end -->
+                    </td>
+                </tr>
+            </table>
+            <div class="blank10">
+            </div>
+            <table border="0" cellspacing="0" cellpadding="0" class="">
+                <tr>
+                    <td>
+                        <a href="http://www.wenming.cn/specials/zxdj/xjp/" target="_blank">
+                            <img src="http://wmw.qnz.com.cn/images/banner2.jpg" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <div class="blank10">
+            </div>
+            <table border="0" cellspacing="0" cellpadding="0" class="row3">
+                <tr>
+                    <td class="title_bg">
+                        <h2>讲文明·树新风公益广告作品展播</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="wenming_ad">
+                            <iframe width="960" scrolling="no" height="258" frameborder="0" target="_blank" hspace="0" vspace="0" marginheight="0" marginwidth="0"
+                                src="http://www.wenming.cn/gxym/sygygg/index_10867.shtml"></iframe>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="blank10">
+            </div>
+            <table border="0" cellspacing="0" cellpadding="0" class="">
+                <tr>
+                    <td width="720" valign="top">
+                        <table border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td class="block">
+                                    <div class="block-t wmcj">
+                                        <h2>文明创建</h2>
+                                        <a target="_blank" href="http://wmw.qnz.com.cn/channels/wmcj.html" class="more">
+                                            <img src="http://wmw.qnz.com.cn/images/more.png">
+                                        </a>
+                                    </div>
+                                    <div class="block-l">
+                                        <!-- 首页文明创建 -->
+                                        <ul>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12641.html" target="_blank" title="福泉：全力真抓实干 创建小康学校">
+                                                        福泉：全力真抓实干 创建小康学校
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12647.html" target="_blank" title="都匀市双新村探索“双十星”管理模式，提升精神文明创建实效">
+                                                        都匀市双新村探索“双十星”管理模式，提升精神...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12606.html" target="_blank" title="都匀：军地携手推动社区精神文明建设">
+                                                        都匀：军地携手推动社区精神文明建设
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmcj/12593.html" target="_blank" title="都匀市：重视督查指导 深化“文明校园”创建">
+                                                        都匀市：重视督查指导 深化“文明校园”创建
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmcj/12574.html" target="_blank" title="独山启动国家森林城市创建和森林保护“六个严禁”工作">
+                                                        独山启动国家森林城市创建和森林保护“六个严禁...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12523.html" target="_blank" title="黔南州启动国家森林城市创建工作">
+                                                        黔南州启动国家森林城市创建工作
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                        <!-- 首页文明创建 end -->
+                                    </div>
+                                </td>
+                                <td width="10"></td>
+                                <td class="block">
+                                    <div class="block-t zyfw">
+                                        <h2>志愿服务</h2>
+                                        <a target="_blank" href="http://wmw.qnz.com.cn/channels/zyff.html" class="more">
+                                            <img src="http://wmw.qnz.com.cn/images/more.png">
+                                        </a>
+                                    </div>
+                                    <div class="block-l">
+                                        <!-- 首页志愿服务 -->
+                                        <ul>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12604.html" target="_blank" title="龙里：谷脚萤火虫志愿服务队热心环境卫生整治">
+                                                        龙里：谷脚萤火虫志愿服务队热心环境卫生整治
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12511.html" target="_blank" title="共青团三都县委组织青年志愿者和群众开展环境卫生整治活动">
+                                                        共青团三都县委组织青年志愿者和群众开展环境卫...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/zyff/12484.html" target="_blank" title="入冬天渐寒  关怀暖人心——计生协情系计生特殊困难家庭">
+                                                        入冬天渐寒关怀暖人心——计生协情系计生特殊...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12402.html" target="_blank" title="福泉：青年志愿者体验环卫 感受平凡中的奉献">
+                                                        福泉：青年志愿者体验环卫 感受平凡中的奉献
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12407.html" target="_blank" title="龙里“三个传递”掀起“健康快递”行动高潮">
+                                                        龙里“三个传递”掀起“健康快递”行动高潮
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/zyff/12486.html" target="_blank" title="三都农商银行在水族“端”节开展金融服务">
+                                                        三都农商银行在水族“端”节开展金融服务
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                        <!-- 首页志愿服务 end -->
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="10"></td>
+                            </tr>
+                            <tr>
+                                <td class="block">
+                                    <div class="block-t ddmf">
+                                        <h2>道德模范</h2>
+                                        <a target="_blank" href="http://wmw.qnz.com.cn/channels/ddmf.html" class="more">
+                                            <img src="http://wmw.qnz.com.cn/images/more.png">
+                                        </a>
+                                    </div>
+                                    <div class="block-l">
+                                        <!-- 首页道德模范 -->
+                                        <ul>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12457.html" target="_blank" title="黔南州表彰省十运会获奖运动员和教练员">
+                                                        黔南州表彰省十运会获奖运动员和教练员
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12458.html" target="_blank" title="惠水县隆重表彰“最美环卫工人”">
+                                                        惠水县隆重表彰“最美环卫工人”
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12278.html" target="_blank" title="“时代楷模”天眼巨匠南仁东塑像落成暨“南仁东星”命名仪式在平塘县举行">
+                                                        “时代楷模”天眼巨匠南仁东塑像落成暨“南仁东...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/ddmf/11085.html" target="_blank" title="当好主人翁 建功新时代——黔南州举办庆祝“五一”国际劳动节表彰晚会">
+                                                        当好主人翁 建功新时代——黔南州举办庆祝“五...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/ddmf/11084.html" target="_blank" title="惠水县七名先进代表荣获黔南州“五一”劳动奖章（状）和工人先锋号受表彰">
+                                                        惠水县七名先进代表荣获黔南州“五一”劳动奖章...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/ddmf/11083.html" target="_blank" title="给留守儿童一个幸福的“家”——记全国五一劳动奖章获得者汪付珍">
+                                                        给留守儿童一个幸福的“家”——记全国五一劳动...
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                        <!-- 首页道德模范 end -->
+                                    </div>
+                                </td>
+                                <td width="10"></td>
+                                <td class="block">
+                                    <div class="block-t gzxx">
+                                        <h2>工作信息</h2>
+                                        <a target="_blank" href="http://wmw.qnz.com.cn/channels/gzxx.html" class="more">
+                                            <img src="http://wmw.qnz.com.cn/images/more.png">
+                                        </a>
+                                    </div>
+                                    <div class="block-l">
+                                        <!-- 首页工作信息 -->
+                                        <ul>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/gzxx/12591.html" target="_blank" title="都匀公路局开展2018年警示教育学习活动">
+                                                        都匀公路局开展2018年警示教育学习活动
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12545.html" target="_blank" title="黔南州召开迎接中央环保督察“回头看”工作动员部署会">
+                                                        黔南州召开迎接中央环保督察“回头看”工作动员...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12547.html" target="_blank" title="独山县“五个注重”顺利推进经济普查单位清查工作">
+                                                        独山县“五个注重”顺利推进经济普查单位清查工...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12524.html" target="_blank" title="生态环境部到独山督查水源地专项整治工作">
+                                                        生态环境部到独山督查水源地专项整治工作
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12512.html" target="_blank" title="都匀市容市貌整治攻坚战打响">
+                                                        都匀市容市貌整治攻坚战打响
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12514.html" target="_blank" title="乡镇环境整治的长顺路径">
+                                                        乡镇环境整治的长顺路径
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                        <!-- 首页工作信息 end -->
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="10"></td>
+                            </tr>
+                            <tr>
+                                <td class="block">
+                                    <div class="block-t wmdjr">
+                                        <h2>我们的节日</h2>
+                                        <a target="_blank" href="http://wmw.qnz.com.cn/channels/wmdjr.html" class="more">
+                                            <img src="http://wmw.qnz.com.cn/images/more.png">
+                                        </a>
+                                    </div>
+                                    <div class="block-l">
+                                        <!-- 首页我们的节日 -->
+                                        <ul>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12370.html" target="_blank" title="荔波县举行“扶贫日”系列活动">
+                                                        荔波县举行“扶贫日”系列活动
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12357.html" target="_blank" title="三都普安镇：重阳村里过重阳">
+                                                        三都普安镇：重阳村里过重阳
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12320.html" target="_blank" title="独山农商银行：“九九”重阳 情暖老人心">
+                                                        独山农商银行：“九九”重阳 情暖老人心
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12304.html" target="_blank" title="福泉市举行“我们的节日·重阳节”主题文化活动">
+                                                        福泉市举行“我们的节日&#183;重阳节”主题文化活动
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12291.html" target="_blank" title="都匀市民政局组织多部门深入村镇开展国际减灾日宣传活动">
+                                                        都匀市民政局组织多部门深入村镇开展国际减灾日...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12189.html" target="_blank" title="2018中国（都匀）青少年儿童电影艺术节·颁奖盛典在秦汉影视城举行">
+                                                        2018中国（都匀）青少年儿童电影艺术节&#183;颁奖盛...
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                        <!-- 首页我们的节日 end -->
+                                    </div>
+                                </td>
+                                <td width="10"></td>
+                                <td class="block">
+                                    <div class="block-t wcnrjy">
+                                        <h2>未成年教育</h2>
+                                        <a target="_blank" href="http://wmw.qnz.com.cn/channels/wcnrjy.html" class="more">
+                                            <img src="http://wmw.qnz.com.cn/images/more.png">
+                                        </a>
+                                    </div>
+                                    <div class="block-l">
+                                        <!-- 首页未成年人教育 -->
+                                        <ul>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12602.html" target="_blank" title="都匀十三小“首届运动会”绘校园文化展师生体魄">
+                                                        都匀十三小“首届运动会”绘校园文化展师生体魄
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wcnrjy/12573.html" target="_blank" title="都匀市凯口完小开展“三项活动”让师生感受宪法的尊严">
+                                                        都匀市凯口完小开展“三项活动”让师生感受宪法...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12510.html" target="_blank" title="都匀青少年乒乓球队斩获多项桂冠">
+                                                        都匀青少年乒乓球队斩获多项桂冠
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wcnrjy/12499.html" target="_blank" title="都匀市第八小学非遗技艺传承“抛花绣”亮相瑞士日内瓦工商大学">
+                                                        都匀市第八小学非遗技艺传承“抛花绣”亮相瑞士...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12406.html" target="_blank" title="三都“打黑除恶”宣传走进校园">
+                                                        三都“打黑除恶”宣传走进校园
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12387.html" target="_blank" title="福泉：高铁安全知识宣传走进民族校园">
+                                                        福泉：高铁安全知识宣传走进民族校园
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                        <!-- 首页未成年人教育 end -->
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td width="10"></td>
+                    <td width="250" valign="top">
+                        <div>
+                            <a target="_blank" href="http://qn.zygz.org.cn/">
+                                <img src="http://wmw.qnz.com.cn/images/zyy.jpg" alt="黔南志愿云" />
+                            </a>
+                        </div>
+                        <div style="margin-top:5px;margin-bottom:5px">
+                            <a target="_blank" href="http://www.qiannan.gov.cn/fzlm/zmhd/ldxx/12345sqlb/index.shtml">
+                                <img src="http://wmw.qnz.com.cn/images/12345.jpg" alt="12345多彩贵州文明行动" />
+                            </a>
+                        </div>
+                        <div class="block-r">
+                            <div class="block-r-t">
+                                <h2>黔南骄傲</h2>
+                                <a target="_blank" href="http://wmw.qnz.com.cn/channels/qnja.html" class="more">更多>></a>
+                            </div>
+                            <table border="0" cellspacing="0" cellpadding="0" style="padding: 0 5px;">
+                                <tr>
+                                    <td height="10"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" class="block-img">
+                                        <!-- 首页黔南骄傲图 -->
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td width="100%" style="text-align:center;padding-bottom:2px;">
+                                                        <table style="margin:3px;width:100%" cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody>
+                                                                
+                                                                    <tr>
+                                                                        <td colspan="2">
+                                                                            <div class="t">
+                                                                                <a href="http://wmw.qnz.com.cn/contents/qnja/11059.html" target="_blank" title="燕子岩村里的“领头雁”——记贵定县云雾镇燕子岩村党支部书记罗荣富">
+                                                                                    燕子岩村里的“领头雁”——记...
+                                                                                </a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="image" style="text-align:center" width="90">
+                                                                            <a href="http://wmw.qnz.com.cn/contents/qnja/11059.html" target="_blank" title="燕子岩村里的“领头雁”——记贵定县云雾镇燕子岩村党支部书记罗荣富">
+                                                                                <img src="http://wmw.qnz.com.cn/upload/images/2018/8/14931bf5972dc37a.jpg" border="0" width="80" height="60" class="pic" alt="燕子岩村里的“领头雁”——记贵定县云雾镇燕子岩村党支部书记罗荣富" align="absmiddle">
+                                                                            </a>
+                                                                        </td>
+                                                                        <td>
+                                                                            <div class="text">
+                                                                                开展思想扶贫，让我们村里的百姓思想转...
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- 首页黔南骄傲图 end -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="12"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!-- 首页黔南骄傲 -->
+                                        <ul>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/qnja/11059.html" target="_blank" title="燕子岩村里的“领头雁”——记贵定县云雾镇燕子岩村党支部书记罗荣富">
+                                                        燕子岩村里的“领头雁”——记...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/qnja/11058.html" target="_blank" title="“五心”诠释新时代最美政法干警">
+                                                        “五心”诠释新时代最美政法干...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/qnja/11057.html" target="_blank" title="独山：党员潘文春返乡壮产业 扶贫情更浓">
+                                                        独山：党员潘文春返乡壮产业 ...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/qnja/11056.html" target="_blank" title="以行动书写履职清单">
+                                                        以行动书写履职清单
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                        <!-- 首页黔南骄傲 end -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="12"></td>
+                                </tr>
+                            </table>
+                            <div class="block-r-t">
+                                <h2>道德讲堂</h2>
+                                <a target="_blank" href="http://wmw.qnz.com.cn/channels/ddjt.html" class="more">更多>></a>
+                            </div>
+                            <table border="0" cellspacing="0" cellpadding="0" style="padding: 0 5px;">
+                                <tr>
+                                    <td height="10"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!-- 首页道德讲堂 -->
+                                        <ul>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/ddjt/12590.html" target="_blank" title="“弘扬‘两路’精神  做新时代公路人”——都匀公路管理局开展第三期道德讲堂活动">
+                                                        “弘扬‘两路’精神做新时代...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/ddjt/11260.html" target="_blank" title="追忆革命史·点燃爱国情——都匀公路管理局举行第一期道德讲堂活动">
+                                                        追忆革命史&#183;点燃爱国情——都...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/ddjt/11259.html" target="_blank" title="都匀公路管理局开展道德讲堂活动 传承优秀家教家风">
+                                                        都匀公路管理局开展道德讲堂活...
+                                                    </a>
+                                                </li>
+                                            
+                                                <li>
+                                                    <a href="http://wmw.qnz.com.cn/contents/ddjt/11258.html" target="_blank" title="都匀公路局开展2017年读书活动暨第二期道德讲堂活动">
+                                                        都匀公路局开展2017年读书活动...
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                        <!-- 首页道德讲堂 end -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="12 "></td>
+                                </tr>
+                            </table>
+                            <div class="block-r-t ">
+                                <h2>机关工作</h2>
+                                <a target="_blank " href="http://wmw.qnz.com.cn/channels/jggz.html " class="more ">更多>></a>
+                            </div>
+                            <table border="0 " cellspacing="0 " cellpadding="0 " style="padding: 0 5px; ">
+                                <tr>
+                                    <td height="10 "></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <!-- 首页机关党建 -->
+                                        <ul>
+                                            <ul>
+                                                
+                                                    <li>
+                                                        <a href="http://wmw.qnz.com.cn/contents/jggz/11641.html" target="_blank" title="州委宣传部党支部庆祝“七·一”建党系列活动多姿多彩">
+                                                            州委宣传部党支部庆祝“七...
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li>
+                                                        <a href="http://wmw.qnz.com.cn/contents/jggz/11640.html" target="_blank" title="州委宣传部党支部到荔波县佳荣镇开展“七·一”慰问和宣讲活动">
+                                                            州委宣传部党支部到荔波县...
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li>
+                                                        <a href="http://wmw.qnz.com.cn/contents/jggz/11638.html" target="_blank" title="州委宣传部党支部积极助力帮扶村乡镇环境整治及思想扶贫工作">
+                                                            州委宣传部党支部积极助力...
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li>
+                                                        <a href="http://wmw.qnz.com.cn/contents/jggz/11639.html" target="_blank" title="州委宣传部党支部组织参观全省扶贫领域形式主义官僚主义专题警示教育专题展">
+                                                            州委宣传部党支部组织参观...
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li>
+                                                        <a href="http://wmw.qnz.com.cn/contents/jggz/11637.html" target="_blank" title="州委宣传部党支部助力帮扶村村庄环境卫生整治">
+                                                            州委宣传部党支部助力帮扶...
+                                                        </a>
+                                                    </li>
+                                                
+                                            </ul>
+                                        </ul>
+                                        <!-- 首页机关党建 end -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="12 "></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="blank10 ">
+            </div>
+            <table border="0 " cellspacing="0 " cellpadding="0 " class="row4 ">
+                <tr>
+                    <td height="49 ">
+                        <div class="ltitle ">
+                            <a target="_blank " href="http://wmw.qnz.com.cn/channels/tp.html ">图片</a> |
+                            <a target="_blank " href="http://wmw.qnz.com.cn/channels/sp.html ">视频</a> |
+                            <a target="_blank " href="http://wmw.qnz.com.cn/channels/zl.html ">资料</a>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td height="5 "></td>
+                </tr>
+                <tr>
+
+                    <td align="center " width="960 ">
+                        <div id="Roll20150920105443 " style="overflow:hidden;height:160px;width:960px;">
+                            
+<div id=Marquee_1_1 style="OVERFLOW: hidden; width:960px; height:160px;"><table cellpadding=0 align=left border=0 cellspace=0><tr><td id=Marquee_1_2 nowrap="nowrap">
+                                <!-- 首页图片滚动 -->
+                                <table cellpadding="0 " cellspacing="0 " border="0 ">
+                                    <tr>
+                                        <td id="">
+                                            <table width="100% " height="100% " border="0 ">
+                                                <tr>
+                                                    
+                                                        <td style="text-align:center ">
+                                                            <div class="img">
+                                                                <a href="http://wmw.qnz.com.cn/contents/wmbb/12647.html" target="_blank " title="都匀市双新村探索“双十星”管理模式，提升精神文明创建实效">
+                                                                    <img src="http://wmw.qnz.com.cn/upload/images/2018/11/3c7676621271c84.jpg" border="0" alt="都匀市双新村探索“双十星”管理模式，提升精神文明创建实效" width="180" height="120" style="border:1px solid #eee;" align="absmiddle">
+                                                                </a>
+                                                            </div>
+                                                            <div class="t">
+                                                                <a href="http://wmw.qnz.com.cn/contents/wmbb/12647.html" target="_blank " title="都匀市双新村探索“双十星”管理模式，提升精神文明创建实效">
+                                                                    都匀市双新村探索“双十星...
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    
+                                                        <td style="text-align:center ">
+                                                            <div class="img">
+                                                                <a href="http://wmw.qnz.com.cn/contents/wmbb/12645.html" target="_blank " title="瓮安县持续“高压”推进环境整治 助力“文明在行动”">
+                                                                    <img src="http://wmw.qnz.com.cn/upload/images/2018/11/c5f8b0fa810fe01a.jpg" border="0" alt="瓮安县持续“高压”推进环境整治 助力“文明在行动”" width="180" height="120" style="border:1px solid #eee;" align="absmiddle">
+                                                                </a>
+                                                            </div>
+                                                            <div class="t">
+                                                                <a href="http://wmw.qnz.com.cn/contents/wmbb/12645.html" target="_blank " title="瓮安县持续“高压”推进环境整治 助力“文明在行动”">
+                                                                    瓮安县持续“高压”推进环...
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    
+                                                        <td style="text-align:center ">
+                                                            <div class="img">
+                                                                <a href="http://wmw.qnz.com.cn/contents/wmbb/12634.html" target="_blank " title="都匀“献血达人”徐培华60岁生日无偿献血让献血生涯完美谢幕">
+                                                                    <img src="http://wmw.qnz.com.cn/upload/images/2018/11/9a96b08bc2519ed8.jpg" border="0" alt="都匀“献血达人”徐培华60岁生日无偿献血让献血生涯完美谢幕" width="180" height="120" style="border:1px solid #eee;" align="absmiddle">
+                                                                </a>
+                                                            </div>
+                                                            <div class="t">
+                                                                <a href="http://wmw.qnz.com.cn/contents/wmbb/12634.html" target="_blank " title="都匀“献血达人”徐培华60岁生日无偿献血让献血生涯完美谢幕">
+                                                                    都匀“献血达人”徐培华60...
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    
+                                                        <td style="text-align:center ">
+                                                            <div class="img">
+                                                                <a href="http://wmw.qnz.com.cn/contents/wmbb/12632.html" target="_blank " title="三都普安镇“三部曲”让农村环境更加亮丽">
+                                                                    <img src="http://wmw.qnz.com.cn/upload/images/2018/11/2aa2eecd79b20ed4.jpg" border="0" alt="三都普安镇“三部曲”让农村环境更加亮丽" width="180" height="120" style="border:1px solid #eee;" align="absmiddle">
+                                                                </a>
+                                                            </div>
+                                                            <div class="t">
+                                                                <a href="http://wmw.qnz.com.cn/contents/wmbb/12632.html" target="_blank " title="三都普安镇“三部曲”让农村环境更加亮丽">
+                                                                    三都普安镇“三部曲”让农...
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    
+                                                        <td style="text-align:center ">
+                                                            <div class="img">
+                                                                <a href="http://wmw.qnz.com.cn/contents/wmbb/12617.html" target="_blank " title="三都完善停车位规划助力乡村环境综合整治">
+                                                                    <img src="http://wmw.qnz.com.cn/upload/images/2018/11/29a90ed06e04c341.jpg" border="0" alt="三都完善停车位规划助力乡村环境综合整治" width="180" height="120" style="border:1px solid #eee;" align="absmiddle">
+                                                                </a>
+                                                            </div>
+                                                            <div class="t">
+                                                                <a href="http://wmw.qnz.com.cn/contents/wmbb/12617.html" target="_blank " title="三都完善停车位规划助力乡村环境综合整治">
+                                                                    三都完善停车位规划助力乡...
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    
+                                                        <td style="text-align:center ">
+                                                            <div class="img">
+                                                                <a href="http://wmw.qnz.com.cn/contents/wmbb/12595.html" target="_blank " title="独山240户易地移民搬迁对象喜获新房">
+                                                                    <img src="http://wmw.qnz.com.cn/upload/images/2018/11/ce19f4f076740acb.jpg" border="0" alt="独山240户易地移民搬迁对象喜获新房" width="180" height="120" style="border:1px solid #eee;" align="absmiddle">
+                                                                </a>
+                                                            </div>
+                                                            <div class="t">
+                                                                <a href="http://wmw.qnz.com.cn/contents/wmbb/12595.html" target="_blank " title="独山240户易地移民搬迁对象喜获新房">
+                                                                    独山240户易地移民搬迁对...
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- 首页图片滚动 end -->
+                            </td><td id=Marquee_1_3 nowrap="nowrap"></td></tr></table></div>
+                        </div>
+                    </td>
+                    <!-- 首页图片滚动 end -->
+                </tr>
+            </table>
+            <table align="center " border="0 " cellpadding="0 " cellspacing="0 " width="100% ">
+                <tbody>
+                    <tr>
+                        <td height="10 "></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table border="0 " cellspacing="0 " cellpadding="0 " class="row5 ">
+                <tbody>
+                    <tr>
+                        <td class="title_bg ">
+                            <h2>友情链接</h2>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- 友情链接 -->
+                            <a href="http://gz.wenming.cn/ " target="_blank ">贵州文明网</a>
+
+                            <a href="http://www.gywmw.cn/ " target="_blank ">贵阳市文明网</a>
+
+                            <a href="http://www.trwmb.cn/ " target="_blank ">铜仁文明网</a>
+
+                            <a href="http://zy.wenming.cn/ " target="_blank ">遵义市文明网</a>
+
+                            <a href="http://gzbj.wenming.cn/ " target="_blank ">毕节地区文明网</a>
+
+                            <a href="http://gzkl.wenming.cn " target="_blank ">凯里文明网</a>
+
+                            <a href="http://www.qnz.com.cn " target="_blank ">黔南热线</a>
+                            <!-- 友情链接 end-->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 底部通用 -->
+        
+<table align="center " border="0 " cellpadding="0 " cellspacing="0 " width="100% ">    <tbody>
+        <tr>
+            <td height="10 "></td>
+        </tr>
+    </tbody>
+</table>
+<table bgcolor="#204055 " border="0 " cellpadding="0 " cellspacing="0 " class="qnwcss " height="36 " width="100% ">
+    <tbody>
+        <tr>
+            <td height="36 ">
+                <table align="center " border="0 " cellpadding="0 " cellspacing="0 " class="wrap " width="1000 ">
+                    <tbody>
+                        <tr>
+                            <td height="28 " class="wrap ">
+                                <div align="center " class="font ">
+                                    <span class="font14 ">
+                                        <a href="http://www.qnz.com.cn/about/default-18.shtml " target="_blank ">
+                                            <font color="#FFFFFF ">黔南州简介</font>
+                                        </a>
+                                        <span class="bs ">&nbsp; | &nbsp;</span>
+                                        <a href="http://www.qnz.com.cn/about/default-7.shtml " target="_blank ">
+                                            <font color="#FFFFFF ">黔南热线简介</font>
+                                        </a>
+                                        <span class="bs ">&nbsp; | &nbsp;</span>
+                                        <a href="http://www.qnz.com.cn/about/default-16.shtml " target="_blank ">
+                                            <font color="#FFFFFF ">联系方式</font>
+                                        </a>
+                                        <span class="bs ">&nbsp; | &nbsp;</span>
+                                        <a href="http://www.qnz.com.cn/adqnz/gg/ " target="_blank ">
+                                            <font color="#FFFFFF ">广告报价</font>
+                                        </a>
+                                        <span class="bs ">&nbsp; | &nbsp;</span>
+                                        <a href="http://www.qnz.com.cn/about/default-11.shtml " target="_blank ">
+                                            <font color="#FFFFFF ">经营许可</font>
+                                        </a>
+                                        <span class="bs ">&nbsp; | &nbsp;</span>
+                                        <a href="http://www.qnz.com.cn/zjxt/ " target="_blank ">
+                                            <font color="#FFFFFF ">证件查询</font>
+                                        </a>
+                                        </font>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table align="center " border="0 " cellpadding="0 " cellspacing="0 " width="100% ">
+    <tbody>
+        <tr>
+            <td height="10 "></td>
+        </tr>
+    </tbody>
+</table>
+<table align="center " border="0 " cellpadding="0 " cellspacing="0 " class="wrap " width="1000 ">
+    <tbody>
+        <tr>
+            <td class="font12 hg " height="62 ">
+                <table align="center " border="0 " cellpadding="0 " cellspacing="0 " class="wrap " height="14
+                                                    " width="90% ">
+                    <tbody>
+                        <tr>
+                            <td height="12 " width="33% ">
+                                <div align="center ">
+                                    <a href="http://www.gzaic315.gov.cn/ei/Ei!certificate.action?id=4028808a4ae9e9b1014b2a9d8a0b0007" target="_blank " style="border:0; ">
+                                        <img src="" style="border:0; ">
+                                    </a>
+                                </div>
+                            </td>
+                            <td width="33% ">
+                                <div align="center ">
+                                    <a href="http://www.bj.cyberpolice.cn/index.do " target="_blank ">
+                                        <img border="0 " height="45 " src="http://www.qnz.com.cn/imgqnw/ga.gif
+                                                    " width="121 ">
+                                    </a>
+                                </div>
+                            </td>
+                            <td width="33% ">
+                                <div align="center ">
+                                    <a href="http://www.12377.cn/ " target="_blank ">
+                                        <img border="0 " height="47 " src="http://www.qnz.com.cn/imgqnw/jb.gif
+                                                    " width="106 ">
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table align="center " border="0 " cellpadding="0 " cellspacing="0 " class="wrap " height="81 " width="1000 ">
+    <tbody>
+        <tr>
+            <td class="font12 hg " height="62 ">
+                <div align="center " class="font121 ">主办： &nbsp; 中共黔南州委宣传部 黔南州文明办·
+                    <a href="http://www.qnz.com.cn/ " title="黔南热线 ">黔南热线</a> 版权所有
+                    <br> 电信与信息服务业务经营许可证号: 黔B2-20060011 网络经营登记证登记编号：5227001200985-1 备案序号:黔ICP备11003211号
+                    <br> Copyright(C) 2005 QNZ.COM.CN All rights reserved.
+                    <br>
+                    <script src="http://count.knowsky.com/count1/count.asp?id=90412&sx=1&ys=20 " language="JavaScript" charset="gb2312 "></script>
+                    <br>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table align="center " border="0 " cellpadding="0 " cellspacing="0 " class="wrap " width="1000 ">
+    <tbody>
+        <tr>
+            <td align="center " height="22 " valign="middle " width="331 ">&nbsp;</td>
+            <td align="center " valign="middle " width="127 ">
+                <div align="center ">
+                    <span class="font121 ">
+                        <img height="15 " src="http://www.qnz.com.cn/UploadFiles/2014-11/admin/2014110711403175021.gif" width="90 ">
+                    </span>
+                </div>
+            </td>
+            <td align="center " valign="middle " width="194 ">
+                <span class="font121 ">
+                    <a href="http://webscan.360.cn/index/checkwebsite/url/qnz.com.cn " target="_blank ">
+                        <font color="#666666 ">360网站安全检测平台</font>
+                    </a>
+                </span>
+                <a href="http://webscan.360.cn/index/checkwebsite/url/qnz.com.cn ">
+                    <img border="0 " height="2 " src="http://img.webscan.360.cn/status/pai/hash/94f12bc036797866e91563ca121c4692" width="2 ">
+                </a>
+            </td>
+            <td align="center " valign="middle " width="348 ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+<table align="center " border="0 " cellpadding="0 " cellspacing="0 " width="100% ">
+    <tbody>
+        <tr>
+            <td height="10 "></td>
+        </tr>
+    </tbody>
+</table>
+
+        <!--底部通用 end-->
+        <!-- <script type="text/javascript " src="js/jquery.min.js "></script> -->
+        <script src="js/jquery.hiSlider.min.js "></script>
+        <script>
+            $('.hiSlider1').hiSlider();
+        </script>
+    </div>
+    <!-- pc end -->
+
+    <div id="phone">
+        <!-- 手机顶部通用 -->
+        
+<style>    
+    #top_ty {
+        width: 100%;
+        height: 34px;
+        background: #fafafa;
+        line-height: 34px;
+        border-bottom: 1px solid #eee;
+        overflow: hidden;
+    }
+
+    #top_ty #top_ty_main {
+        /* width: 60%; */
+        margin: 0 auto
+    }
+
+    #top_ty ul {
+        padding-left: 0;
+        overflow: hidden;
+    }
+
+    #top_ty ul li {
+        float: left;
+        margin-right: 16px;
+        list-style: none;
+    }
+
+    #top_ty ul li.top_logo {
+        margin-right: 20px;
+    }
+
+    #top_ty ul li a {
+        color: #333;
+        font-size: 14px;
+    }
+
+    .clearfix {
+        *zoom: 1;
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+</style>
+<div id="top_ty">
+    <div id="top_ty_main" class="am-container">
+        <ul>
+            <li class="top_logo">
+                <a href="http://www.qnz.com.cn">
+                    <img src="http://cdn.special.qnz.com.cn/images/logoqnz.png">
+                </a>
+            </li>
+            <li>
+                <a href="http://www.qnz.com.cn" target="_parent">首 页</a>
+            </li>
+            <li>
+                <a href="http://www.qnz.com.cn/news/" target="_blank">黔南新闻</a>
+            </li>
+            <li>
+                <a href="http://people.qnz.com.cn" target="_blank">百姓呼声</a>
+            </li>
+            <li>
+                <a href="http://qnly.qnz.com.cn/" target="_blank">黔南旅游</a>
+            </li>
+            <li>
+                <a href="http://rwft.qnz.com.cn" target="_blank">人物访谈</a>
+            </li>
+            <li>
+                <a href="/a/204.html" target="_blank">微讲堂</a>
+            </li>
+            <li>
+                <a href="http://special.qnz.com.cn" target="_blank">专题</a>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+</div>
+<header class="clearfix">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="http://wmw.qnz.com.cn">黔南文明网</a>
+        <div id="mobile-menu" class="mobile-nav hide-nav">
+            <ul>
+                
+                        <li>
+                            <a href="http://wmw.qnz.com.cn/channels/wmcj.html">文明创建</a>
+                        </li>
+                    
+                        <li>
+                            <a href="http://wmw.qnz.com.cn/channels/wmbb.html">文明播报</a>
+                        </li>
+                    
+                        <li>
+                            <a href="http://wmw.qnz.com.cn/channels/dcgzwmxd.html">多彩贵州文明行动</a>
+                        </li>
+                    
+                        <li>
+                            <a href="http://wmw.qnz.com.cn/channels/sznjmlxc.html">四在农家美丽乡村</a>
+                        </li>
+                    
+                        <li>
+                            <a href="http://wmw.qnz.com.cn/channels/qnja.html">黔南骄傲</a>
+                        </li>
+                    
+                        <li>
+                            <a href="http://wmw.qnz.com.cn/channels/ddmf.html">道德模范</a>
+                        </li>
+                    
+                        <li>
+                            <a href="http://wmw.qnz.com.cn/channels/zyff.html">志愿服务</a>
+                        </li>
+                    
+                        <li>
+                            <a href="http://wmw.qnz.com.cn/channels/wmdjr.html">我们的节日</a>
+                        </li>
+                    
+                        <li>
+                            <a href="http://wmw.qnz.com.cn/channels/ddjt.html">道德讲堂</a>
+                        </li>
+                    
+                        <li>
+                            <a href="http://wmw.qnz.com.cn/channels/gzxx.html">工作信息</a>
+                        </li>
+                    
+                        <li>
+                            <a href="http://wmw.qnz.com.cn/channels/jwmsxf.html">讲文明树新风</a>
+                        </li>
+                    
+                        <li>
+                            <a href="http://wmw.qnz.com.cn/channels/wcnrjy.html">未成年人教育</a>
+                        </li>
+                    
+                        <li>
+                            <a href="http://wmw.qnz.com.cn/channels/jggz.html">机关工作</a>
+                        </li>
+                    
+            </ul>
+        </div>
+        <!--手机导航栏侧滑-->
+        <div id="cd">菜单</div>
+        <div class="navbar-toggler">
+            <a class="mobile-nav-taggle" id="mobile-nav-taggle">
+                <span class="navbar-toggler-icon"></span>
+            </a>
+        </div>
+    </nav>
+</header>
+
+        <!-- 手机顶部通用end -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col" id="slide">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <!-- 手机幻灯 -->
+                            
+                                <div class="carousel-item active">
+                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12647.html">
+                                        <img class="d-block w-100" src="http://wmw.qnz.com.cn/upload/images/2018/11/3c7676621271c84.jpg">
+                                    </a>
+                                </div>
+                            
+                            
+                                <div class="carousel-item">
+                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12645.html">
+                                        <img class="d-block w-100" src="http://wmw.qnz.com.cn/upload/images/2018/11/c5f8b0fa810fe01a.jpg">
+                                    </a>
+                                </div>
+                            
+                                <div class="carousel-item">
+                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12634.html">
+                                        <img class="d-block w-100" src="http://wmw.qnz.com.cn/upload/images/2018/11/9a96b08bc2519ed8.jpg">
+                                    </a>
+                                </div>
+                            
+                                <div class="carousel-item">
+                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12632.html">
+                                        <img class="d-block w-100" src="http://wmw.qnz.com.cn/upload/images/2018/11/2aa2eecd79b20ed4.jpg">
+                                    </a>
+                                </div>
+                            
+                                <div class="carousel-item">
+                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12617.html">
+                                        <img class="d-block w-100" src="http://wmw.qnz.com.cn/upload/images/2018/11/29a90ed06e04c341.jpg">
+                                    </a>
+                                </div>
+                            
+                            <!-- 手机幻灯 end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="icon">
+                <div class="col-3">
+                    <a href="http://wmw.qnz.com.cn/channels/wmbb.html">
+                        <i class="zi zi_bzh zi_3x" style="color:#b60808">
+                        </i>
+                        <p>文明播报</p>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="http://wmw.qnz.com.cn/channels/gzxx.html">
+                        <i class="zi zi_ckhf zi_3x" style="color:#b60808">
+                        </i>
+                        <p>工作信息</p>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="http://wmw.qnz.com.cn/channels/sznjmlxc.html">
+                        <i class="zi zi_ds zi_3x" style="color:#b60808">
+                        </i>
+                        <p>四在农家</p>
+                    </a>
+                </div>
+                <div class="col-3">
+                    <a href="http://wmw.qnz.com.cn/channels/jggz.html">
+                        <i class="zi zi_fileWord zi_3x" style="color:#b60808">
+                        </i>
+                        <p>机关工作</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" id="news1">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">文明播报</a>
+                        </li>
+                        <li class="nav-item" style="margin-right:auto;">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">文件公告</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">more+</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <ul class="list-group">
+                                <!-- 手机文明播报 -->
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12647.html" target="_blank" title="都匀市双新村探索“双十星”管理模式，提升精神文明创建实效">都匀市双新村探索“双十星”管理模式，提升精神文明创建实效</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12645.html" target="_blank" title="瓮安县持续“高压”推进环境整治 助力“文明在行动”">瓮安县持续“高压”推进环境整治 助力“文明在行动”</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12644.html" target="_blank" title="龙里县9家商户被评为“放心消费示范单位”">龙里县9家商户被评为“放心消费示范单位”</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12643.html" target="_blank" title="独山240户易地移民搬迁对象喜获新房">独山240户易地移民搬迁对象喜获新房</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12642.html" target="_blank" title="惠水：幸福社区里的幸福故事">惠水：幸福社区里的幸福故事</a>
+                                    </li>
+                                
+                                <!-- 手机文明播报 end -->
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <ul class="list-group">
+                                <!-- 手机文件公告 -->
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/zl/11548.html" target="_blank" title="关于对黔南州2016—2017年度拟命名表彰文明单位、文明乡镇、文明村、文明校园、文明家庭的公示">关于对黔南州2016—2017年度拟命名表彰文明单位、文明乡镇、文明村、文明校园、文明家庭的公示</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/zl/11547.html" target="_blank" title="文明类别测评体系">文明类别测评体系</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/zl/11546.html" target="_blank" title="关于开展2016-2017年度州级文明单位、文明村镇、文明家庭、文明校园申报工作的通知">关于开展2016-2017年度州级文明单位、文明村镇、文明家庭、文明校园申报工作的通知</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/zl/11544.html" target="_blank" title="贵州省文明单位测评体系操作手册">贵州省文明单位测评体系操作手册</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/zl/11545.html" target="_blank" title="关于转发《关于评选表彰全省文明城市、文明村镇、文明单位、文明家庭、文明校园的通知》的通知">关于转发《关于评选表彰全省文明城市、文明村镇、文明单位、文明家庭、文明校园的通知》的通知</a>
+                                    </li>
+                                
+                                <!-- 手机文件公告 end -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-group" role="group1" id="btn1">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                    <i class="zi zi_plus inverted"></i> 志愿服务</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
+                    <i class="zi zi_plus inverted"></i> 道德模范</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">
+                    <i class="zi zi_plus inverted"></i> 黔南骄傲</button>
+            </div>
+            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">志愿服务</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="list-group list-group-flush">
+                                <!-- 手机志愿服务 -->
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12604.html" target="_blank" title="龙里：谷脚萤火虫志愿服务队热心环境卫生整治">龙里：谷脚萤火虫志愿服务队热心环境卫生整治</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12511.html" target="_blank" title="共青团三都县委组织青年志愿者和群众开展环境卫生整治活动">共青团三都县委组织青年志愿者和群众开展环境卫生整治活动</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/zyff/12484.html" target="_blank" title="入冬天渐寒  关怀暖人心——计生协情系计生特殊困难家庭">入冬天渐寒  关怀暖人心——计生协情系计生特殊困难家庭</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12402.html" target="_blank" title="福泉：青年志愿者体验环卫 感受平凡中的奉献">福泉：青年志愿者体验环卫 感受平凡中的奉献</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12407.html" target="_blank" title="龙里“三个传递”掀起“健康快递”行动高潮">龙里“三个传递”掀起“健康快递”行动高潮</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/zyff/12486.html" target="_blank" title="三都农商银行在水族“端”节开展金融服务">三都农商银行在水族“端”节开展金融服务</a>
+                                    </li>
+                                
+                                <!-- 手机志愿服务 end -->
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                            <a class="btn btn-primary" href="http://wmw.qnz.com.cn/channels/zyff.html">查看更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">道德模范</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="list-group list-group-flush">
+                                <!-- 手机道德模范 -->
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12457.html" target="_blank" title="黔南州表彰省十运会获奖运动员和教练员">黔南州表彰省十运会获奖运动员和教练员</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12458.html" target="_blank" title="惠水县隆重表彰“最美环卫工人”">惠水县隆重表彰“最美环卫工人”</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12278.html" target="_blank" title="“时代楷模”天眼巨匠南仁东塑像落成暨“南仁东星”命名仪式在平塘县举行">“时代楷模”天眼巨匠南仁东塑像落成暨“南仁东星”命名仪式在平塘县举行</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/ddmf/11085.html" target="_blank" title="当好主人翁 建功新时代——黔南州举办庆祝“五一”国际劳动节表彰晚会">当好主人翁 建功新时代——黔南州举办庆祝“五一”国际劳动节表彰晚会</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/ddmf/11084.html" target="_blank" title="惠水县七名先进代表荣获黔南州“五一”劳动奖章（状）和工人先锋号受表彰">惠水县七名先进代表荣获黔南州“五一”劳动奖章（状）和工人先锋号受表彰</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/ddmf/11083.html" target="_blank" title="给留守儿童一个幸福的“家”——记全国五一劳动奖章获得者汪付珍">给留守儿童一个幸福的“家”——记全国五一劳动奖章获得者汪付珍</a>
+                                    </li>
+                                
+                                <!-- 手机道德模范 end -->
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                            <a class="btn btn-primary" href="http://wmw.qnz.com.cn/channels/ddmf.html">查看更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">黔南骄傲</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="list-group list-group-flush">
+                                <!-- 手机黔南骄傲 -->
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/qnja/11059.html" target="_blank" title="燕子岩村里的“领头雁”——记贵定县云雾镇燕子岩村党支部书记罗荣富">燕子岩村里的“领头雁”——记贵定县云雾镇燕子岩村党支部书记罗荣富</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/qnja/11058.html" target="_blank" title="“五心”诠释新时代最美政法干警">“五心”诠释新时代最美政法干警</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/qnja/11057.html" target="_blank" title="独山：党员潘文春返乡壮产业 扶贫情更浓">独山：党员潘文春返乡壮产业 扶贫情更浓</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/qnja/11056.html" target="_blank" title="以行动书写履职清单">以行动书写履职清单</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/qnja/11055.html" target="_blank" title="维稳责任重如山——记都匀市特巡警大队大队长王焱刚">维稳责任重如山——记都匀市特巡警大队大队长王焱刚</a>
+                                    </li>
+                                
+                                    <li class="list-group-item">
+                                        <a href="http://wmw.qnz.com.cn/contents/qnja/11054.html" target="_blank" title="因你的文艺梦 黔南更出彩——记黔南州文广新局副局长汪洋">因你的文艺梦 黔南更出彩——记黔南州文广新局副局长汪洋</a>
+                                    </li>
+                                
+                                <!-- 手机黔南骄傲 end-->
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                            <a class="btn btn-primary" href="http://wmw.qnz.com.cn/channels/qnja.html">查看更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" id="news2">
+                    <div class="card">
+                        <img class="card-img-top" src="http://wmw.qnz.com.cn/images/wenming.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">文明在行动 满意在黔南</h5>
+                            <p class="card-text">“多彩贵州文明行动”整脏治乱专项行动正在黔南大地如火如荼地开展，持续为全域旅游营造优质的服务环境和良好的社会氛围发力。</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <!-- 手机文明行动 -->
+                            
+                                <li class="list-group-item">
+                                    <a href="http://wmw.qnz.com.cn/contents/dcgzwmxd/12646.html" target="_blank" title="瓮安县持续“高压”推进环境整治 助力“文明在行动”">瓮安县持续“高压”推进环境整治 助力“文明在行动”</a>
+                                </li>
+                            
+                                <li class="list-group-item">
+                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12603.html" target="_blank" title="瓮安：多措并举整治乡镇环境助力“文明在行动”">瓮安：多措并举整治乡镇环境助力“文明在行动”</a>
+                                </li>
+                            
+                                <li class="list-group-item">
+                                    <a href="http://wmw.qnz.com.cn/contents/wmbb/12493.html" target="_blank" title="瓮安：多部门联合开展环境综合整治行动">瓮安：多部门联合开展环境综合整治行动</a>
+                                </li>
+                            
+                                <li class="list-group-item">
+                                    <a href="http://wmw.qnz.com.cn/contents/dcgzwmxd/12478.html" target="_blank" title="荔波县公安局网安大队开展“多彩贵州文明行动”环境卫生大清扫活动">荔波县公安局网安大队开展“多彩贵州文明行动”环境卫生大清扫活动</a>
+                                </li>
+                            
+                            <!-- 手机文明行动 end -->
+                        </ul>
+                        <div class="card-body">
+                            <a href="http://wmw.qnz.com.cn/channels/dcgzwmxd.html" class="card-link">更多内容</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                <a>乡村环境整治 建设美丽黔南</a>
+                            </h6>
+                            <a href="http://wmw.qnz.com.cn/channels/jsmlqn.html" class="badge badge-primary float-right">专题</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                <a>黔南州脱贫攻坚群英谱</a>
+                            </h6>
+                            <a href="http://special.qnz.com.cn/a/335.html" class="badge badge-primary float-right">专题</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="photo">
+                <!-- 手机滚动图片 -->
+                
+                    <div>
+                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12647.html">
+                            <img src="http://wmw.qnz.com.cn/upload/images/2018/11/3c7676621271c84.jpg" class="rounded" alt="">
+                        </a>
+                        <p>都匀市双新村探索“双十星”管理模式，提升精神文明创建实效</p>
+                    </div>
+                
+                    <div>
+                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12645.html">
+                            <img src="http://wmw.qnz.com.cn/upload/images/2018/11/c5f8b0fa810fe01a.jpg" class="rounded" alt="">
+                        </a>
+                        <p>瓮安县持续“高压”推进环境整治 助力“文明在行动”</p>
+                    </div>
+                
+                    <div>
+                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12634.html">
+                            <img src="http://wmw.qnz.com.cn/upload/images/2018/11/9a96b08bc2519ed8.jpg" class="rounded" alt="">
+                        </a>
+                        <p>都匀“献血达人”徐培华60岁生日无偿献血让献血生涯完美谢幕</p>
+                    </div>
+                
+                    <div>
+                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12632.html">
+                            <img src="http://wmw.qnz.com.cn/upload/images/2018/11/2aa2eecd79b20ed4.jpg" class="rounded" alt="">
+                        </a>
+                        <p>三都普安镇“三部曲”让农村环境更加亮丽</p>
+                    </div>
+                
+                    <div>
+                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12617.html">
+                            <img src="http://wmw.qnz.com.cn/upload/images/2018/11/29a90ed06e04c341.jpg" class="rounded" alt="">
+                        </a>
+                        <p>三都完善停车位规划助力乡村环境综合整治</p>
+                    </div>
+                
+                    <div>
+                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12595.html">
+                            <img src="http://wmw.qnz.com.cn/upload/images/2018/11/ce19f4f076740acb.jpg" class="rounded" alt="">
+                        </a>
+                        <p>独山240户易地移民搬迁对象喜获新房</p>
+                    </div>
+                
+                    <div>
+                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12592.html">
+                            <img src="http://wmw.qnz.com.cn/upload/images/2018/11/c791f97d130e4704.jpg" class="rounded" alt="">
+                        </a>
+                        <p>罗甸县召开生态环境保护大会</p>
+                    </div>
+                
+                    <div>
+                        <a href="http://wmw.qnz.com.cn/contents/wmbb/12575.html">
+                            <img src="http://wmw.qnz.com.cn/upload/images/2018/11/f26e6d9503a0c94e.jpg" class="rounded" alt="">
+                        </a>
+                        <p>千名自驾车友相聚净心谷 共享音乐盛宴</p>
+                    </div>
+                
+                <!-- 手机滚动图片 end -->
+            </div>
+            <div class="btn-group dropup " id="link">
+                <button type="button" class="btn btn-secondary  dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    友情链接
+                </button>
+                <div class="dropdown-menu">
+                    <!-- 手机友情链接 -->
+                    <a class="dropdown-item" href="http://gz.wenming.cn/">贵州文明网</a>
+
+                    <a class="dropdown-item" href="http://www.gywmw.cn/">贵阳市文明网</a>
+
+                    <a class="dropdown-item" href="http://www.trwmb.cn/">铜仁文明网</a>
+
+                    <a class="dropdown-item" href="http://zy.wenming.cn/">遵义市文明网</a>
+
+                    <a class="dropdown-item" href="http://gzbj.wenming.cn/">毕节地区文明网</a>
+
+                    <a class="dropdown-item" href="http://gzkl.wenming.cn">凯里文明网</a>
+
+                    <a class="dropdown-item" href="http://www.qnz.com.cn">黔南热线</a>
+                    <!-- 手机友情链接 end -->
+                </div>
+            </div>
+        </div>
+        <!-- 底部通用 -->
+        
+<footer>    
+    <p>主办： 中共黔南州委宣传部 黔南州文明办</p>
+    <p>黔南热线技术支持 © 2007-2018 QNZ.COM.CN All rights reserved. </p>
+    <p>黔ICP备11003211号</p>
+</footer>
+
+<script src="http://wmw.qnz.com.cn/js/bootstrap.bundle.min.js"></script>
+<script src="http://wmw.qnz.com.cn/js/bootstrap.min.js"></script>
+<script src="http://wmw.qnz.com.cn/js/slick.min.js"></script>
+<script>
+    $(function () {
+        $('#photo').slick({
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: true,
+            infinite: false,
+        });
+    });
+</script>
+<script>
+    $("#mobile-nav-taggle").click(function () {
+        var mobileMenu = $("#mobile-menu");
+        if (mobileMenu.hasClass("show-nav")) {
+            setTimeout(function () {
+                mobileMenu.addClass("hide-nav").removeClass("show-nav");
+            }, 0)
+        } else {
+            setTimeout(function () {
+                mobileMenu.addClass("show-nav").removeClass("hide-nav");
+            }, 0)
+        }
+    })
+</script>
+
+        <!-- 底部通用 end -->
+    </div>
+    <!-- phone end -->
+
+    <script>
+        if (show == 3) {
+            $('#phone').remove()
+        } else {
+            $('#pc').remove()
+        }
+    </script>
+</body>
+
+</html>
+
+<script language=javascript>
+var Marquee_1_isMar = true;
+var Marquee_1_1=document.getElementById("Marquee_1_1");
+var Marquee_1_2=document.getElementById("Marquee_1_2");
+var Marquee_1_3=document.getElementById("Marquee_1_3");
+if (Marquee_1_1.style.pixelWidth){
+    Marquee_1_isMar = Marquee_1_2.offsetWidth > Marquee_1_1.style.pixelWidth;
+}else{
+    var Marquee_1_width = parseInt(Marquee_1_1.style.width.replace('%', '').replace('px', ''));
+    Marquee_1_isMar = Marquee_1_2.offsetWidth > Marquee_1_width;
+}
+if (Marquee_1_isMar){
+    function Marquee_1_function(){
+	    Marquee_1_3.innerHTML=Marquee_1_2.innerHTML;
+	    <!--if(Marquee_1_3.offsetLeft-Marquee_1_1.scrollLeft<=0)-->
+        if(Marquee_1_2.offsetWidth*2+1==Marquee_1_1.scrollLeft+Marquee_1_1.offsetWidth )
+		    Marquee_1_1.scrollLeft-=Marquee_1_2.offsetWidth;
+	    else{
+		    Marquee_1_1.scrollLeft++
+	    }
+    }
+    var Marquee_1_myMar=setInterval(Marquee_1_function,40);
+    Marquee_1_1.onmouseover=function() {clearInterval(Marquee_1_myMar)}
+    Marquee_1_1.onmouseout=function() {Marquee_1_myMar=setInterval(Marquee_1_function,40)}
+}
+</script>

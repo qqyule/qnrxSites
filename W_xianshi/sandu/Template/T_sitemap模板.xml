@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- XML文件需以utf-8编码-->
+<urlset>
+<!--必填标签--><stl:channels channelIndex="首页" totalNum="20" groupChannelNot="hidden">
+    <url>
+        <loc>{Channel.NavigationUrl}</loc>
+        <lastmod>2018-07-27</lastmod>
+        <priority>1.0</priority>
+    </url></stl:channels><stl:contents channelIndex="首页" totalNum="2000" scope="SelfAndChildren">
+    <url>
+        <loc>{content.NavigationUrl}</loc>
+        <lastmod>{content.AddDate}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url></stl:contents>
+</urlset>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{Content.Title}-{stl.SiteName}</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <stl:include file="@/include/head.html"></stl:include>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?0ca1dc46120bf60eae22257eeb06f3cf";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <!--[if lte IE 7]>
+    <p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，网站暂不支持。 请 <ahref="http://browsehappy.com/" target="_blank">升级浏览器</a>以获得更好的体验！</p>
+    <![endif]-->
+    <stl:include file="@/include/header.html"></stl:include>
+    <div class="am-container am-margin-top-sm">
+        <div class="am-g my-am-list">
+            <div class="am-u-sm-12">
+                <ol class="am-breadcrumb">
+                    当前位置：
+                    <li>
+                        <stl:location> >> </stl:location>
+                    </li>
+                </ol>
+                <div class="newstitles">
+                    <h2>{content.Title}</h2>
+                    <stl:if testType="Author" testOperate="NotEmpty">
+                        <span class="am-badge am-round">作者：{content.Author}</span>
+                    </stl:if>                   
+                    <span class="am-badge am-round">时间：{content.AddDate}</span>
+                    <stl:if testType="Source" testOperate="NotEmpty">
+                        <span class="am-badge am-round">来源：{content.Source}</span>
+                    </stl:if>
+                    
+                </div>
+                <div class="contents">
+                    <stl:content type="Content"></stl:content>
+                    <p>　　（编辑：{content.AddUserName}&nbsp; 审核编辑：{content.shbj}）</p>
+                </div>
+                <hr />
+                <div class="am-g next">
+                    <span class="am-u-sm-12 am-u-lg-12 am-text-sm">
+                        <stl:navigation emptyText="这是最新一篇文章" type="PreviousContent">
+                                上一篇：
+                                <stl:a></stl:a>
+                        </stl:navigation>
+                    </span>
+                    <span class="am-u-sm-12 am-u-lg-12 am-text-sm">
+                        <stl:navigation emptyText="这是最后一篇文章" type="NextContent">
+                                下一篇：
+                                <stl:a></stl:a>
+                        </stl:navigation>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <stl:include file="@/include/footer.html"></stl:include>
+</body>
+
+</html>

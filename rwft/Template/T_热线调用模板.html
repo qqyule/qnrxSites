@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  #rwft img{
+    width: 180px;
+    height: 100px;
+  }
+  #rwft div{
+    text-align: center
+  }
+  #rwft ul li{
+    list-style: none;
+  }
+  
+  #rwft a{
+	color: #333;
+    line-height: 20px;
+    font-size: 12px;
+    text-decoration: none;
+  }
+</style>
+
+<div id="rwft">
+  <div>
+	<stl:contents channelName="首页" scope="Children" totalNum="1" isImage="true" order="AddDate">
+    <a href="{content.NavigationUrl}" target="_blank">
+      <img src="{content.ImageUrl}" alt="{content.title}">
+    </a>
+    <p>
+      <a href="{content.NavigationUrl}" target="_blank" title="{content.title}"><stl:content type="Title" wordNum="20"></stl:content></a>
+    </p>
+	</stl:contents>
+  </div>
+  <ul>
+	<stl:contents channelName="首页" scope="Children" totalNum="2" startNum="2" order="AddDate">
+    <li>
+      <a href="{content.NavigationUrl}" target="_blank" title="{content.title}"><stl:content type="Title" wordNum="20"></stl:content></a>
+    </li>
+	</stl:contents>
+  </ul>
+</div>
+</body>
+</html>

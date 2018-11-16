@@ -1,0 +1,70 @@
+
+<!DOCTYPE html><html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我要投稿-{stl.SiteName}</title>
+    <stl:include file="@/include/head.html"></stl:include>
+    <style>
+        @media only screen and (min-width: 1025px) {
+            .am-with-topbar-fixed-top {
+                padding-top: 105px;
+            }
+        }
+
+        @media only screen and (max-width: 640px) {
+            .am-with-topbar-fixed-top {
+                padding-top: 80px;
+            }
+        }
+    </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?0ca1dc46120bf60eae22257eeb06f3cf";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <!--[if lte IE 7]>
+    <p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，网站暂不支持。 请 <ahref="http://browsehappy.com/" target="_blank">升级浏览器</a>以获得更好的体验！</p>
+    <![endif]-->
+    <stl:include file="@/include/header.html"></stl:include>
+
+    <div class="am-container">
+        <!-- 编者按 -->
+        <div class="am-g bz-wrap wytg">
+            <div class="bianzhe am-cf">
+                <p class="bz-tit">在您上传文章之前，请仔细阅读下列文字： </p>
+                <p class="bz-txt">无论您事实上是否在投稿之前认真阅读本文，只要您点击"提交"按扭并成功投稿，您的行为仍然表示您无条件接受了本投稿须知</p>
+                <p class="bz-txt tg-tit">尊敬的各位网友：</p>
+                <p class="bz-txt"><a href="http://www.qnz.com.cn" target="_balnk">黔南热线（www.qnz.com.cn）</a>是中共黔南州委宣传部和中共黔南州委外宣办主管下的黔南最大的一个门户网站，是展示和宣传黔南的一个重要窗口和平台。为了更好地服务于网民，全面整合新闻信息资源，欢迎网民踊跃来稿。 </p>
+                <p class="bz-txt">1、稿件确系本人原创作品，不得一稿多投。</p>
+                <p class="bz-txt">2、稿件力求简约、真实可信，以500字左右为宜，长文不超过2000字。（最好有图片或视频）</p>
+                <p class="bz-txt">3、请署真实姓名和联系方式。</p>
+                <p class="bz-txt tg-tit">二、稿件版权说明：</p>
+                <p class="bz-txt">1、作者应对所投稿件拥有合法著作权。</p>
+                <p class="bz-txt">2、作者向我网所投稿件一经投送，即表明作者已同意将该作品的专有使用权授予黔南热线，我网享有专有使用权的范围为世界范围及网络。</p>
+                <p class="bz-txt">3、作者一经投送作品，即视为其已同意并接受上述全部条款，不作任何保留。</p>
+                <p class="bz-txt tg-tit">三、投稿方式和注意事项： </p>
+                <p class="bz-txt">1、你可使用该投稿平台在线及时投稿或者将稿件发送至黔南热线新闻专用投稿邮箱qnrx999@163.com进行投稿。 </p>
+                <p class="bz-txt">2、编辑在收到稿件后会及时处理。若通知不予采用，或一周内未见采用，作者可另行处理此稿件。 </p>
+            </div>
+            <div class="discuss">
+                <stl:form title="我要投稿"></stl:form>
+            </div>
+            
+        </div>
+    </div>
+    <stl:include file="@/include/footer.html"></stl:include>
+</body>
+
+</html>

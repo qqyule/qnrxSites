@@ -1,0 +1,20 @@
+@charset "utf-8";
+ul.am-list{
+    padding: 2px 10px 0 18px;
+}
+.am-list li{
+    margin: 15px auto;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #bbb;
+}
+.am-list li .am-list-item-hd{
+    font-size: 15px;
+    margin-bottom: 4px;
+    display: inline-block;
+} 
+.am-list li .am-list-item-text{
+    color: #999;
+}
+.am-list-news-bd table{
+    margin: 0 auto;
+}

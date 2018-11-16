@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{Content.Title}-{stl.SiteName}</title>
+    <stl:include file="@/include/head.html"></stl:include>
+    <style>
+        @media only screen and (min-width: 1025px) {
+            .am-with-topbar-fixed-top {
+                padding-top: 105px;
+            }
+        }
+
+        @media only screen and (max-width: 640px) {
+            .am-with-topbar-fixed-top {d
+                padding-top: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+ <stl:include file="@/include/header.html"></stl:include>
+    <div class="am-container am-margin-top-sm">
+        <div class="am-g my-am-list">
+            <div class="am-u-sm-12 am-u-lg-9">
+                <ol class="am-breadcrumb">
+                    当前位置：
+                    <li>
+                       <stl:location> >> </stl:location>
+                    </li>
+                </ol>
+                <div class="newstitles">
+                        <h2>{content.Title}</h2>
+                        <stl:if testType="Author" testOperate="NotEmpty"><span class="am-badge am-round">
+                            作者：{content.Author}
+                        </span></stl:if>
+                        <span class="am-badge am-round">时间：{content.AddDate}</span>
+                        <stl:if testType="Source" testOperate="NotEmpty"><span class="am-badge am-round">
+                            来源：{content.Source}
+                        </span></stl:if>
+                    </div>
+                    <div class="contents">
+                        <stl:content type="Content"></stl:content>      
+                        <p>　　（编辑：{content.AddUserName}&nbsp; 审核编辑：{content.shbj}）</p>
+                    </div>
+                    <hr />
+                    <div class="am-g next">
+                        <span class="am-u-sm-12 am-u-lg-12 am-text-sm">
+                            <stl:navigation emptyText="这是最新一篇文章" type="PreviousContent">
+                                上一篇：
+                                <stl:a></stl:a>
+                            </stl:navigation>
+                        </span>
+                        <span class="am-u-sm-12 am-u-lg-12 am-text-sm">
+                            <stl:navigation emptyText="这是最后一篇文章" type="NextContent">
+                                下一篇：
+                                <stl:a></stl:a>
+                            </stl:navigation>
+                        </span>
+                    </div>
+            </div>
+            <div class="am-u-sm-12 am-u-md-3 am-u-lg-3 lm-gzdt com-mid-list">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_gzdt}" class="">
+                            <h2>{Channel.Title_gzdt}</h2>
+                            <span class="am-list-news-more am-fr">+更多+</span>
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="工作动态" totalNum="8" border="0">
+                                <li class="am-g am-list-item-dated">
+                                    <stl:a title="{Content.FullTitle}" target="_blank" class="am-list-item-hd "><stl:content type="Title"></stl:content></stl:a>
+                                    <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                </li>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-md-3 am-u-lg-3 jdkf com-mid-list">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="{Channel.NavigationUrl_jdkf}" class="">
+                            <h2>{Channel.Title_jdkf}</h2>
+                            <span class="am-list-news-more am-fr">+更多+</span>
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="jdkf" totalNum="8" border="0">
+                                <li class="am-g am-list-item-dated">
+                                    <stl:a title="{Content.FullTitle}" target="_blank" class="am-list-item-hd ">
+                                        <stl:content type="Title"></stl:content>
+                                    </stl:a>
+                                    <span class="am-list-date">[
+                                        <stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                </li>
+                            </stl:contents>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<stl:include file="@/include/footer.html"></stl:include>
+</body>
+
+</html>

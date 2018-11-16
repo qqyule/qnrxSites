@@ -1,0 +1,309 @@
+/* 公共头部 */
+.my-am-btn{
+    font-size: 1.4rem;
+    margin-top: .4rem;
+    width: 9.6rem;
+    border-radius: .4rem;
+}
+.my-am-dropdown-content{
+    min-width: 180px;
+    padding: 10px 5px;
+}
+.shouye{
+    color: #318ade !important;
+}
+.am-container {
+    max-width: 1200px
+}
+.fl{
+    float: left !important;
+}
+.footlink {
+    background: #318ade;
+    line-height: 3rem
+}
+.next span{
+
+}
+.next a {
+    color: #666;
+}
+.next a:hover{
+    color: #318ade;
+}
+.footlink ul{
+    padding: .4rem 0 .4rem 0;
+}
+.footlink a {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+@media only screen and (min-width:1025px) {
+    .ly .am-gallery-item img {
+        height: 136px
+    }
+    .am-gallery-bordered .am-gallery-item img {
+        width: 100%;
+        height: 120px
+    }
+    .am-slides img {
+        height: 282px
+    }
+    .padding-none {
+        padding: 0
+    }
+    .am-list>li>a {
+        /* padding: .5rem 0 */
+    }
+    .am-with-fixed-header {
+        padding-top: 0
+    }
+}
+
+.am-list a {}
+
+.am-list a:before {
+    content: "\f0da";
+    margin-right: .5rem
+}
+
+.gaikuang li {
+    margin-top: .2rem
+}
+
+[class*=am-align-] {
+    margin-bottom: .2rem
+}
+
+.menu-bars>a {
+    color: #eee
+}
+
+.am-topbar .am-text-ir {
+    display: block;
+    margin-right: 10px;
+    height: 50px;
+    width: 125px;
+    background: url(../images/lxsd.png) no-repeat left center;
+    -webkit-background-size: 125px 24px;
+    background-size: 125px 24px
+}
+
+.link {
+    border-radius: 5px;
+    /* border: 1px solid #efefef; */
+    /* background: #f5f5f5 */
+}
+
+.link1 {
+    border-bottom: 1px dotted #ccc
+}
+
+a.red {
+    color: red
+}
+
+.newstitles {
+    margin: 20px 0
+}
+
+.newstitles h2 {
+    font-size: 200%;
+    margin-bottom: 10px
+}
+
+.lvyou .gd-friendline {
+    margin-left: 46px;
+    line-height: 42px;
+    color: #666
+}
+
+.lvyou .gd-friendline:hover {
+    color: #0e90d2
+}
+
+@media only screen and (max-width:640px) {
+    .ly .am-gallery-item img {
+        height: 140px
+    }
+    .am-gallery-bordered .am-gallery-item img {
+        width: 100%;
+        height: 130px
+    }
+    .am-slides img {
+        height: 280px
+    }
+    .hd {
+        margin-bottom: 10px
+    }
+    .newstitles h2 {
+        font-size: 150%
+    }
+}
+
+@media only screen and (min-width:641px) and (max-width:1024px) {
+    .ly .am-gallery-item img {
+        height: 160px
+    }
+    .am-gallery-bordered .am-gallery-item img {
+        width: 100%;
+        height: 180px
+    }
+    .am-slides img {
+        height: 420px
+    }
+    .hd {
+        margin-bottom: 10px
+    }
+}
+
+.newstitles img {
+    width: 30px;
+    border-radius: 30px
+}
+
+.newstitles span {
+    color: #e1652f;
+    padding: 0 5px
+}
+
+.contents {
+    margin: 30px auto
+}
+
+.newstitles span {
+    color: #fff;
+    padding: .25em .625em
+}
+
+.list li {
+    height: 52px;
+}
+
+.list li a {}
+
+.list .date {
+    float: right;
+    font-size: 80%
+}
+
+.contents img {
+    max-width: 90%
+}
+
+/* 头部nav */
+.my-header-topbar{
+    background: #3390e7;
+    border-color: #318ade;
+}
+.my-header-topbar ul li a{
+    /* color: #fff; */
+}
+/* 手机头部 */
+.my-mb-header{
+    background: #3390e7;
+}
+.my-mb-header .am-header-left a i.am-icon-home{
+    font-size: 20px !important;
+} 
+.am-titlebar h2,
+.am-titlebar nav a,
+.am-list-news h2{
+    color: #3390e7 !important;
+}
+
+.sdbanner-m{
+    margin-top: 1rem;
+}
+/* 综合新闻 */
+.my-news ul li a,
+.my-sdly .am-list-news ul li a{
+    color: #444;
+}
+.my-news ul li a:hover,
+.my-sdly .am-list-news ul li a:hover{
+    color: #3390e7;
+}
+
+/* 走进三都 */
+.my-zjsd{
+    /* background: url(../images/zjsd-bg.jpg) no-repeat; */
+}
+.my-zjsd .am-intro .am-intro-hd,
+.my-zjsd .am-intro ul li a{
+    background: #3390e7;
+}
+.my-zjsd .zjsd-img{
+    padding: .5rem 0 0 .5rem;
+}
+.my-zjsd .sdjj-txt{
+    background: url(../images/zjsd-bg.jpg) 0px -64px no-repeat;
+    background-size:100%;
+    padding: .5rem;
+}
+.my-zjsd ul li .xqgk{
+    color: transparent;
+    background: url(../images/sdgk.jpg) -2px 0px !important;
+    border: none;
+}
+.my-zjsd ul li .dlgk{
+    color: transparent;
+    background: url(../images/dlgk.jpg) -2px 0px !important;
+    border: none;
+}
+.my-zjsd ul li .lsyg{
+    color: transparent;
+    background: url(../images/lsyg.jpg) -2px 0px !important;
+    border: none;
+}
+.my-zjsd ul li .zrzy{
+    color: transparent;
+    background: url(../images/zrzy.jpg) -2px 0px !important;
+    border: none;
+}
+.my-zjsd ul li .mzfq{
+    color: transparent;
+    background: url(../images/mzfq.jpg) -2px 0px !important;
+    border: none;
+}
+.my-zjsd ul li .lyzy{
+    color: transparent;
+    background: url(../images/lyjq.jpg) -2px 0px !important;
+    border: none;
+}
+/* 三都旅游 */
+.am-list-news-bd ul li a{
+    color: #666;
+}
+.am-list-news-bd ul li a:hover{
+    color: #3390e7;
+}
+
+/* 栏目页 */
+.my-am-list .am-breadcrumb{
+    margin-bottom: 0;
+}
+.my-am-list .am-breadcrumb a{
+    color: #3390e7
+}
+.my-am-list .am-breadcrumb a:hover{
+    text-decoration: underline;
+}
+
+/* 走进三都频道页 */
+.zjsd-list ul {
+    margin-top: 4rem;
+}
+.zjsd-list ul li{
+    margin-bottom: 2rem;
+}
+.zjsd-list ul li img{
+    padding: .6rem;
+    border: 1px #e5e5e5 solid;
+    border-radius: 4px;
+    width: 90%
+}
+.zjsd-list .mg{
+    margin-right: -1.4rem;
+}
