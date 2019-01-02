@@ -1,0 +1,101 @@
+
+<!doctype html><html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{channel.title}-{stl.SiteName}</title>
+    <!--360 browser -->
+    <meta name="renderer" content="webkit">
+    <stl:include file="@/include/head.html"></stl:include>
+</head>
+
+<body>
+    <stl:include file="@/include/header.html"></stl:include>
+
+
+    <div class="am-g am-container">
+        <div class="am-u-sm-12 am-u-md-12 am-u-lg-8">
+            <ol class="am-breadcrumb">
+                当前位置：
+                <li>
+                    <stl:location> >> </stl:location>
+                </li>
+            </ol>
+
+            <div data-am-widget="list_news" class="am-list-news am-list-news-default ">
+                <div class="am-list-news-bd">
+          <table class="am-table am-table-striped am-table-hover">
+           <thead>
+            <tr>
+            <th>剧目名称</th>
+            <th>演出单位</th>
+            <th>演出时间</th>
+            </tr>
+            <stl:pageContents pageNum="15" order="AddDateback" scope="SelfAndChildren">
+            <tr>
+            <td>{content.title}</td>
+            <td>{content.source}</td>
+            <td>{content.author}</td>
+            </tr>
+            </stl:pageContents>
+          </thead>
+          </table>
+                    <!-- <div class="fenye" id="fenye">
+                        <stl:pageItems autoHide="true">
+                            <table border="0">
+                                <tr>
+                                    <td id="pagelist">
+                                        <a href="javascript:;" class="prev" style="display:none">首 页</a> <a href="javascript:;"
+                                            class="next"><img src="/SysImg/fl.png" /></a>
+                                        <a href="#" class="curr">1</a>
+                                        <a class="num" href="/a/281-2.html">2</a>
+                                        <a class="num" href="/a/281-3.html">3</a>
+
+                                        <a href="/a/281-2.html" class="next"><img src="/SysImg/fr.png" /></a>
+                                        <a href="/a/281-3.html" class="prev" style="display:none">末页</a> </td>
+                                </tr>
+                            </table>
+                        </stl:pageItems>
+                    </div> -->
+                   
+
+                </div>
+            </div>
+        </div>
+        <div class="am-u-sm-0 am-u-md-0 am-u-lg-4">
+            <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+                <h2 class="am-titlebar-title ">
+                    新闻动态
+                </h2>
+                <nav class="am-titlebar-nav">
+                    <a href="{Channel.NavigationUrl_zxbd}" target="_blank">more &raquo;</a>
+                </nav>
+            </div>
+
+            <div data-am-widget="list_news" class="am-list-news am-list-news-default right-bg" data-am-scrollspy="{animation:'fade'}">
+                <ul class="am-list">
+                    <stl:contents channelName="最新报道" totalNum="6" order="AddDate">
+                        <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                            <a href="{content.NavigationUrl}" target="_blank" title="{content.title}">
+                                <i class="am-icon-calendar"></i>
+                                <stl:content type="Title" wordNum="16" ellipsis="..."></stl:content>
+                            </a>
+                        </li>
+                        <hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+                    </stl:contents>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <stl:include file="@/include/footer.html"></stl:include>
+</body>
+
+</html>
+

@@ -1,0 +1,220 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{stl.SiteName}|黔南热线技术支持</title>
+    <META NAME="keywords" CONTENT="{stl.SiteName}，黔南热线" />
+    <META NAME="description" CONTENT="{stl.SiteName}" />
+    <!--360 browser -->
+    <meta name="renderer" content="webkit">
+    <stl:include file="@/include/head.html"></stl:include>
+   <!--微信分享1/2-->
+    <script>
+        var ua = navigator.userAgent || navigator.vendor || window.opera;
+        //全局对象
+        window.APPCONF = {
+            isIOS: /ipad|iphone|ipod/ig.test(ua) && !window.MSStream,
+            isWechat: /micromessenger/ig.test(ua),
+            isShoubai: /baiduboxapp/ig.test(ua),
+            // 分享 参数
+            url: location.href,
+            shareTitle: '{stl.SiteName}官方网站-黔南热线技术支持',
+            shareDesc: '12月26日，共青团黔南州第十一次代表大会在州委党校开幕。',
+            shareImgUrl: 'http://zt.qnz.com.cn/tuan/images/app.jpg'
+        };
+    </script>
+</head>
+
+<body>
+    <stl:include file="@/include/header.html"></stl:include>
+    <!--banner-->
+    <div class="banner">
+        <div class="am-g am-container">
+            <div class="am-u-sm-12 am-u-md-12 am-u-lg-7">
+                <div data-am-widget="slider" class="am-slider am-slider-c1" data-am-slider='{"directionNav":false}'>
+                    <ul class="am-slides">
+                        <stl:contents channelName="会议动态" totalNum="5" isImage="true" order="AddDate" isRecommend="true">
+                            <li>
+                                <a href="{content.NavigationUrl}" target="_blank"><img src="{content.ImageUrl}"></a>
+                                <div class="am-slider-desc">{content.Title}</div>
+                            </li>
+                        </stl:contents>
+                    </ul>
+                </div>
+            </div>
+            <!-- 新闻动态 -->
+            <div class="am-u-sm-0 am-u-md-0 am-u-lg-5 padding-none">
+                <div class="star am-container"><span>最新报道</span></div>
+                <ul class="padding-none am-list">
+                    <stl:contents channelName="会议动态" order="AddDate" totalNum="6">
+                        <li>
+                            <stl:a title="{Content.FullTitle}" target="_blank" class="am-text-truncate">
+                                <i class="am-icon-file-text-o am-icon-fw"></i>
+                                <stl:content type="Title"></stl:content>
+                                </a>
+                        </li>
+                    </stl:contents>
+                </ul>
+            </div>
+            <!-- 新闻动态 end -->
+        </div>
+    </div>
+    <!-- <div class="am-container banner2 am-g am-show-lg-only"> -->
+    <!-- <div class="am-u-lg-12 am-u-sm-12 am-margin-bottom-sm">
+            <a href="http://qnly.qnz.com.cn/" target="_blank">
+                <img width="100%" src="images/mlqnly.jpg" alt="">
+            </a>
+        </div> -->
+    <!-- <div class="am-u-lg-12 am-hide-lg"><img width="100%" src="/html/qnlh2017/b3.jpg" alt=""></div> -->
+    <!-- </div> -->
+
+    <!--banner2-->
+    <!--  剧目介绍 -->
+    <div class="am-g">
+        <div class="am-container">
+            <div class="am-u-lg-12">
+                <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+                    <h2 class="am-titlebar-title ">
+                        精彩图集
+                    </h2>
+                    <nav class="am-titlebar-nav">
+                        <a href="{Channel.NavigationUrl_jctj}"><i class="am-icon-photo"></i> 更多</a>
+                    </nav>
+                </div>
+                <div id="youxi" class="case am-animation-slide-right">
+                    <ul class="am-gallery am-avg-sm-2 am-avg-md-4 am-avg-lg-4 am-gallery-overlay" data-am-gallery="{ pureview: true }">
+                        <stl:contents channelName="精彩图集" totalNum="4" isImage="true" order="AddDate" isRecommend="true">
+                            <li>
+                                <div class="am-gallery-item">
+                                    <a href="{content.NavigationUrl}" class="">
+                                        <img src="{content.ImageUrl}" alt="{content.title}" />
+                                        <h3 class="am-gallery-title">{content.title}</h3>
+                                    </a>
+                                </div>
+                            </li>
+                        </stl:contents>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 剧目介绍 end-->
+    <div class="am-g am-container newatype">
+        <!-- 最新报道 -->
+        <div class="am-u-sm-12 am-u-md-12 am-u-lg-7 oh">
+            <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default" style="border-bottom: 0px; margin-bottom: -10px">
+                <h2 class="am-titlebar-title ">
+                    会议动态
+                </h2>
+                <nav class="am-titlebar-nav">
+                    <a href="{Channel.NavigationUrl_hydt}" target="_blank">more &raquo;</a>
+                </nav>
+            </div>
+            <div data-am-widget="list_news" class="am-list-news am-list-news-default news">
+                <div class="am-list-news-bd">
+                    <ul class="am-list">
+                        <stl:contents channelName="会议动态" totalNum="6" isImage="true" order="AddDate">
+                            <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left"
+                                data-am-scrollspy="{animation:'fade'}">
+                                <div class="am-u-sm-5 am-list-thumb">
+                                    <a href="{content.NavigationUrl}" target="_blank">
+                                        <img src="{content.ImageUrl}" alt="{content.title}" />
+                                    </a>
+                                </div>
+                                <div class=" am-u-sm-7 am-list-main">
+                                    <h3 class="am-list-item-hd">
+                                        <a href="{content.NavigationUrl}" target="_blank">{content.title}
+                                        </a>
+                                    </h3>
+                                    <div class="am-list-item-text">
+                                        <stl:content type="content" wordNum="80" ellipsis="..." isClearTags="true"></stl:content>
+                                    </div>
+                                </div>
+                            </li>
+                            <div class="newsico am-fr am-show-lg-only">
+                                <i class="am-icon-clock-o">
+                                    <stl:content type="AddDate" formatString="MM-dd"></stl:content>
+                                </i>
+                                <i class="am-icon-pencil">
+                                    <stl:content type="author"></stl:content>
+                                </i>
+                            </div>
+                        </stl:contents>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 最新报道 end -->
+        <div class="am-u-sm-12 am-u-md-12 am-u-lg-5">
+            
+         
+            <!-- 媒体关注 -->
+            <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+                <h2 class="am-titlebar-title ">
+                    会议议程
+                </h2>
+                <nav class="am-titlebar-nav">
+                    <a href="{Channel.NavigationUrl_hyyc}" target="_blank">more &raquo;</a>
+                </nav>
+            </div>
+            <div data-am-widget="list_news" class="am-list-news am-list-news-default right-bg" data-am-scrollspy="{animation:'fade'}">
+                <ul class="am-list">
+                    <stl:contents channelName="会议议程" totalNum="6"  order="AddDate">
+                        <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                            <a href="{content.NavigationUrl}" target="_blank" title="{content.title}">
+                                <i class="am-icon-calendar"></i>
+                                <stl:content type="Title" wordNum="22" ellipsis="..."></stl:content>
+                            </a>
+                        </li>
+                        <hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+                    </stl:contents>
+                </ul>
+            </div>
+          <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+                <h2 class="am-titlebar-title ">
+                    代表感言
+                </h2>
+                <nav class="am-titlebar-nav">
+                    <a href="{Channel.NavigationUrl_dbgy}" target="_blank">more &raquo;</a>
+                </nav>
+            </div>
+            <div data-am-widget="list_news" class="am-list-news am-list-news-default right-bg" data-am-scrollspy="{animation:'fade'}">
+                <ul class="am-list">
+                    <stl:contents channelName="代表感言" totalNum="6"  order="AddDate">
+                        <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                            <a href="{content.NavigationUrl}" target="_blank" title="{content.title}">
+                                <i class="am-icon-calendar"></i>
+                                <stl:content type="Title" wordNum="22" ellipsis="..."></stl:content>
+                            </a>
+                        </li>
+                        <hr data-am-widget="divider" class="am-divider am-divider-default" />
+                    </stl:contents>
+                </ul>
+            </div>
+            <!-- 媒体关注 end -->
+        </div>
+    </div>
+    <stl:include file="@/include/footer.html"></stl:include>
+  <!-- 微信分享 -->
+        <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+        <script src="http://s.bdstatic.com/common/openjs/aio.js?_v=20170512"></script>
+        
+        <script src="http://cdn.qnz.com.cn/js/wx/zepto.min.js" type="text/javascript"></script>
+<script src="http://cdn.qnz.com.cn/js/wx/share.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            // 初始化分享
+            if (window.APPCONF.isWechat) {
+                initWXShare();
+            } else if (window.APPCONF.isShoubai) {
+                initBoxShare();
+            }
+        </script>
+</body>
+
+</html>
+

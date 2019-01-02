@@ -1,0 +1,120 @@
+
+<!doctype html><html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{Content.Title}-{stl.SiteName}</title>
+    <!--360 browser -->
+    <meta name="renderer" content="webkit">
+    <stl:include file="@/include/head.html"></stl:include>
+  <!--微信分享1/2-->
+    <script>
+        var ua = navigator.userAgent || navigator.vendor || window.opera;
+        //全局对象
+    var img = '{content.imageUrl}';
+    if (img) {
+      img = '{content.imageUrl}';
+    } else {
+      img='http://zt.qnz.com.cn/images/tuan-app.jpg';
+    };
+        window.APPCONF = {
+            isIOS: /ipad|iphone|ipod/ig.test(ua) && !window.MSStream,
+            isWechat: /micromessenger/ig.test(ua),
+            isShoubai: /baiduboxapp/ig.test(ua),
+            // 分享 参数
+            url: location.href,
+            shareTitle: '{Content.Title}-{stl.SiteName}',
+            shareDesc: '{stl:content type=content wordNum=100 isClearTags=true}',
+      shareImgUrl: img
+        };
+    console.log(img)
+    </script>
+</head>
+
+<body>
+    <stl:include file="@/include/header.html"></stl:include>
+    <div class="am-g am-container">
+        <div class="am-u-sm-12 am-u-md-12 am-u-lg-8">
+            <ol class="am-breadcrumb">
+                当前位置：
+                <li>
+                    <stl:location> >> </stl:location>
+                </li>
+            </ol>
+            <div class="newstitles">
+                <h2>{content.Title}</h2>
+                <stl:if testType="Author" testOperate="NotEmpty">
+                    作者：{content.Author}
+                </stl:if>
+                时间：{content.AddDate} 来源：{content.Source}
+            </div>
+
+            <div class="contents">
+                <stl:content type="Content"></stl:content>
+            </div>
+            <div class="am-avg-sm-1 am-avg-md-2 am-avg-lg-2">
+                <li>
+                    <stl:navigation emptyText="这是最新一篇文章" type="PreviousContent">
+                        上一篇：
+                        <stl:a></stl:a>
+                    </stl:navigation>
+                </li>
+                <li>
+                    <stl:navigation emptyText="这是最后一篇文章" type="NextContent">
+                        下一篇：
+                        <stl:a></stl:a>
+                    </stl:navigation>
+                </li>
+            </div>
+        </div>
+        <div class="am-u-sm-0 am-u-md-0 am-u-lg-4">
+            <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default">
+                <h2 class="am-titlebar-title ">
+                    媒体关注
+                </h2>
+                <nav class="am-titlebar-nav">
+                    <a href="{Channel.NavigationUrl_mtgz}" target="_blank">more &raquo;</a>
+                </nav>
+            </div>
+
+            <div data-am-widget="list_news" class="am-list-news am-list-news-default right-bg" data-am-scrollspy="{animation:'fade'}">
+                <ul class="am-list">
+                    <stl:contents channelName="媒体关注" totalNum="6" order="AddDate">
+                        <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                            <a href="{content.NavigationUrl}" target="_blank" title="{content.title}">
+                                <i class="am-icon-calendar"></i>
+                                <stl:content type="Title" wordNum="18" ellipsis="..."></stl:content>
+                            </a>
+                        </li>
+                        <hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+                    </stl:contents>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <stl:include file="@/include/footer.html"></stl:include>
+  <!-- 微信分享 -->
+        <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+        <script src="http://s.bdstatic.com/common/openjs/aio.js?_v=20170512"></script>
+        
+        <script src="http://cdn.qnz.com.cn/js/wx/zepto.min.js" type="text/javascript"></script>
+<script src="http://cdn.qnz.com.cn/js/wx/share.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            // 初始化分享
+            if (window.APPCONF.isWechat) {
+                initWXShare();
+            } else if (window.APPCONF.isShoubai) {
+                initBoxShare();
+            }
+        </script>
+</body>
+
+</html>
+

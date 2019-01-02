@@ -1,0 +1,127 @@
+
+<!DOCTYPE html><html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{Content.Title}-{stl.SiteName}-黔南热线</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="renderer" content="webkit">
+    <stl:include file="@/include/head.html"></stl:include>
+    <script>
+        var ua = navigator.userAgent || navigator.vendor || window.opera;
+        //全局对象
+        window.APPCONF = {
+            isIOS: /ipad|iphone|ipod/ig.test(ua) && !window.MSStream,
+            isWechat: /micromessenger/ig.test(ua),
+            isShoubai: /baiduboxapp/ig.test(ua),
+            // 分享 参数
+            url: location.href,
+            shareTitle: '{Content.Title}-{stl.SiteName}-黔南热线',
+            shareDesc: '{content.Summary}',
+            shareImgUrl: '{stl.SiteUrl}/images/app.jpg'
+        };
+    </script>
+    <style>
+        @media only screen and (min-width: 1025px) {
+            .am-with-topbar-fixed-top {
+                padding-top: 105px;
+            }
+        }
+
+        @media only screen and (max-width: 640px) {
+            .am-with-topbar-fixed-top {
+                padding-top: 80px;
+            }
+        }
+      .newstitles h2{
+      text-align:center  
+      }
+    </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?0ca1dc46120bf60eae22257eeb06f3cf";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <stl:include file="@/include/header.html"></stl:include>
+
+    <div class="am-container am-margin-top-lg">
+        <div class="am-g my-am-list">
+            <div class="am-u-sm-12 am-u-lg-9">
+                <ol class="am-breadcrumb">
+                    当前位置：
+                    <li>
+                        <stl:location> >> </stl:location>
+                    </li>
+                </ol>
+                <div class="newstitles">
+                    <h2>{content.Title}</h2>
+                </div>
+                <div class="contents">
+                    
+                    <p class="am-hide-lg-only" align="center"><a class="am-btn am-btn-danger" href="{content.url}" target="_blank">为我点赞 <i class="am-icon-thumbs-o-up"></i></a></p>
+                    <stl:content type="Content"></stl:content>
+                    <p class="am-hide-lg-only" align="center"><a class="am-btn am-btn-danger" href="{content.url}" target="_blank">为我点赞 <i class="am-icon-thumbs-o-up"></i></a></p>
+                </div>
+                <hr />
+                <div class="am-g next">
+                    <span class="am-u-sm-12 am-u-lg-12 am-text-sm">
+                        <stl:navigation emptyText="这是最新一篇文章" type="PreviousContent">
+                            上一篇：
+                            <stl:a></stl:a>
+                        </stl:navigation>
+                    </span>
+                    <span class="am-u-sm-12 am-u-lg-12 am-text-sm">
+                        <stl:navigation emptyText="这是最后一篇文章" type="NextContent">
+                            下一篇：
+                            <stl:a></stl:a>
+                        </stl:navigation>
+                    </span>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-u-md-3 am-u-lg-3 lm-gzdt com-mid-list">
+                <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                    <!--列表标题-->
+                  
+                    <div class="am-list-news-hd am-cf">
+                        <!--带更多链接-->
+                        <a href="javascript:;" class="">
+                            <h2>热门报道</h2>
+                            <!-- <span class="am-list-news-more am-fr">+更多+</span> -->
+                        </a>
+                    </div>
+
+                    <div class="am-list-news-bd">
+                        <ul class="am-list">
+                            <stl:contents channelName="相关报道" totalNum="8" order="Hits">
+                                <li class="am-g am-list-item-dated">
+                                    <a href="{content.NavigationUrl}" class="am-list-item-hd ">{content.Title}</a>
+                                    <span class="am-list-date">[<stl:content type="AddDate" formatString="MM-dd"></stl:content>]</span>
+                                </li>
+                            </stl:contents>
+                        </ul>
+                    </div>
+<p class="am-show-lg-only" align="center"><img width="200" src="{stl.SiteUrl}/images/qnja-qr.png" /></p>
+                    <p class="am-show-lg-only am-text-danger" align="center">扫描二维码给候选人点赞</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <stl:include file="@/include/footer.html"></stl:include>
+    <script>
+        $(".rwft-cont-hidden").css("display", "none");
+    </script>
+</body>
+
+</html>

@@ -33,6 +33,20 @@
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
+	<script>
+        var ua = navigator.userAgent || navigator.vendor || window.opera;
+        //全局对象
+        window.APPCONF = {
+            isIOS: /ipad|iphone|ipod/ig.test(ua) && !window.MSStream,
+            isWechat: /micromessenger/ig.test(ua),
+            isShoubai: /baiduboxapp/ig.test(ua),
+            // 分享 参数
+            url: location.href,
+            shareTitle: '{stl.SiteName}-黔南热线',
+            shareDesc: '站在高端，访问黔南，将黔南人展现给世界！黔南热线人物访谈',
+            shareImgUrl: 'http://rwft.qnz.com.cn/images/header.jpg'
+        };
+    </script>
 </head>
 
 <body>
@@ -511,6 +525,18 @@
         </div>
     </div>
     <stl:include file="@/include/footer.html"></stl:include>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script src="//s.bdstatic.com/common/openjs/aio.js?_v=20170512"></script>
+<script src="/js/wx/zepto.min.js" type="text/javascript"></script>
+<script src="/js/wx/share.js" type="text/javascript"></script>
+<script type="text/javascript">
+    // 初始化分享
+    if (window.APPCONF.isWechat) {
+        initWXShare();
+    } else if (window.APPCONF.isShoubai) {
+        initBoxShare();
+    }
+</script>
 </body>
 
 </html>

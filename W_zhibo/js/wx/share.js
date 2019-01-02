@@ -12,7 +12,7 @@ function initWXShare() {
         type: 'get',
         // 微信二次分享失败:
         // 微信在第二次分享的链接里增加了后缀，如?from=singlemessage...，所以需要对url进行转译
-        url: '/js/wx/index.php?url=' + encodeURIComponent(location.href.split('#')[0]),
+        url: 'http://www.qnz.com.cn/js/wx/index.php?url=' + encodeURIComponent(location.href.split('#')[0]),
         dataType: 'json',
 
         success: function (data) {
