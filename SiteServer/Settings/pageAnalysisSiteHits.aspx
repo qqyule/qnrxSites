@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <!--#include file="../inc/head.html"-->
-  <script src="../assets/echarts/echarts.js?v=6.8.0"></script>
+  <script src="../assets/echarts/echarts.js?v=6.8.1"></script>
 </head>
 
 <body>

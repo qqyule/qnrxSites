@@ -19,7 +19,7 @@
           line-height: 16px;
         }
       </style>
-      <script src="../assets/codeMirror/js/codemirror.js?v=6.8.0" type="text/javascript"></script>
+      <script src="../assets/codeMirror/js/codemirror.js?v=6.8.1" type="text/javascript"></script>
     </head>
 
     <body>
@@ -63,11 +63,11 @@
                   $(document).ready(function () {
                     var editor = CodeMirror.fromTextArea('TbContent', {
                       height: "500px",
-                      parserfile: ["parsecss.js?v=6.8.0", "tokenizejavascript.js?v=6.8.0", "parsejavascript.js?v=6.8.0", "parsexml.js?v=6.8.0",
-                        "parsehtmlmixed.js?v=6.8.0"
+                      parserfile: ["parsecss.js?v=6.8.1", "tokenizejavascript.js?v=6.8.1", "parsejavascript.js?v=6.8.1", "parsexml.js?v=6.8.1",
+                        "parsehtmlmixed.js?v=6.8.1"
                       ],
-                      stylesheet: ["../assets/codeMirror/css/xmlcolors.css?v=6.8.0",
-                        "../assets/codeMirror/css/csscolors.css?v=6.8.0", "../assets/codeMirror/css/jscolors.css?v=6.8.0"
+                      stylesheet: ["../assets/codeMirror/css/xmlcolors.css?v=6.8.1",
+                        "../assets/codeMirror/css/csscolors.css?v=6.8.1", "../assets/codeMirror/css/jscolors.css?v=6.8.1"
                       ],
                       path: "../assets/codeMirror/js/",
                       continuousScanning: 500,
@@ -85,8 +85,8 @@
                   $(document).ready(function () {
                     var editor = CodeMirror.fromTextArea('TbContent', {
                       height: "500px",
-                      parserfile: ["tokenizejavascript.js?v=6.8.0", "parsejavascript.js?v=6.8.0"],
-                      stylesheet: ["../assets/codeMirror/css/jscolors.css?v=6.8.0"],
+                      parserfile: ["tokenizejavascript.js?v=6.8.1", "parsejavascript.js?v=6.8.1"],
+                      stylesheet: ["../assets/codeMirror/css/jscolors.css?v=6.8.1"],
                       path: "../assets/codeMirror/js/",
                       continuousScanning: 500,
                       lineNumbers: true
@@ -103,8 +103,8 @@
                   $(document).ready(function () {
                     var editor = CodeMirror.fromTextArea('TbContent', {
                       height: "500px",
-                      parserfile: ["parsecss.js?v=6.8.0"],
-                      stylesheet: ["../assets/codeMirror/css/csscolors.css?v=6.8.0"],
+                      parserfile: ["parsecss.js?v=6.8.1"],
+                      stylesheet: ["../assets/codeMirror/css/csscolors.css?v=6.8.1"],
                       path: "../assets/codeMirror/js/",
                       continuousScanning: 500,
                       lineNumbers: true

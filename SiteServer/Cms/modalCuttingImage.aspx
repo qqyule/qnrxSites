@@ -6,9 +6,9 @@
     <head>
       <meta charset="utf-8">
       <!--#include file="../inc/head.html"-->
-      <link rel="stylesheet" type="text/css" href="js/jquery.imgareaselect/css/imgareaselect-default.css?v=6.8.0" />
-      <script type="text/javascript" src="js/jquery.imgareaselect/scripts/jquery.imgareaselect.pack.js?v=6.8.0"></script>
-      <script type="text/javascript" src="js/jQueryRotateCompressed.js?v=6.8.0"></script>
+      <link rel="stylesheet" type="text/css" href="js/jquery.imgareaselect/css/imgareaselect-default.css?v=6.8.1" />
+      <script type="text/javascript" src="js/jquery.imgareaselect/scripts/jquery.imgareaselect.pack.js?v=6.8.1"></script>
+      <script type="text/javascript" src="js/jQueryRotateCompressed.js?v=6.8.1"></script>
 
       <asp:Literal id="LtlScript" runat="server" />
       <script type="text/javascript">

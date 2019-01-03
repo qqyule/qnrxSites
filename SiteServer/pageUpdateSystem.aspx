@@ -8,17 +8,17 @@
   <title>SiteServer CMS 升级向导</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="./assets/icons/favicon.png" rel="icon" type="image/png">
-  <link href="./assets/bootstrap/css/bootstrap.min.css?v=6.8.0" rel="stylesheet" type="text/css" />
-  <link href="./assets/css/core.css?v=6.8.0" rel="stylesheet" type="text/css" />
-  <link href="./assets/css/components.css?v=6.8.0" rel="stylesheet" type="text/css" />
-  <link href="./assets/css/pages.css?v=6.8.0" rel="stylesheet" type="text/css" />
-  <link href="./assets/css/menu.css?v=6.8.0" rel="stylesheet" type="text/css" />
-  <link href="./assets/css/responsive.css?v=6.8.0" rel="stylesheet" type="text/css" />
-  <link href="./assets/css/ionicons.min.css?v=6.8.0" rel="stylesheet" type="text/css" />
-  <script src="./assets/jquery/jquery-1.9.1.min.js?v=6.8.0" type="text/javascript"></script>
-  <script src="./assets/sweetalert/sweetalert.min.js?v=6.8.0" type="text/javascript"></script>
-  <script src="./assets/layer/layer.min.js?v=6.8.0" type="text/javascript"></script>
-  <script src="./inc/script.js?v=6.8.0" type="text/javascript"></script>
+  <link href="./assets/bootstrap/css/bootstrap.min.css?v=6.8.1" rel="stylesheet" type="text/css" />
+  <link href="./assets/css/core.css?v=6.8.1" rel="stylesheet" type="text/css" />
+  <link href="./assets/css/components.css?v=6.8.1" rel="stylesheet" type="text/css" />
+  <link href="./assets/css/pages.css?v=6.8.1" rel="stylesheet" type="text/css" />
+  <link href="./assets/css/menu.css?v=6.8.1" rel="stylesheet" type="text/css" />
+  <link href="./assets/css/responsive.css?v=6.8.1" rel="stylesheet" type="text/css" />
+  <link href="./assets/css/ionicons.min.css?v=6.8.1" rel="stylesheet" type="text/css" />
+  <script src="./assets/jquery/jquery-1.9.1.min.js?v=6.8.1" type="text/javascript"></script>
+  <script src="./assets/sweetalert/sweetalert.min.js?v=6.8.1" type="text/javascript"></script>
+  <script src="./assets/layer/layer.min.js?v=6.8.1" type="text/javascript"></script>
+  <script src="./inc/script.js?v=6.8.1" type="text/javascript"></script>
   <style>
     body {
           padding: 20px 0;
@@ -172,12 +172,12 @@
 
 </html>
 <!--#include file="./inc/foot.html"-->
-<script type="text/javascript" src="assets/vue/vue.min.js?v=6.8.0"></script>
-<script type="text/javascript" src="assets/js/apiUtils.js?v=6.8.0"></script>
-<script type="text/javascript" src="assets/js/es6-promise.auto.min.js?v=6.8.0"></script>
-<script type="text/javascript" src="assets/js/axios-0.17.1.min.js?v=6.8.0"></script>
-<script type="text/javascript" src="assets/js/utils.js?v=6.8.0"></script>
-<script type="text/javascript" src="assets/js/compareversion.js?v=6.8.0"></script>
+<script type="text/javascript" src="assets/vue/vue.min.js?v=6.8.1"></script>
+<script type="text/javascript" src="assets/js/apiUtils.js?v=6.8.1"></script>
+<script type="text/javascript" src="assets/js/es6-promise.auto.min.js?v=6.8.1"></script>
+<script type="text/javascript" src="assets/js/axios-0.17.1.min.js?v=6.8.1"></script>
+<script type="text/javascript" src="assets/js/utils.js?v=6.8.1"></script>
+<script type="text/javascript" src="assets/js/compareversion.js?v=6.8.1"></script>
 <script type="text/javascript">
   var updateSsCmsApi = new apiUtils.Api('<%=UpdateSsCmsApiUrl%>');
   var isNightly = <%=IsNightly%>;

@@ -154,9 +154,9 @@
     </html>
     <!--#include file="../inc/foot.html"-->
 
-    <script type="text/javascript" src="../assets/validate.js?v=6.8.0"></script>
-    <script type="text/javascript" src="../assets/jquery/jquery.form.js?v=6.8.0"></script>
-    <script type="text/javascript" src="../assets/jscolor/jscolor.js?v=6.8.0"></script>
+    <script type="text/javascript" src="../assets/validate.js?v=6.8.1"></script>
+    <script type="text/javascript" src="../assets/jquery/jquery.form.js?v=6.8.1"></script>
+    <script type="text/javascript" src="../assets/jscolor/jscolor.js?v=6.8.1"></script>
     <script>
       function translateNodeAdd(name, value) {
         $('#translateContainer').append("<span id='translate_" + value + "' class='label label-primary p-1'>" + name +

@@ -7,10 +7,10 @@
       <meta charset="utf-8">
       <title>SiteServer CMS 安装向导</title>
       <!--#include file="../inc/head.html"-->
-      <link href="../assets/showLoading/css/showLoading.css?v=6.8.0" rel="stylesheet" />
-      <script type="text/javascript" src="../assets/showLoading/js/jquery.showLoading.js?v=6.8.0"></script>
-      <link href="password.css?v=6.8.0" rel="stylesheet" />
-      <script type="text/javascript" src="password.js?v=6.8.0"></script>
+      <link href="../assets/showLoading/css/showLoading.css?v=6.8.1" rel="stylesheet" />
+      <script type="text/javascript" src="../assets/showLoading/js/jquery.showLoading.js?v=6.8.1"></script>
+      <link href="password.css?v=6.8.1" rel="stylesheet" />
+      <script type="text/javascript" src="password.js?v=6.8.1"></script>
     </head>
 
     <body>

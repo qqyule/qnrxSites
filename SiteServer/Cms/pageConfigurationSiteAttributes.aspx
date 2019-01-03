@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <!--#include file="../inc/head.html"-->
-  <script type="text/javascript" charset="utf-8" src="../assets/validate.js?v=6.8.0"></script>
+  <script type="text/javascript" charset="utf-8" src="../assets/validate.js?v=6.8.1"></script>
 </head>
 
 <body>
