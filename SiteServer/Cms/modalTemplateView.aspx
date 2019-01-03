@@ -19,7 +19,7 @@
           line-height: 16px;
         }
       </style>
-      <script src="../assets/codeMirror/js/codemirror.js?v=6.7.6" type="text/javascript"></script>
+      <script src="../assets/codeMirror/js/codemirror.js?v=6.8.0" type="text/javascript"></script>
     </head>
 
     <body>
@@ -37,8 +37,8 @@
                 var isTextArea = false;
                 var editor = CodeMirror.fromTextArea('TbContent', {
                   height: "400px",
-                  parserfile: ["parsexml.js?v=6.7.6"],
-                  stylesheet: ["../assets/codeMirror/css/xmlcolors.css?v=6.7.6"],
+                  parserfile: ["parsexml.js?v=6.8.0"],
+                  stylesheet: ["../assets/codeMirror/css/xmlcolors.css?v=6.8.0"],
                   path: "../assets/codeMirror/js/",
                   continuousScanning: 500,
                   lineNumbers: true

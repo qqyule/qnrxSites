@@ -8,17 +8,17 @@
   <title>SiteServer CMS 升级向导</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="./assets/icons/favicon.png" rel="icon" type="image/png">
-  <link href="./assets/bootstrap/css/bootstrap.min.css?v=6.7.6" rel="stylesheet" type="text/css" />
-  <link href="./assets/css/core.css?v=6.7.6" rel="stylesheet" type="text/css" />
-  <link href="./assets/css/components.css?v=6.7.6" rel="stylesheet" type="text/css" />
-  <link href="./assets/css/pages.css?v=6.7.6" rel="stylesheet" type="text/css" />
-  <link href="./assets/css/menu.css?v=6.7.6" rel="stylesheet" type="text/css" />
-  <link href="./assets/css/responsive.css?v=6.7.6" rel="stylesheet" type="text/css" />
-  <link href="./assets/css/ionicons.min.css?v=6.7.6" rel="stylesheet" type="text/css" />
-  <script src="./assets/jquery/jquery-1.9.1.min.js?v=6.7.6" type="text/javascript"></script>
-  <script src="./assets/sweetalert/sweetalert.min.js?v=6.7.6" type="text/javascript"></script>
-  <script src="./assets/layer/layer.min.js?v=6.7.6" type="text/javascript"></script>
-  <script src="./inc/script.js?v=6.7.6" type="text/javascript"></script>
+  <link href="./assets/bootstrap/css/bootstrap.min.css?v=6.8.0" rel="stylesheet" type="text/css" />
+  <link href="./assets/css/core.css?v=6.8.0" rel="stylesheet" type="text/css" />
+  <link href="./assets/css/components.css?v=6.8.0" rel="stylesheet" type="text/css" />
+  <link href="./assets/css/pages.css?v=6.8.0" rel="stylesheet" type="text/css" />
+  <link href="./assets/css/menu.css?v=6.8.0" rel="stylesheet" type="text/css" />
+  <link href="./assets/css/responsive.css?v=6.8.0" rel="stylesheet" type="text/css" />
+  <link href="./assets/css/ionicons.min.css?v=6.8.0" rel="stylesheet" type="text/css" />
+  <script src="./assets/jquery/jquery-1.9.1.min.js?v=6.8.0" type="text/javascript"></script>
+  <script src="./assets/sweetalert/sweetalert.min.js?v=6.8.0" type="text/javascript"></script>
+  <script src="./assets/layer/layer.min.js?v=6.8.0" type="text/javascript"></script>
+  <script src="./inc/script.js?v=6.8.0" type="text/javascript"></script>
   <style>
     body {
           padding: 20px 0;
@@ -172,11 +172,13 @@
 
 </html>
 <!--#include file="./inc/foot.html"-->
-<script src="assets/vue/vue.min.js?v=6.7.6"></script>
-<script src="assets/js/apiUtils.js?v=6.7.6"></script>
-<script src="assets/js/compareversion.js?v=6.7.6"></script>
+<script type="text/javascript" src="assets/vue/vue.min.js?v=6.8.0"></script>
+<script type="text/javascript" src="assets/js/apiUtils.js?v=6.8.0"></script>
+<script type="text/javascript" src="assets/js/es6-promise.auto.min.js?v=6.8.0"></script>
+<script type="text/javascript" src="assets/js/axios-0.17.1.min.js?v=6.8.0"></script>
+<script type="text/javascript" src="assets/js/utils.js?v=6.8.0"></script>
+<script type="text/javascript" src="assets/js/compareversion.js?v=6.8.0"></script>
 <script type="text/javascript">
-  var ssApi = new apiUtils.Api();
   var updateSsCmsApi = new apiUtils.Api('<%=UpdateSsCmsApiUrl%>');
   var isNightly = <%=IsNightly%>;
   var version = '<%=Version%>';
@@ -199,18 +201,39 @@
       version: function () {
         var $this = this;
 
-        ssApi.get({
-          isNightly: isNightly,
-          version: version
-        }, function (err, res) {
-          if (err || !res || !res.value) return;
+        $apiCloud.get('updates', {
+          params: {
+            isNightly: isNightly,
+            pluginVersion: version,
+            packageIds: packageId
+          }
+        }).then(function (response) {
+          var res = response.data;
 
-          $this.package = res.value;
+          $this.package = res.value[0];
           $this.isShouldUpdate = compareversion($this.installedVersion, $this.package.version) == -1;
           var major = $this.package.version.split('.')[0];
           var minor = $this.package.version.split('.')[1];
           $this.updatesUrl = 'http://www.siteserver.cn/updates/v' + major + '_' + minor + '/index.html';
-        }, 'packages', packageId);
+
+        }).catch(function (error) {
+          $this.pageAlert = utils.getPageAlert(error);
+        }).then(function () {
+          $this.pageLoad = true;
+        });
+
+        // ssApi.get({
+        //   isNightly: isNightly,
+        //   version: version
+        // }, function (err, res) {
+        //   if (err || !res || !res.value) return;
+
+        //   $this.package = res.value;
+        //   $this.isShouldUpdate = compareversion($this.installedVersion, $this.package.version) == -1;
+        //   var major = $this.package.version.split('.')[0];
+        //   var minor = $this.package.version.split('.')[1];
+        //   $this.updatesUrl = 'http://www.siteserver.cn/updates/v' + major + '_' + minor + '/index.html';
+        // }, 'packages', packageId);
       },
       check: function () {
         this.isCheck = !this.isCheck;

@@ -79,9 +79,9 @@
 </html>
 <!--#include file="../inc/foot.html"-->
 
-<script type="text/javascript" src="../assets/vue/vue.min.js?v=6.7.6"></script>
-<script type="text/javascript" src="../assets/web-uploader/js/Q.js?v=6.7.6"></script>
-<script type="text/javascript" src="../assets/web-uploader/js/Q.Uploader.js?v=6.7.6"></script>
+<script type="text/javascript" src="../assets/vue/vue.min.js?v=6.8.0"></script>
+<script type="text/javascript" src="../assets/web-uploader/js/Q.js?v=6.8.0"></script>
+<script type="text/javascript" src="../assets/web-uploader/js/Q.Uploader.js?v=6.8.0"></script>
 <script type="text/javascript">
 	var data = {
 		op: '',
